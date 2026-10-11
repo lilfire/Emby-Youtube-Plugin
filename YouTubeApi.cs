@@ -36,7 +36,8 @@ namespace Emby.YouTubePlugin
         // Memory cache lifetimes. Disk uses the same value per request,
         // capped by the global limit below.
         private const long CacheTtlMs = 15 * 60 * 1000;            // Default: 15 minutes.
-        private const long FreshListTtlMs = 6 * 60 * 60 * 1000;       // Trending, uploads, and playlists: 6 hours.
+        private const long FreshListTtlMs = 6 * 60 * 60 * 1000;       // Trending and ordinary playlists: 6 hours.
+        private const long ChannelUploadsTtlMs = 55 * 60 * 1000;    // Expires before an hourly channel refresh.
         private const long ChannelDetailsCacheTtlMs = 6 * 60 * 60 * 1000;       // Channel names and thumbnails: 6 hours.
         private const long SearchTtlMs = 24 * 60 * 60 * 1000;           // Search has a separate daily call limit.
         private const long CategoriesTtlMs = 30L * 24 * 60 * 60 * 1000; // Categories rarely change.
@@ -968,12 +969,12 @@ namespace Emby.YouTubePlugin
                       $"&maxResults=50&key={Uri.EscapeDataString(apiKey)}";
             if (!string.IsNullOrEmpty(pageToken))
                 url += $"&pageToken={Uri.EscapeDataString(pageToken)}";
-            // Uploads/playlists are cheap but noisy, so 6h hits a good middle
-            // ground for normal browsing.
+            // Channel uploads must expire before an hourly refresh; ordinary
+            // saved playlists retain their existing six-hour lifetime.
             return await TryGetCachedJsonAsync(
                     url,
                     ct,
-                    FreshListTtlMs,
+                    playlistId.StartsWith("UU", StringComparison.Ordinal) ? ChannelUploadsTtlMs : FreshListTtlMs,
                     GetPlaylistCacheTag(playlistId))
                 .ConfigureAwait(false);
         }

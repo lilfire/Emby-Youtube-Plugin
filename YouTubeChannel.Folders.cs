@@ -160,7 +160,11 @@ namespace Emby.YouTubePlugin
                 Type = ChannelItemType.Folder,
                 FolderType = ChannelFolderType.Container,
                 MediaType = ChannelMediaType.Video,
-                ImageUrl = imageUrl
+                ImageUrl = imageUrl,
+                ProviderIds = new ProviderIdDictionary
+                {
+                    [YouTubeFolderWatchStateSynchronizer.ProviderKey] = YouTubeFolderWatchStateSynchronizer.ProviderValue
+                }
             };
 
         private static async Task<ChannelItemResult> BuildChannelSubfoldersAsync(
@@ -178,6 +182,7 @@ namespace Emby.YouTubePlugin
                 channelThumb = details.thumb;
                 if (!string.IsNullOrEmpty(details.id))
                     resolvedChannelId = details.id!;
+                else YouTubeWatchStateScan.MarkIncomplete();
             }
             catch (OperationCanceledException) when (ct.IsCancellationRequested)
             {
@@ -186,6 +191,7 @@ namespace Emby.YouTubePlugin
             catch (Exception ex)
             {
                 Log($"[YT] Channel details lookup failed for {term}: {ex.Message}");
+                YouTubeWatchStateScan.MarkIncomplete();
             }
 
             var includeShorts = config.ShortsEnabled

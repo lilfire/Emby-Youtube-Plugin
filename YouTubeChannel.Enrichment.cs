@@ -174,7 +174,11 @@ namespace Emby.YouTubePlugin
                     var chunkList = videoIds.Skip(i).Take(50).ToList();
                     using var doc = await YouTubeApi.GetVideoDetailsBatchAsync(apiKey, chunkList, ct)
                         .ConfigureAwait(false);
-                    if (doc == null) continue; // network blip, leave this chunk alone
+                    if (doc == null)
+                    {
+                        YouTubeWatchStateScan.MarkIncomplete();
+                        continue; // network blip, leave this chunk alone
+                    }
                     foreach (var qid in chunkList) queriedIds.Add(qid);
 
                     if (doc.RootElement.TryGetProperty("items", out var items)
@@ -477,9 +481,12 @@ namespace Emby.YouTubePlugin
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"[YouTubeChannel] EnrichBatch error: {ex.Message}");
+                YouTubeWatchStateScan.MarkIncomplete();
             }
             finally
             {
+                if (unresolvedShortCandidates != null)
+                    ExcludeConfirmedUnavailableCandidates(unresolvedShortCandidates, queriedIds, foundIds, unplayableIds);
                 // Always strip unplayable items even if a later chunk blew up.
                 // Items in chunks that never finished are guarded by queriedIds,
                 // so a transient failure won't accidentally remove them.
@@ -500,6 +507,7 @@ namespace Emby.YouTubePlugin
 
                 if (unresolvedShortCandidates?.Count > 0)
                 {
+                    YouTubeWatchStateScan.MarkIncomplete();
                     batch.RemoveAll(item =>
                     {
                         var raw = item.Id;
@@ -511,6 +519,15 @@ namespace Emby.YouTubePlugin
                     });
                 }
             }
+        }
+
+        internal static void ExcludeConfirmedUnavailableCandidates(HashSet<string> unresolved,
+            HashSet<string> queried, HashSet<string> found, HashSet<string> unplayable)
+        {
+            // Confirmed unavailable videos are intentionally excluded, not an
+            // incomplete classification. Failed API chunks stay unresolved.
+            unresolved.ExceptWith(unplayable);
+            unresolved.RemoveWhere(id => queried.Contains(id) && !found.Contains(id));
         }
 
         private static bool IsLiveOrUpcomingVideo(JsonElement detail)

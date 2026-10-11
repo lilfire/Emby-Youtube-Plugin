@@ -38,6 +38,7 @@ namespace Emby.YouTubePlugin
         private static readonly object PlaylistFingerprintFileLock = new();
         private readonly object _resumeCheckpointFileLock = new();
         private readonly YouTubeHomeSectionManager _homeSectionManager;
+        private readonly YouTubeFolderWatchStateSynchronizer _folderWatchState;
         private readonly YouTubeCaptionOffGuard _captionOffGuard;
         private readonly IUserManager _userManager;
         private readonly CancellationTokenSource _lifetimeCts = new();
@@ -145,7 +146,8 @@ namespace Emby.YouTubePlugin
             IUserDataManager userDataManager,
             IUserManager userManager,
             IUserViewManager userViewManager,
-            IChannelManager channelManager)
+            IChannelManager channelManager,
+            MediaBrowser.Model.Tasks.ITaskManager taskManager)
         {
             Plugin.InitializeApplicationHost(applicationHost);
             _sessionManager = sessionManager;
@@ -154,6 +156,7 @@ namespace Emby.YouTubePlugin
             _userManager = userManager;
             _lifetimeToken = _lifetimeCts.Token;
             _homeSectionManager = new YouTubeHomeSectionManager(userManager, userViewManager);
+            _folderWatchState = new YouTubeFolderWatchStateSynchronizer(libraryManager, userDataManager, userManager, tasks: taskManager, channels: channelManager);
             _captionOffGuard = new YouTubeCaptionOffGuard(sessionManager);
             ChannelRefreshInvoker.Initialize(channelManager);
         }
@@ -161,6 +164,8 @@ namespace Emby.YouTubePlugin
         public void Run()
         {
             _current = this;
+            YouTubeWatchStateScan.Initialize(Plugin.DataPath);
+            _folderWatchState.Start();
             // If the plugin DLL was updated, wipe transient caches automatically
             // so users don't have to clear them by hand. Persistent plugin
             // state stays intact: config hash, quota, logs and resume
@@ -224,6 +229,8 @@ namespace Emby.YouTubePlugin
         {
             _current?.QueueHomeSectionSync(reason, delay ?? TimeSpan.Zero);
         }
+
+        internal static void RequestFolderWatchStateSync() => _current?._folderWatchState.RequestAll();
 
         private void QueueHomeSectionSync(string reason, TimeSpan delay)
         {
@@ -2601,6 +2608,7 @@ namespace Emby.YouTubePlugin
                 _libraryManager.ItemUpdated -= OnItemUpdated;
             _userManager.UserCreated -= OnHomeSectionUserChanged;
             _userManager.UserPolicyUpdated -= OnHomeSectionUserChanged;
+            _folderWatchState.Dispose();
 
             if (_sessionManager != null)
             {
@@ -2675,7 +2683,7 @@ namespace Emby.YouTubePlugin
         {
             get
             {
-                if (Volatile.Read(ref _refreshActive) != 0)
+                if (Volatile.Read(ref _refreshActive) != 0 || YouTubeWatchStateScan.IsActive)
                     return true;
 
                 var last = Volatile.Read(ref _lastChannelScanTicks);
@@ -2816,9 +2824,11 @@ namespace Emby.YouTubePlugin
                             Interlocked.Exchange(ref _refreshActive, 0);
                             if (completedTask.Status == TaskStatus.RanToCompletion)
                             {
+                                PluginEntryPoint.RequestFolderWatchStateSync();
                                 PluginEntryPoint.RequestHomeSectionSync(
                                     "channel refresh completed");
                             }
+                            else YouTubeWatchStateScan.MarkAllIncomplete();
                         },
                         CancellationToken.None,
                         TaskContinuationOptions.ExecuteSynchronously,

@@ -38,7 +38,7 @@ namespace Emby.YouTubePlugin
         public string Name => "YouTube";
         public string Description => "YouTube integration via official YouTube Data API v3.";
         public string Id => "youtube_channel_10";
-        private const string ChannelDataRevision = "20260908-stats-labels";
+        private const string ChannelDataRevision = "20261010-folder-watch-state";
 
         // Emby caches the channel's folders/items keyed by DataVersion and only
         // re-queries GetChannelItems when it changes. A constant version means a
@@ -73,7 +73,12 @@ namespace Emby.YouTubePlugin
 
         public ChannelFeatures GetChannelFeatures() => Features;
 
-        public async Task<ChannelItemResult> GetChannelItems(
+        public Task<ChannelItemResult> GetChannelItems(
+            InternalChannelItemQuery query, CancellationToken cancellationToken) =>
+            YouTubeWatchStateScan.RunAsync(query.FolderId,
+                () => GetChannelItemsCore(query, cancellationToken));
+
+        private async Task<ChannelItemResult> GetChannelItemsCore(
             InternalChannelItemQuery query, CancellationToken cancellationToken)
         {
             var items = new List<ChannelItemInfo>();

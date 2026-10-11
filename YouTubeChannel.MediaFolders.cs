@@ -53,6 +53,7 @@ namespace Emby.YouTubePlugin
             if ((type == "channelvideos" || type == "channelshorts") && IsChannelId(term))
             {
                 var shortsProbe = await GetChannelShortVideoIdsAsync(term, ct).ConfigureAwait(false);
+                if (!shortsProbe.LookupSucceeded) YouTubeWatchStateScan.MarkIncomplete();
                 knownShortsIds = shortsProbe.VideoIds;
             }
 
@@ -63,6 +64,7 @@ namespace Emby.YouTubePlugin
                 var requestedPageToken = pageToken ?? string.Empty;
                 if (!seenPageTokens.Add(requestedPageToken))
                 {
+                    YouTubeWatchStateScan.MarkIncomplete();
                     Log($"[YT] Stopping {type} pagination for {term}: repeated page token.");
                     break;
                 }
@@ -70,7 +72,11 @@ namespace Emby.YouTubePlugin
 
                 using var doc = await GetMediaPageAsync(apiKey, config, type, term, pageToken, ct)
                     .ConfigureAwait(false);
-                if (doc == null) break;
+                if (doc == null)
+                {
+                    YouTubeWatchStateScan.MarkIncomplete();
+                    break;
+                }
 
                 var batch = ExtractVideos(doc, IsPlaylistDocument(type));
                 pageToken = GetNextPageToken(doc);
@@ -115,13 +121,21 @@ namespace Emby.YouTubePlugin
                     && batch.Count == 0
                     && IsShortsProbeCircuitOpen())
                 {
+                    YouTubeWatchStateScan.MarkIncomplete();
                     Log($"[YT] Stopping {type} pagination for {term}: Shorts classification is temporarily unavailable.");
                     break;
                 }
             }
 
             if (hasMore && pageRequests >= maxPageRequests)
+            {
+                // This is a deliberate bound on the displayed listing, just
+                // like the video limit. Successfully inspected pages are not
+                // an incomplete load merely because filtering yields fewer
+                // playable videos. Actual fetch/classification failures above
+                // still mark the load incomplete.
                 Log($"[YT] Stopping {type} pagination for {term} after {maxPageRequests} pages.");
+            }
 
             UpdateChannelContentFlags(type, term, observedShorts, observedLive, reachedEnd);
 
@@ -187,6 +201,7 @@ namespace Emby.YouTubePlugin
             CancellationToken ct)
         {
             var liveProbe = await GetChannelLiveAndUpcomingIdsAsync(channelId, ct).ConfigureAwait(false);
+            if (!liveProbe.LookupSucceeded) YouTubeWatchStateScan.MarkIncomplete();
             var liveIds = liveProbe.VideoIds;
             if (liveIds.Count == 0)
             {
@@ -219,6 +234,7 @@ namespace Emby.YouTubePlugin
                 if (doc == null)
                 {
                     allDetailLookupsSucceeded = false;
+                    YouTubeWatchStateScan.MarkIncomplete();
                     continue;
                 }
 
@@ -389,7 +405,10 @@ namespace Emby.YouTubePlugin
                 // quota on every root refresh.
                 var shortsProbe = await GetChannelShortVideoIdsAsync(channelId, ct).ConfigureAwait(false);
                 if (!shortsProbe.LookupSucceeded)
+                {
+                    YouTubeWatchStateScan.MarkIncomplete();
                     return cached?.HasShorts ?? shortsProbe.VideoIds.Count > 0;
+                }
 
                 var hasShorts = shortsProbe.VideoIds.Count > 0;
                 ChannelContentFlags.SetHasShorts(channelId, hasShorts);
@@ -401,6 +420,7 @@ namespace Emby.YouTubePlugin
             }
             catch (Exception ex)
             {
+                YouTubeWatchStateScan.MarkIncomplete();
                 Log($"[YT] Shorts folder probe failed for {channelId}: {ex.Message}");
                 return cached?.HasShorts ?? false;
             }
@@ -422,8 +442,12 @@ namespace Emby.YouTubePlugin
                 var liveProbe = await GetChannelLiveAndUpcomingIdsAsync(channelId, ct)
                     .ConfigureAwait(false);
                 var liveIds = liveProbe.VideoIds;
+                if (!liveProbe.LookupSucceeded) YouTubeWatchStateScan.MarkIncomplete();
                 if (!liveProbe.LookupSucceeded && liveIds.Count == 0)
+                {
+                    YouTubeWatchStateScan.MarkIncomplete();
                     return cached?.HasLive ?? false;
+                }
 
                 var hasLive = false;
                 var allDetailLookupsSucceeded = true;
@@ -433,6 +457,7 @@ namespace Emby.YouTubePlugin
                         .ConfigureAwait(false);
                     if (details == null)
                     {
+                        YouTubeWatchStateScan.MarkIncomplete();
                         allDetailLookupsSucceeded = false;
                         continue;
                     }
@@ -459,6 +484,7 @@ namespace Emby.YouTubePlugin
             }
             catch (Exception ex)
             {
+                YouTubeWatchStateScan.MarkIncomplete();
                 Log($"[YT] Live folder probe failed for {channelId}: {ex.Message}");
                 return cached?.HasLive ?? false;
             }

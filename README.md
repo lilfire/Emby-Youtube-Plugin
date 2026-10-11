@@ -4,6 +4,18 @@ An Emby channel plugin for browsing YouTube content with the official YouTube Da
 
 The plugin adds a YouTube entry to Emby and lets you browse saved channels, playlists, Watch Later-style playlists, trending videos, categories, and Shorts from one place.
 
+## Changes in this fork
+
+This fork builds on [the original Emby YouTube Plugin](https://github.com/eliasbruno124-dev/Emby-Youtube-Plugin), version 2.0.9.3, and adds:
+
+- **Automatic watched channel folders.** A saved channel and its Videos/Shorts/Live folders become watched when their displayed listing contains at least one accessible video and every accessible video is watched. They disappear from Emby's unwatched filter and reappear when a new unwatched video arrives or a video is marked unwatched.
+- **Separate state for each Emby user.** Folder status follows that user's existing video history. Synchronization changes only the folder's watched flag; it preserves favorites, ratings, playback position and other user data.
+- **Migration of existing channel folders.** Existing folders gain the ownership marker needed for synchronization after their owning YouTube provider is verified. Migration runs on startup and after successful channel refreshes.
+- **Correct handling of filtered and bounded listings.** Confirmed unavailable videos, including age-restricted videos and videos that disable embedding, no longer incorrectly leave a channel's load marked incomplete. Reaching the deliberate pagination limit after successful requests also counts as a completed listing. Actual fetch failures and unresolved playable videos still defer folder updates.
+- **Fresher channel uploads.** Upload-list cache duration is reduced from six hours to 55 minutes to support hourly channel refreshes. Set **Refresh Internet Channels** to run every hour in Emby's scheduled tasks; installing the fork does not change that schedule automatically. Ordinary playlists retain their six-hour cache.
+
+The changes have passed 25 local regression groups and server-side checks on Emby 4.10.1.0, including existing-folder migration and watched/unwatched filter transitions. See [verification results and remaining client checks](docs/folder-watch-state-verification.md).
+
 ## Highlights
 
 - Add YouTube channels by `@handle` or channel ID.
@@ -16,6 +28,7 @@ The plugin adds a YouTube entry to Emby and lets you browse saved channels, play
 - Hide empty playlists, categories, and Shorts folders.
 - Optionally show YouTube root folders at the top level and, on Emby 4.10+, add one latest-videos home row per saved channel while reversibly hiding both forms of combined YouTube-latest row.
 - Track estimated daily YouTube API quota usage.
+- Derive saved-channel and Videos/Shorts/Live folder watched state from each user's accessible videos.
 
 
 ## Screenshots
@@ -82,6 +95,32 @@ Handles, channel IDs, and playlist IDs are the best options because they avoid t
 The **Watch Later Playlists** field accepts playlist IDs. Each playlist becomes its own top-level folder and can be checked regularly for new videos.
 
 
+## Watched channel folders
+
+Saved channels and their Videos/Shorts/Live folders are watched when they contain
+at least one accessible, materialized video and every such video is watched for
+that Emby user. A new unwatched video or an unwatched mark makes the folder
+unwatched again. Empty folders default to unwatched. Incomplete loads defer the
+calculation until a successful refresh. Updates wait for scanning to settle.
+
+This uses Emby's existing video history, separately for each user, and only
+changes the folder's `Played` field. It does not sync Google watch history or
+describe videos beyond the configured listing limit.
+
+If a client's manual folder action changes its videos, those video states drive
+the result. If it changes only the folder, the derived state is restored. The
+plugin never interprets a folder update as a command to mark videos.
+
+Ownership is verified with the plugin's provider marker and stable external ids.
+On startup and after a completed channel refresh, folders from older versions
+acquire that marker only after their parent channel is mapped to this plugin's
+registered provider. Emby does not reliably merge provider markers into existing
+folders during refresh, so the plugin saves and reads back the marker explicitly.
+Playlists, search folders, trending and categories are excluded.
+
+Build and local checks are described in
+[folder-watch-state verification](docs/folder-watch-state-verification.md).
+
 ## Quota
 
 Most browsing uses low-cost YouTube API endpoints:
@@ -94,7 +133,11 @@ Most browsing uses low-cost YouTube API endpoints:
 | Categories | `videoCategories.list` | 1 unit |
 | Search folders | `search.list` | 1 Search Queries call |
 
-The plugin caches responses on disk. Search results are cached longer because
+The plugin caches responses on disk. Channel upload lists expire after 55
+minutes so an hourly Emby channel refresh can discover new videos. The refresh
+schedule itself is controlled by Emby's **Refresh Internet Channels** task;
+changing its interval does not change ordinary media-library disk monitoring.
+Other playlists retain their six-hour cache. Search results are cached longer because
 `search.list` has a separate default limit of 100 calls per day, while most
 other endpoints share the regular 10,000-unit daily bucket.
 
