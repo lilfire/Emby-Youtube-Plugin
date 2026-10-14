@@ -154,6 +154,14 @@ namespace Emby.YouTubePlugin
                 if (dto.MaxSearchVideos.HasValue) config.MaxSearchVideos = dto.MaxSearchVideos.Value;
                 if (dto.WatchLaterPollMinutes.HasValue) config.WatchLaterPollMinutes = dto.WatchLaterPollMinutes.Value;
                 if (dto.Donate != null) config.Donate = dto.Donate;
+                if (dto.PersonalYouTubeAlphaEnabled.HasValue) config.PersonalYouTubeAlphaEnabled = dto.PersonalYouTubeAlphaEnabled.Value;
+                if (dto.PersonalYouTubeDownloaderPath != null) config.PersonalYouTubeDownloaderPath = dto.PersonalYouTubeDownloaderPath;
+                if (dto.PersonalYouTubeFfmpegPath != null) config.PersonalYouTubeFfmpegPath = dto.PersonalYouTubeFfmpegPath;
+                if (dto.PersonalYouTubeNodePath != null) config.PersonalYouTubeNodePath = dto.PersonalYouTubeNodePath;
+                if (dto.PersonalYouTubeMaxVideos.HasValue) config.PersonalYouTubeMaxVideos = dto.PersonalYouTubeMaxVideos.Value;
+                if (dto.PersonalYouTubeMaxVideoBytes.HasValue) config.PersonalYouTubeMaxVideoBytes = dto.PersonalYouTubeMaxVideoBytes.Value;
+                if (dto.PersonalYouTubeMaxCollectionBytes.HasValue) config.PersonalYouTubeMaxCollectionBytes = dto.PersonalYouTubeMaxCollectionBytes.Value;
+                if (dto.PersonalYouTubeMaxStorageBytes.HasValue) config.PersonalYouTubeMaxStorageBytes = dto.PersonalYouTubeMaxStorageBytes.Value;
 
                 // Reuse the plugin's own override: it normalizes/clamps the values,
                 // persists to disk, and — only when a content field actually
@@ -211,6 +219,14 @@ namespace Emby.YouTubePlugin
             public int? MaxSearchVideos { get; set; }
             public int? WatchLaterPollMinutes { get; set; }
             public string? Donate { get; set; }
+            public bool? PersonalYouTubeAlphaEnabled { get; set; }
+            public string? PersonalYouTubeDownloaderPath { get; set; }
+            public string? PersonalYouTubeFfmpegPath { get; set; }
+            public string? PersonalYouTubeNodePath { get; set; }
+            public int? PersonalYouTubeMaxVideos { get; set; }
+            public long? PersonalYouTubeMaxVideoBytes { get; set; }
+            public long? PersonalYouTubeMaxCollectionBytes { get; set; }
+            public long? PersonalYouTubeMaxStorageBytes { get; set; }
         }
     }
 }

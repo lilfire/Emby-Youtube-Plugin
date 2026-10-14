@@ -1,0 +1,34 @@
+<div is="emby-scroller" data-controller="configurationpage?name=YouTubePersonalSettingsjs-alpha1"
+     class="view flex flex-direction-column scrollFrameY flex-grow" data-horizontal="false"
+     data-forcescrollbar="true" data-centerfocus="true" data-bindheader="true" data-title="YouTube">
+    <style>.ytPersonalForm .ytPersonalCancelDelete[hidden] { display: none !important; }</style>
+    <div class="scrollSlider flex-grow" style="padding: 4.5em 1.5em 1.5em;">
+        <div class="readOnlyContent" style="max-width: 680px;">
+            <p>Din API-nøkkel og dine kanalvalg.</p>
+            <p class="fieldDescription ytPersonalAvailability" role="status" aria-live="polite">Henter bibliotekstatus…</p>
+            <form class="ytPersonalForm">
+                <div class="inputContainer">
+                    <label class="inputLabel" for="ytPersonalApiKey">YouTube API-nøkkel</label>
+                    <input is="emby-input" id="ytPersonalApiKey" type="password" autocomplete="off" maxlength="256" />
+                    <div class="fieldDescription ytPersonalKeyStatus"></div>
+                </div>
+                <label class="checkboxContainer">
+                    <input is="emby-checkbox" class="ytPersonalClearKey" type="checkbox" />
+                    <span>Slett lagret API-nøkkel</span>
+                </label>
+                <div class="inputContainer" style="margin-top: 1.5em;">
+                    <label class="inputLabel" for="ytPersonalChannels">YouTube-kanaler</label>
+                    <textarea is="emby-textarea" id="ytPersonalChannels" rows="6" maxlength="2500"></textarea>
+                    <div class="fieldDescription">Kanal-ID-er, én per linje. En kanal-ID begynner med UC. Biblioteket klargjør et begrenset utvalg av de nyeste videoene fra hver kanal.</div>
+                </div>
+                <div style="display: flex; gap: 1em; flex-wrap: wrap;">
+                    <button is="emby-button" type="submit" class="raised button-submit ytPersonalSave" disabled>Lagre og oppdater</button>
+                    <button is="emby-button" type="button" class="raised ytPersonalReload">Last inn på nytt</button>
+                    <button is="emby-button" type="button" class="raised ytPersonalDelete" disabled>Slett samlingen</button>
+                    <button is="emby-button" type="button" class="raised ytPersonalCancelDelete" hidden>Avbryt sletting</button>
+                </div>
+            </form>
+            <p class="ytPersonalStatus" role="status" aria-live="polite"></p>
+        </div>
+    </div>
+</div>

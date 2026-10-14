@@ -1,0 +1,47 @@
+{
+  "DateUTC": "2026-10-14",
+  "PluginSHA256": "2CFC5C19E0EC5475019ACBA081D2DE1573EB7B00011B8D89BD24FB31B77D585B",
+  "Emby": "4.10.1.0",
+  "Container": "emby-youtube-alpha-verification",
+  "MainServerChanged": false,
+  "Restart": {
+    "State": "Ready",
+    "ErrorCode": null,
+    "CompletedVideos": 2,
+    "TotalVideos": 2,
+    "BOnlyOwnStatus": true,
+    "RealGoogle": true,
+    "NoTestAdapter": true,
+    "ServerDiagnosticsAdministratorOnly": true,
+    "OwnNativeLibrary": true,
+    "ForeignNativeLibraryAbsent": true,
+    "VideoStreams": [
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404
+      },
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404
+      }
+    ],
+    "ActualDockerRestart": true,
+    "SameRootAndVideos": true
+  },
+  "Delete": {
+    "State": "Deleted",
+    "ErrorCode": null,
+    "CompletedVideos": 0,
+    "TotalVideos": 0,
+    "BOnlyOwnStatus": true,
+    "RealGoogle": true,
+    "NoTestAdapter": true,
+    "DeletedProfileVerified": true,
+    "RetiredLibraryAndReferencesGone": true,
+    "RetiredMediaAndBufferGone": true,
+    "ServerDiagnosticsAdministratorOnly": true
+  },
+  "Scope": "Real Google with a stored personal key; two videos from one channel; native HTTP streams; actual Docker restart and deletion. No physical client proof."
+}

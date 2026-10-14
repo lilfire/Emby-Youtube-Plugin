@@ -20,7 +20,7 @@ namespace Emby.YouTubePlugin
             typeof(Plugin).Assembly.GetName().Version?.ToString(4) ?? "0.0.0.0";
 
         public override string Name => "YouTube";
-        public override string Description => $"YouTube channel integration for Emby using the YouTube Data API v3. (v{PluginVersion})";
+        public override string Description => $"YouTube channel integration for Emby using the YouTube Data API v3. (v{PluginVersion}{(typeof(Plugin).Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion.Contains("-alpha", StringComparison.OrdinalIgnoreCase) == true ? ", closed alpha" : "")})";
         public override Guid Id => Guid.Parse("B2C3D4E5-F6A7-4B5C-9D0E-1F2A3B4C5D6E");
 
         public static Plugin? Instance { get; private set; }
@@ -87,7 +87,7 @@ namespace Emby.YouTubePlugin
             {
                 new PluginPageInfo
                 {
-                    Name = "YouTubeConfiguration",
+                    Name = "YouTubeConfiguration-alpha1",
                     DisplayName = "YouTube",
                     EmbeddedResourcePath = "Emby.YouTubePlugin.Configuration.YouTubeConfiguration.html",
                     EnableInMainMenu = true,
@@ -95,9 +95,29 @@ namespace Emby.YouTubePlugin
                 },
                 new PluginPageInfo
                 {
-                    Name = "YouTubeConfigurationjs",
+                    Name = "YouTubeConfigurationjs-alpha1",
                     EmbeddedResourcePath = "Emby.YouTubePlugin.Configuration.YouTubeConfiguration.js"
-                }
+                },
+                new PluginPageInfo
+                {
+                    Name = "YouTubePersonalSettings-alpha1",
+                    DisplayName = "YouTube",
+                    EnableInUserMenu = true,
+                    MenuIcon = "ondemand_video",
+                    EmbeddedResourcePath = "Emby.YouTubePlugin.Configuration.YouTubePersonalSettings.html"
+                },
+                new PluginPageInfo
+                {
+                    Name = "YouTubePersonalSettingsjs-alpha1",
+                    EmbeddedResourcePath = "Emby.YouTubePlugin.Configuration.YouTubePersonalSettings.js"
+                },
+                // Keep existing bookmarks resolvable. Menu links use the
+                // candidate-specific names so cached older templates/scripts
+                // cannot hide the alpha controls after an upgrade.
+                new PluginPageInfo { Name = "YouTubeConfiguration", EmbeddedResourcePath = "Emby.YouTubePlugin.Configuration.YouTubeConfiguration.html" },
+                new PluginPageInfo { Name = "YouTubeConfigurationjs", EmbeddedResourcePath = "Emby.YouTubePlugin.Configuration.YouTubeConfiguration.js" },
+                new PluginPageInfo { Name = "YouTubePersonalSettings", EmbeddedResourcePath = "Emby.YouTubePlugin.Configuration.YouTubePersonalSettings.html" },
+                new PluginPageInfo { Name = "YouTubePersonalSettingsjs", EmbeddedResourcePath = "Emby.YouTubePlugin.Configuration.YouTubePersonalSettings.js" }
             };
         }
 

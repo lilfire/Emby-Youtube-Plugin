@@ -724,6 +724,12 @@ define([
                     const config = this.config;
 
                     setValue(view, 'txtApiKey', config.ApiKey);
+                    setChecked(view, 'chkPersonalYouTubeAlphaEnabled', config.PersonalYouTubeAlphaEnabled);
+                    ['Downloader', 'Ffmpeg', 'Node'].forEach(tool => setValue(view, 'txtPersonalYouTube' + tool + 'Path', config['PersonalYouTube' + tool + 'Path']));
+                    setValue(view, 'numPersonalYouTubeMaxVideos', config.PersonalYouTubeMaxVideos || 50);
+                    setValue(view, 'numPersonalYouTubeMaxVideoMiB', (config.PersonalYouTubeMaxVideoBytes || 536870912) / 1048576);
+                    setValue(view, 'numPersonalYouTubeMaxCollectionMiB', (config.PersonalYouTubeMaxCollectionBytes || 2147483648) / 1048576);
+                    setValue(view, 'numPersonalYouTubeMaxStorageMiB', (config.PersonalYouTubeMaxStorageBytes || 10737418240) / 1048576);
                     this.savedItems = uniqueEntries(splitEntries(config.SavedItems));
                     this.watchLaterItems = uniqueEntries(splitEntries(config.WatchLaterPlaylist));
                     this.syncEntryFields(view);
@@ -791,6 +797,14 @@ define([
 
             const config = Object.assign({}, this.config || {});
             config.ApiKey = value(view, 'txtApiKey').trim();
+            if (field(view, 'chkPersonalYouTubeAlphaEnabled')) {
+                config.PersonalYouTubeAlphaEnabled = checked(view, 'chkPersonalYouTubeAlphaEnabled');
+                ['Downloader', 'Ffmpeg', 'Node'].forEach(tool => { config['PersonalYouTube' + tool + 'Path'] = value(view, 'txtPersonalYouTube' + tool + 'Path').trim(); });
+                config.PersonalYouTubeMaxVideos = numberValue(view, 'numPersonalYouTubeMaxVideos', 50, 1, 10000);
+                config.PersonalYouTubeMaxVideoBytes = numberValue(view, 'numPersonalYouTubeMaxVideoMiB', 512, 1, 4096) * 1048576;
+                config.PersonalYouTubeMaxCollectionBytes = numberValue(view, 'numPersonalYouTubeMaxCollectionMiB', 2048, 1, 1048576) * 1048576;
+                config.PersonalYouTubeMaxStorageBytes = numberValue(view, 'numPersonalYouTubeMaxStorageMiB', 10240, 2, 1048576) * 1048576;
+            }
             this.syncEntryFields(view);
             config.SavedItems = this.savedItems.join(', ');
             config.WatchLaterPlaylist = this.watchLaterItems.join(', ');

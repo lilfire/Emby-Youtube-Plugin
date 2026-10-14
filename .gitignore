@@ -9,3 +9,5 @@ tests/
 
 
 MD/
+__pycache__/
+*.py[cod]

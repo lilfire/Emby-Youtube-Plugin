@@ -1,5 +1,37 @@
 # Emby YouTube Plugin
 
+> **Alpha build: 2.0.10-alpha.1.** This branch contains an experimental personal
+> YouTube feature for controlled testing on **Emby Server 4.10.1.0**. It is not
+> a general production release or a guarantee of complete isolation between users.
+
+## Personal YouTube — closed alpha
+
+Each signed-in Emby user can save their own YouTube Data API v3 key and channel
+IDs through **YouTube in the Emby web user menu**. Keys are encrypted on the
+server. Leaving the key field empty retains the saved key. A background job
+fetches metadata, buffers a bounded selection of videos locally, and publishes
+the collection as a normal Emby library. Channel updates replace the collection;
+deleting it revokes its references and removes its buffered media.
+
+The API key supplies metadata; playback uses locally buffered media obtained
+with yt-dlp. The server needs separately installed **yt-dlp, Node.js 24 LTS,
+FFmpeg and ffprobe**, persistent storage, and administrator activation of
+**Personal YouTube — closed alpha**. Installing the DLL alone does not enable
+the worker. Back up the existing DLL and configuration before updating.
+
+Follow the [alpha installation and rollback instructions](verification/PersonalChannels/alpha-package/INSTALL.md)
+and read the [known limitations](verification/PersonalChannels/alpha-package/KNOWN-LIMITS.md).
+Delete all personal collections and verify cleanup before returning to an older
+plugin that may lack their access controls.
+
+Verified scope includes Chrome playback, actual Emby AndroidTv **1.8.54g** video
+playback and active audio output, and Docker checks with real Google metadata,
+two channels, account access checks, restart recovery, interrupted buffering
+and deletion. Android mobile and other clients remain unverified. All Emby
+routes, offline/Sync and client caches are not covered by a universal privacy
+guarantee. Use controlled test accounts and content. See the
+[alpha acceptance report](verification/PersonalChannels/CLOSED-ALPHA-ACCEPTANCE.md).
+
 An Emby channel plugin for browsing YouTube content with the official YouTube Data API v3.
 
 The plugin adds a YouTube entry to Emby and lets you browse saved channels, playlists, Watch Later-style playlists, trending videos, categories, and Shorts from one place.
@@ -66,6 +98,10 @@ The changes have passed 25 local regression groups and server-side checks on Emb
 The API key only needs access to public YouTube data. After installation, open the plugin settings and use the built-in **Setup Guide** to create and restrict the key.
 
 ## Installation
+
+For **2.0.10-alpha.1 personal libraries**, use the alpha instructions above.
+The following steps describe the existing shared YouTube channel feature;
+that feature uses the administrator's settings and key.
 
 1. Download the latest `Emby.YouTubePlugin.dll` release.
 2. Copy the DLL into Emby's  `programdata/plugins` folder.
@@ -143,7 +179,8 @@ other endpoints share the regular 10,000-unit daily bucket.
 
 ## Notes
 
-- Uses the official YouTube API and player. Videos are not downloaded or re-encoded.
+- The existing shared channel feature uses the official YouTube API and player.
+  The personal-library alpha downloads and buffers video locally for native Emby playback.
 - The plugin requests captions off, but some TV and Android players may ignore this.
 - Resume and player cleanup depend on the Emby client. Bundled players may not use the server-side fixes.
 - Private account data is not supported. Use channels and playlists accessible with your API key.

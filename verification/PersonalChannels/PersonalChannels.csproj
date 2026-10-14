@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>PersonalChannelsFixture</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../Emby.YouTubePlugin.csproj" /></ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" PrivateAssets="all" GeneratePathProperty="true" />
+    <EmbeddedResource Include="$(PkgLib_Harmony)/lib/net6.0/0Harmony.dll" LogicalName="PersonalChannelsFixture.Harmony.dll" />
+  </ItemGroup>
+</Project>

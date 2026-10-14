@@ -1,4 +1,4 @@
-<div is="emby-scroller" data-controller="configurationpage?name=YouTubeConfigurationjs"
+<div is="emby-scroller" data-controller="configurationpage?name=YouTubeConfigurationjs-alpha1"
     class="view flex flex-direction-column scrollFrameY flex-grow" data-horizontal="false" data-forcescrollbar="true"
     data-centerfocus="true" data-bindheader="true" data-title="YouTube">
     <style>
@@ -598,6 +598,21 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="paper-card">
+                        <h2 style="margin-top: 0;">Personal YouTube — closed alpha</h2>
+                        <p>Personal API keys and channels are managed under each user's YouTube settings. Use controlled test content during the alpha. Restart Emby after changing these server settings.</p>
+                        <div class="checkboxContainer checkboxContainer-withDescription">
+                            <label><input is="emby-checkbox" id="chkPersonalYouTubeAlphaEnabled" type="checkbox"><span>Enable personal YouTube alpha</span></label>
+                        </div>
+                        <div class="inputContainer"><label class="inputLabel" for="txtPersonalYouTubeDownloaderPath">yt-dlp executable</label><input is="emby-input" id="txtPersonalYouTubeDownloaderPath" type="text"><div class="fieldDescription">Absolute path inside the Emby server or container.</div></div>
+                        <div class="inputContainer"><label class="inputLabel" for="txtPersonalYouTubeFfmpegPath">FFmpeg executable</label><input is="emby-input" id="txtPersonalYouTubeFfmpegPath" type="text"></div>
+                        <div class="inputContainer"><label class="inputLabel" for="txtPersonalYouTubeNodePath">Node.js executable</label><input is="emby-input" id="txtPersonalYouTubeNodePath" type="text"></div>
+                        <div class="inputContainer"><label class="inputLabel" for="numPersonalYouTubeMaxVideos">Recent videos per user, shared across their channels</label><input is="emby-input" id="numPersonalYouTubeMaxVideos" type="number" min="1" max="10000"></div>
+                        <div class="inputContainer"><label class="inputLabel" for="numPersonalYouTubeMaxVideoMiB">Maximum size per video (MiB)</label><input is="emby-input" id="numPersonalYouTubeMaxVideoMiB" type="number" min="1" max="4096"></div>
+                        <div class="inputContainer"><label class="inputLabel" for="numPersonalYouTubeMaxCollectionMiB">Maximum size per collection (MiB)</label><input is="emby-input" id="numPersonalYouTubeMaxCollectionMiB" type="number" min="1" max="1048576"></div>
+                        <div class="inputContainer"><label class="inputLabel" for="numPersonalYouTubeMaxStorageMiB">Combined personal media and staging budget (MiB)</label><input is="emby-input" id="numPersonalYouTubeMaxStorageMiB" type="number" min="2" max="1048576"><div class="fieldDescription">Includes all users and temporary publication copies. Downloads run one at a time across users.</div></div>
                     </div>
 
                     <div class="paper-card">

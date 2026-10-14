@@ -16,9 +16,19 @@ if (Test-Path -LiteralPath $pidFile) {
         if (-not $existing.WaitForExit(10000)) { Stop-Process -Id $testProcessId -ErrorAction Stop }
     }
 }
-if ($Stop) { Write-Output 'Isolated server stopped.'; exit 0 }
+if ($Stop) {
+    Remove-Item -LiteralPath $pidFile -ErrorAction SilentlyContinue
+    Write-Output 'Isolated server stopped.'
+    exit 0
+}
 Copy-Item -LiteralPath (Join-Path $repository 'bin/Release/net6.0/Emby.YouTubePlugin.dll') -Destination (Join-Path $isolatedRoot 'data/plugins/Emby.YouTubePlugin.dll')
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'bin/Release/net6.0/WatchStateFixture.dll') -Destination (Join-Path $isolatedRoot 'data/plugins/WatchStateFixture.dll')
-$testProcess = Start-Process -FilePath $executable -ArgumentList @('-programdata', (Join-Path $isolatedRoot 'data'), '-noautorunwebapp', '-nosplash', '-service') -WorkingDirectory (Join-Path $isolatedRoot 'server/system') -WindowStyle Hidden -RedirectStandardOutput (Join-Path $isolatedRoot 'stdout.log') -RedirectStandardError (Join-Path $isolatedRoot 'stderr.log') -PassThru
+$previousHeapLimit = [Environment]::GetEnvironmentVariable('DOTNET_GCHeapHardLimit', 'Process')
+try {
+    # Bound only the portable fixture's managed heap on this shared desktop.
+    # This is not a setting for the installed Emby server.
+    [Environment]::SetEnvironmentVariable('DOTNET_GCHeapHardLimit', '0x40000000', 'Process')
+    $testProcess = Start-Process -FilePath $executable -ArgumentList @('-programdata', (Join-Path $isolatedRoot 'data'), '-noautorunwebapp', '-nosplash', '-service') -WorkingDirectory (Join-Path $isolatedRoot 'server/system') -WindowStyle Hidden -RedirectStandardOutput (Join-Path $isolatedRoot 'stdout.log') -RedirectStandardError (Join-Path $isolatedRoot 'stderr.log') -PassThru
+} finally { [Environment]::SetEnvironmentVariable('DOTNET_GCHeapHardLimit', $previousHeapLimit, 'Process') }
 $testProcess.Id | Set-Content -LiteralPath $pidFile
 Write-Output ('Isolated server started: ' + $testProcess.Id)

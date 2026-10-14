@@ -1,0 +1,40 @@
+{
+  "DateUTC": "2026-10-14",
+  "PluginSHA256": "2E68B8DE68DE787DCEEB8AC30C44A417BD28126A3EE630F988F183ED193347EC",
+  "Emby": "4.10.1.0",
+  "MainServerChanged": false,
+  "DockerFinalRefresh": {
+    "State": "Ready",
+    "ErrorCode": null,
+    "CompletedVideos": 2,
+    "TotalVideos": 2,
+    "BOnlyOwnStatus": true,
+    "RealGoogle": true,
+    "NoTestAdapter": true,
+    "ServerDiagnosticsAdministratorOnly": true,
+    "OwnNativeLibrary": true,
+    "ForeignNativeLibraryAbsent": true,
+    "VideoStreams": [
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404,
+        "OwnerOriginalStatus": 200,
+        "OwnerOriginalMp4": true,
+        "ForeignOriginalStatus": 404
+      },
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404,
+        "OwnerOriginalStatus": 200,
+        "OwnerOriginalMp4": true,
+        "ForeignOriginalStatus": 404
+      }
+    ],
+    "FreshPublicationAfterRefresh": true,
+    "OldReferencesGone": true,
+    "PluginSHA256": "2e68b8de68de787dceeb8ac30c44a417bd28126a3ee630f988f183ed193347ec"
+  },
+  "Scope": "Latest DLL; real Google and retained personal key; fresh two-video publication after replacement; ordinary native streams and Android original route return owner MP4 and foreign 404. Physical Android TV is covered separately on Windows."
+}

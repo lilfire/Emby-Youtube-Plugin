@@ -1,0 +1,121 @@
+{
+  "DateUTC": "2026-10-14",
+  "PluginSHA256": "2E68B8DE68DE787DCEEB8AC30C44A417BD28126A3EE630F988F183ED193347EC",
+  "Emby": "4.10.1.0",
+  "MainServerPluginOrConfigChanged": false,
+  "FinalRefresh": {
+    "State": "Ready",
+    "ErrorCode": null,
+    "CompletedVideos": 2,
+    "TotalVideos": 2,
+    "BOnlyOwnStatus": true,
+    "RealGoogle": true,
+    "NoTestAdapter": true,
+    "ServerDiagnosticsAdministratorOnly": true,
+    "OwnNativeLibrary": true,
+    "ForeignNativeLibraryAbsent": true,
+    "VideoStreams": [
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404,
+        "OwnerOriginalStatus": 200,
+        "OwnerOriginalMp4": true,
+        "ForeignOriginalStatus": 404
+      },
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404,
+        "OwnerOriginalStatus": 200,
+        "OwnerOriginalMp4": true,
+        "ForeignOriginalStatus": 404
+      }
+    ],
+    "FreshPublicationAfterRefresh": true,
+    "OldReferencesGone": true,
+    "PluginSHA256": "2e68b8de68de787dceeb8ac30c44a417bd28126a3ee630f988f183ed193347ec"
+  },
+  "Restart": {
+    "State": "Ready",
+    "ErrorCode": null,
+    "CompletedVideos": 2,
+    "TotalVideos": 2,
+    "BOnlyOwnStatus": true,
+    "RealGoogle": true,
+    "NoTestAdapter": true,
+    "ServerDiagnosticsAdministratorOnly": true,
+    "OwnNativeLibrary": true,
+    "ForeignNativeLibraryAbsent": true,
+    "VideoStreams": [
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404,
+        "OwnerOriginalStatus": 200,
+        "OwnerOriginalMp4": true,
+        "ForeignOriginalStatus": 404
+      },
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404,
+        "OwnerOriginalStatus": 200,
+        "OwnerOriginalMp4": true,
+        "ForeignOriginalStatus": 404
+      }
+    ],
+    "PluginSHA256": "2e68b8de68de787dceeb8ac30c44a417bd28126a3ee630f988f183ed193347ec",
+    "ActualDockerRestart": true,
+    "SameRootAndVideos": true
+  },
+  "BufferingInterruption": {
+    "State": "Ready",
+    "ErrorCode": null,
+    "CompletedVideos": 2,
+    "TotalVideos": 2,
+    "BOnlyOwnStatus": true,
+    "RealGoogle": true,
+    "NoTestAdapter": true,
+    "ServerDiagnosticsAdministratorOnly": true,
+    "OwnNativeLibrary": true,
+    "ForeignNativeLibraryAbsent": true,
+    "VideoStreams": [
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404,
+        "OwnerOriginalStatus": 200,
+        "OwnerOriginalMp4": true,
+        "ForeignOriginalStatus": 404
+      },
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404,
+        "OwnerOriginalStatus": 200,
+        "OwnerOriginalMp4": true,
+        "ForeignOriginalStatus": 404
+      }
+    ],
+    "PluginSHA256": "2e68b8de68de787dceeb8ac30c44a417bd28126a3ee630f988f183ed193347ec",
+    "ActualDockerProcessInterruption": true,
+    "ObservedInterruptedState": "Buffering",
+    "AutomaticRecoveryReady": true,
+    "OldReferencesGone": true,
+    "OnePersonalLibrary": true
+  },
+  "Delete": {
+    "State": "Deleted",
+    "ErrorCode": null,
+    "CompletedVideos": 0,
+    "TotalVideos": 0,
+    "BOnlyOwnStatus": true,
+    "RealGoogle": true,
+    "NoTestAdapter": true,
+    "DeletedProfileVerified": true,
+    "RetiredLibraryAndReferencesGone": true,
+    "RetiredMediaAndBufferGone": true,
+    "ServerDiagnosticsAdministratorOnly": true
+  }
+}

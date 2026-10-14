@@ -4,6 +4,7 @@ using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Library;
 using MediaBrowser.Controller.Providers;
 using MediaBrowser.Controller.Session;
+using MediaBrowser.Controller.Net;
 using MediaBrowser.Common;
 using MediaBrowser.Model.Entities;
 using MediaBrowser.Model.Events;
@@ -41,12 +42,16 @@ namespace Emby.YouTubePlugin
         private readonly YouTubeFolderWatchStateSynchronizer _folderWatchState;
         private readonly YouTubeCaptionOffGuard _captionOffGuard;
         private readonly IUserManager _userManager;
+        private readonly IHttpServer _httpServer;
+        private readonly IAuthorizationContext _authorization;
+        private readonly IHttpResultFactory _personalResults;
         private readonly CancellationTokenSource _lifetimeCts = new();
         private readonly CancellationToken _lifetimeToken;
         private readonly object _resumeDispatchLifetimeGate = new();
         private readonly ManualResetEventSlim _pollIdle = new(initialState: true);
         private ILibraryManager? _libraryManager;
         private ISessionManager? _sessionManager;
+        private PersonalYouTubeJobs? _personalJobs;
         private IUserDataManager? _userDataManager;
         private Timer? _pollTimer;
         private Timer? _resumeCheckpointSaveTimer;
@@ -147,13 +152,19 @@ namespace Emby.YouTubePlugin
             IUserManager userManager,
             IUserViewManager userViewManager,
             IChannelManager channelManager,
-            MediaBrowser.Model.Tasks.ITaskManager taskManager)
+            MediaBrowser.Model.Tasks.ITaskManager taskManager,
+            IHttpServer httpServer,
+            IAuthorizationContext authorization,
+            IHttpResultFactory personalResults)
         {
             Plugin.InitializeApplicationHost(applicationHost);
             _sessionManager = sessionManager;
             _libraryManager = libraryManager;
             _userDataManager = userDataManager;
             _userManager = userManager;
+            _httpServer = httpServer;
+            _authorization = authorization;
+            _personalResults = personalResults;
             _lifetimeToken = _lifetimeCts.Token;
             _homeSectionManager = new YouTubeHomeSectionManager(userManager, userViewManager);
             _folderWatchState = new YouTubeFolderWatchStateSynchronizer(libraryManager, userDataManager, userManager, tasks: taskManager, channels: channelManager);
@@ -164,6 +175,37 @@ namespace Emby.YouTubePlugin
         public void Run()
         {
             _current = this;
+            EmbeddedDependencyLoader.Register();
+            if (_libraryManager != null)
+            {
+                var creationGuard = PersonalYouTubeNativeCreationHook.Install(_libraryManager);
+                YouTubeChannel.LogPublic(creationGuard.Installed
+                    ? "[YT] Verified personal native creation guard installed."
+                    : "[YT] Personal native creation unavailable: " + creationGuard.Error);
+                if (Plugin.DataPath != null)
+                {
+                    var serviceGate = PersonalYouTubeServiceReferenceGate.Install(_httpServer, _libraryManager, _authorization,
+                        Path.Combine(Plugin.DataPath, "youtube-personal"), _personalResults);
+                    YouTubeChannel.LogPublic(serviceGate.Installed
+                        ? "[YT] Audited personal item service gate installed."
+                        : "[YT] Personal item service gate unavailable: " + serviceGate.Error);
+                    var listGate = PersonalYouTubeItemListGate.Install(_httpServer, _libraryManager, _authorization,
+                        Path.Combine(Plugin.DataPath, "youtube-personal"), _personalResults);
+                    YouTubeChannel.LogPublic(listGate.Installed
+                        ? "[YT] Audited personal item-list gate installed."
+                        : "[YT] Personal item-list gate unavailable: " + listGate.Error);
+                    if(Plugin.Instance?.Options.PersonalYouTubeAlphaEnabled == true && creationGuard.Installed && serviceGate.Installed && listGate.Installed)
+                    {
+                        var personalDirectory = Path.Combine(Plugin.DataPath, "youtube-personal");
+                        var personalFiles = Plugin.ResolveService<MediaBrowser.Model.IO.IFileSystem>();
+                        if(personalFiles != null)
+                        {
+                            try { _personalJobs = PersonalYouTubeJobRuntime.Start(personalDirectory, _libraryManager, personalFiles, Plugin.Instance.Options, users: _userManager); }
+                            catch(Exception) { YouTubeChannel.LogPublic("[YT] Personal job recovery failed; inspect alpha status."); }
+                        }
+                    }
+                }
+            }
             YouTubeWatchStateScan.Initialize(Plugin.DataPath);
             _folderWatchState.Start();
             // If the plugin DLL was updated, wipe transient caches automatically
@@ -2591,6 +2633,7 @@ namespace Emby.YouTubePlugin
 
         public void Dispose()
         {
+            _personalJobs?.Dispose();
             lock (_resumeDispatchLifetimeGate)
             {
                 if (Interlocked.Exchange(ref _disposed, 1) != 0)

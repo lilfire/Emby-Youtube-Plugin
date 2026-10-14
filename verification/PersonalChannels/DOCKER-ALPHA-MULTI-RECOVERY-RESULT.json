@@ -1,0 +1,64 @@
+{
+  "DateUTC": "2026-10-14",
+  "PluginSHA256": "2CFC5C19E0EC5475019ACBA081D2DE1573EB7B00011B8D89BD24FB31B77D585B",
+  "Emby": "4.10.1.0",
+  "MainServerChanged": false,
+  "MultipleChannels": {
+    "State": "Ready",
+    "ErrorCode": null,
+    "CompletedVideos": 2,
+    "TotalVideos": 2,
+    "BOnlyOwnStatus": true,
+    "RealGoogle": true,
+    "NoTestAdapter": true,
+    "ServerDiagnosticsAdministratorOnly": true,
+    "OwnNativeLibrary": true,
+    "ForeignNativeLibraryAbsent": true,
+    "VideoStreams": [
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404
+      },
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404
+      }
+    ],
+    "MultipleChannelsVerified": true,
+    "Channels": 2,
+    "OneVideoFromEachChannel": true,
+    "NativeTitlesMatchGoogle": true
+  },
+  "Interruption": {
+    "State": "Ready",
+    "ErrorCode": null,
+    "CompletedVideos": 2,
+    "TotalVideos": 2,
+    "BOnlyOwnStatus": true,
+    "RealGoogle": true,
+    "NoTestAdapter": true,
+    "ServerDiagnosticsAdministratorOnly": true,
+    "OwnNativeLibrary": true,
+    "ForeignNativeLibraryAbsent": true,
+    "VideoStreams": [
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404
+      },
+      {
+        "OwnerStatus": 200,
+        "OwnerMp4": true,
+        "ForeignStatus": 404
+      }
+    ],
+    "ActualDockerProcessInterruption": true,
+    "ObservedInterruptedState": "Buffering",
+    "AutomaticRecoveryReady": true,
+    "OldReferencesGone": true,
+    "OnePersonalLibrary": true
+  },
+  "Scope": "Real Google with a stored personal key, one selected video per channel, native HTTP streams; actual process kill with persisted Buffering state and automatic recovery. Physical apps remain unverified."
+}

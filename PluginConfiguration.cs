@@ -6,6 +6,14 @@ namespace Emby.YouTubePlugin
     // Settings persisted by the custom configuration page.
     public class PluginConfiguration : BasePluginConfiguration
     {
+        public bool PersonalYouTubeAlphaEnabled { get; set; }
+        public string PersonalYouTubeDownloaderPath { get; set; } = "";
+        public string PersonalYouTubeFfmpegPath { get; set; } = "";
+        public string PersonalYouTubeNodePath { get; set; } = "";
+        public int PersonalYouTubeMaxVideos { get; set; } = 50;
+        public long PersonalYouTubeMaxVideoBytes { get; set; } = 512L * 1024 * 1024;
+        public long PersonalYouTubeMaxCollectionBytes { get; set; } = 2L * 1024 * 1024 * 1024;
+        public long PersonalYouTubeMaxStorageBytes { get; set; } = 10L * 1024 * 1024 * 1024;
         public string ApiKey { get; set; } = "";
 
         public string SavedItems { get; set; } = "";
