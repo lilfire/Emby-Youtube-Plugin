@@ -1,6 +1,6 @@
 # Leveransestatus: personlig YouTube
 
-2026-10-15: **Ny kandidat 2.0.11-alpha.1**, assembly `2.0.11.0`.
+2026-10-15: **2.0.11-alpha.1 er installert på Lilflix**, assembly `2.0.11.0`.
 Den inneholder native kildeoversikt, skrivebarriere, varig privat rotregister,
 servernøkkelfiks og forbedret innstillingsvalidering. Bygget bestod uten
 advarsler/feil; 119 native observasjoner og 46 komponentkontroller bestod på
@@ -9,6 +9,9 @@ den versjonerte DLL-en. SHA256:
 Se [implementasjon og bevis](../FollowUp/PrivateInventory/IMPLEMENTATION.md).
 Tidligere fullmatriser og ytelsestall gjelder den tidligere kildekandidaten.
 Gjeldende Lilflix-status står i [utrullingsrapporten](LILFLIX-ALPHA-DEPLOYMENT.md).
+DLL-hash, aktive kontroller, bevart konfigurasjon, HA `loaded` og utvalgte
+servernøkkel-/brukerkall med HTTP 200 er bekreftet. Native kildebarriere er
+ikke aktiv på Linux; full skanning brukes som reserve.
 Avsnittene nedenfor om tidligere pakker er historikk.
 
 Oppdatering 2026-10-14: Alfaen er nå også installert og aktivert på Lilflix etter

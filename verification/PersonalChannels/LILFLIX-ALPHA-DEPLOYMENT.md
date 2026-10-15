@@ -1,5 +1,32 @@
 # Lilflix: installert lukket alfa
 
+## Gjeldende: 2.0.11-alpha.1, 2026-10-15
+
+Etter uttrykkelig brukerbestilling er kildecommit `6759f86` bygget og installert
+i `emby_backup`, Emby 4.10.1.0. API-et viser YouTube assembly `2.0.11.0`.
+Installert DLL SHA256 er
+`2DE94E0F869D303F6E6C2870285B44FCA81852A125EFAE8B3B974C65609C1F66`.
+Den gamle DLL-en (`4FC47099…`), serverkonfigurasjon og plugininnstillinger er
+sikkerhetskopiert mens Emby var stoppet, under
+`/config/youtube-alpha-backups/20261015T051314Z-2.0.11-alpha.1`.
+Ingen `youtube-personal`-mappe fantes før byttet. Innstillingsfilen er uendret,
+lest tilbake byte for byte mot sikkerhetskopien. Containeren kjører.
+
+Arbeider, verktøystatus og Creation/References/Lists er aktive uten rapportert
+feil. HA `embymedia` for Lilflix er `loaded`. Servernøkkelkall til Counts,
+VirtualFolders og BoxSet-listen ga HTTP 200 på 1,26–1,78 s. En eksisterende
+ordinær brukers Items, Views og Latest ga HTTP 200 på henholdsvis 1,78, 1,53
+og 1,53 s. Dette er enkeltmålinger etter utrulling, ikke en belastningstest.
+
+**Linux-begrensning:** `SourceBarrierInstalled=false`, med 0 inventory builds/hits.
+Den nye kildebufferen er derfor ikke aktiv her; full skanning brukes som reserve.
+Årsaken er ikke diagnostisert i denne utrullingen. Privat eier/fremmed-tilgang,
+Google og avspilling er ikke prøvd på hovedserveren som del av oppdateringen.
+Tidligere kjente alfa-begrensninger gjelder fortsatt. Maskinlesbart avlest
+resultat: [LILFLIX-2.0.11-alpha.1.json](LILFLIX-2.0.11-alpha.1.json).
+
+## Tidligere installasjoner
+
 2026-10-14: Etter uttrykkelig brukerbestilling er 2.0.10-alpha.1 installert
 og aktivert på Lilflix, Emby 4.10.1.0, container emby_backup.
 

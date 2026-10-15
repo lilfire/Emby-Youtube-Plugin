@@ -4,13 +4,18 @@ Denne pakken er for kontrollert lukket alfa på Emby 4.10.1.0. Den er ikke en
 garanti for full skjerming eller alle klienter. Testene og kildedeltavurderingen
 er dokumentert i verification/PersonalChannels.
 
-Status 2026-10-14: Alfaen er installert og aktivert på Lilflix, se
+Status 2026-10-15: 2.0.11-alpha.1 er installert og aktivert på Lilflix, se
 [utrullingsrapporten](../LILFLIX-ALPHA-DEPLOYMENT.md). Ingen offentlig binærutgivelse
 er dokumentert. Senere isolerte undersøkelser påviser tilgangshull i Similar,
 anbefalinger, metadata, spillelister, Sync, live-referanser, audio/HLS og
 cacheinnhold. Sletting av profil sperrer ikke alle disse inngangene.
 [Rapportindeksen](../../FollowUp/K/INDEX.md) viser versjoner, bevis og
 godkjenningsnivåer. Bruk fortsatt bare kontrollert prøveinnhold.
+
+Kildeoversiktens native skrivebarriere er ikke aktiv på Lilflix/Linux;
+`SourceBarrierInstalled=false` gir full skanning som reserve. Oppstart og
+utvalgte HTTP-kall er verifisert der, men Windows-fixturens ytelsestall gjelder
+ikke som dokumentasjon for Linux eller andre serverbuilds.
 
 - Full skjerming på alle Emby-innganger og klienter er ikke bevist. Administrator
   og serverhost er betrodd. Bruk bare kontrollert prøveinnhold i kandidaten.

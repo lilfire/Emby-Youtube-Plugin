@@ -1,0 +1,125 @@
+{
+  "Server": "Lilflix",
+  "Version": "2.0.11-alpha.1",
+  "PluginSHA256": "2de94e0f869d303f6e6c2870285b44fca81852a125efae8b3b974c65609c1f66",
+  "PreviousSHA256": "4fc47099fcb9833cec2bfa1522a73051ebdb32f1b3ee0ede9eff35f2575e7983",
+  "Backup": "/config/youtube-alpha-backups/20261015T051314Z-2.0.11-alpha.1",
+  "Installed": true,
+  "Verified": true,
+  "PersonalStateCopies": 0,
+  "ConfigurationChanged": false,
+  "Status": {
+    "AlphaEnabled": true,
+    "WorkerRunning": true,
+    "Creation": {
+      "ContractMatched": true,
+      "Installed": true,
+      "RuntimeType": "Emby.Server.Implementations.Library.LibraryManager",
+      "Error": ""
+    },
+    "References": {
+      "Installed": true,
+      "Error": "",
+      "AuditedDtoCount": 18,
+      "Checked": 0,
+      "Denied": 0,
+      "LastResponseContract": "",
+      "StaticSources": {
+        "Installed": true,
+        "Error": "",
+        "Factories": 0,
+        "Reads": 0,
+        "IoCalls": 0,
+        "Denied": 0,
+        "LastFailure": ""
+      },
+      "AssetSources": {
+        "Installed": true,
+        "Error": "",
+        "Producers": 0,
+        "Outputs": 0,
+        "Denied": 0,
+        "ImageRecipes": 0,
+        "ImageRecipeVersion": 1
+      }
+    },
+    "Lists": {
+      "Installed": true,
+      "Error": "",
+      "Requests": 8,
+      "Queries": 38,
+      "Writes": 8,
+      "WritesDenied": 0,
+      "AuditedDtoCount": 10,
+      "ViewSources": 5,
+      "CountParentsDenied": 0,
+      "SourceBarrierInstalled": false,
+      "SourceInventoryBuilds": 0,
+      "SourceInventoryHits": 0
+    },
+    "MediaToolsAvailable": true
+  },
+  "Plugin": [
+    {
+      "Name": "YouTube",
+      "Version": "2.0.11.0",
+      "ConfigurationFileName": "Emby.YouTubePlugin.xml",
+      "Description": "YouTube channel integration for Emby using the YouTube Data API v3. (v2.0.11.0, closed alpha)",
+      "Id": "b2c3d4e5-f6a7-4b5c-9d0e-1f2a3b4c5d6e",
+      "ImageTag": "1"
+    }
+  ],
+  "ConfigurationUnchanged": true,
+  "Running": true,
+  "ServerKeyChecks": [
+    {
+      "Route": "Items/Counts",
+      "Auth": "ServerKey",
+      "Status": 200,
+      "Milliseconds": 1776,
+      "CurlCode": 0
+    },
+    {
+      "Route": "Library/VirtualFolders",
+      "Auth": "ServerKey",
+      "Status": 200,
+      "Milliseconds": 1262,
+      "CurlCode": 0
+    },
+    {
+      "Route": "Items?IncludeItemTypes=BoxSet&Limit=0&Recursive=true",
+      "Auth": "ServerKey",
+      "Status": 200,
+      "Milliseconds": 1368,
+      "CurlCode": 0
+    }
+  ],
+  "UserChecks": [
+    {
+      "Route": "Users/{user}/Items?Recursive=true&Limit=12&EnableTotalRecordCount=true",
+      "Auth": "User",
+      "Status": 200,
+      "Milliseconds": 1776,
+      "Returned": 12
+    },
+    {
+      "Route": "Users/{user}/Views",
+      "Auth": "User",
+      "Status": 200,
+      "Milliseconds": 1528
+    },
+    {
+      "Route": "Users/{user}/Items/Latest?Limit=12",
+      "Auth": "User",
+      "Status": 200,
+      "Milliseconds": 1525
+    }
+  ],
+  "VerifiedAtUtc": "2026-10-15T05:15:32Z",
+  "Limitations": [
+    "No production private collection owner/foreign or playback test",
+    "Native source barrier unavailable; full-scan fallback is active"
+  ],
+  "HAIntegrationState": "loaded",
+  "SourceCommit": "6759f86"
+}

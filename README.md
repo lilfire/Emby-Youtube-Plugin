@@ -15,8 +15,10 @@ Emby 4.10.1.0 for Windows. With 62,566 native items, warm sequential Items reque
 took about 0.56–0.57 seconds; six concurrent home requests had route medians of
 0.65–1.11 seconds. These measurements are from an isolated fixture. See the
 [implementation and evidence](verification/FollowUp/PrivateInventory/IMPLEMENTATION.md)
-and [remaining work](TODO.md). Linux and other Emby builds require separate
-verification; the access gaps described below remain open.
+and [remaining work](TODO.md). On Lilflix's Linux installation the native source
+barrier is unavailable, so full-scan fallback remains active. Linux source
+inventory support and other Emby builds require separate verification; the
+access gaps described below remain open.
 
 ## Personal YouTube — closed alpha
 
@@ -38,7 +40,9 @@ and read the [known limitations](verification/PersonalChannels/alpha-package/KNO
 Delete all personal collections and verify cleanup before returning to an older
 plugin that may lack their access controls.
 
-The alpha was installed and enabled on Lilflix on 2026-10-14; see the
+Lilflix was updated to 2.0.11-alpha.1 on 2026-10-15. The installed DLL hash,
+startup controls, HA integration and selected server-key/user API calls were
+verified; the user list calls returned HTTP 200 in about 1.5–1.8 seconds. See the
 [deployment record](verification/PersonalChannels/LILFLIX-ALPHA-DEPLOYMENT.md).
 Later isolated investigations found access gaps in recommendations, metadata,
 playlists, Sync, audio/HLS and cache content. Use controlled test content;

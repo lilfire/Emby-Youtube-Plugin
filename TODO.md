@@ -1,6 +1,6 @@
 ﻿# TODO: personlig YouTube etter lukket alfa
 
-Oppdatert 2026-10-15. Utgangspunkt: `2.0.10-alpha.1`, commit `e49dc06`.
+Oppdatert 2026-10-15. Gjeldende: `2.0.11-alpha.1`, kildecommit `6759f86`.
 Alfaen er installert og aktivert på Lilflix. Denne listen er en arbeidsfordeling
 for videre undersøkelser, ikke en godkjenning av full skjerming eller alle klienter.
 
@@ -64,17 +64,20 @@ integrert rettelse eller støtteerklæring må vente på relevant leveranse.
 
 [Feilrapport](docs/BUG-2026-10-14-item-list-gate-404.md) og
 [undersøkelse](docs/INVESTIGATION-2026-10-14-item-list-gate-and-todos.md).
-Servernøkkelrettelsen (DLL `4FC47099…`) er installert på Lilflix: HA
-`embymedia` er `loaded`, og ingen 404 er sett siden. Innloggede brukere får nå
-200, men hvert listekall tar ~31 s (servernøkkel ~6 s) i gatens fulle skanning.
+DLL `2DE94E0F…` er installert på Lilflix: HA `embymedia` er `loaded`.
+Utvalgte servernøkkelkall og en ordinær brukers Items/Views/Latest ga HTTP 200,
+med brukerlistene på 1,53–1,78 s. Dette er enkeltmålinger etter omstart.
+`SourceBarrierInstalled=false`: kildebufferen er ikke aktiv på Linux;
+full skanning brukes som reserve. Se [utrullingsrapporten](verification/PersonalChannels/LILFLIX-ALPHA-DEPLOYMENT.md).
 Alfa-innstillingen deaktiverer ikke tilgangsgatene.
 
 - [ ] Følg med på innloggede brukeres tidligere 404. Den er ikke reprodusert
-  på ny DLL, og brukerlogikken er uendret; diagnostikken logger nå fase og
+  i de utvalgte kallene på ny DLL; diagnostikken logger fase og
   unntakstype. Prøv også tomme og cachede resultatkilder samt fremmedkontroll.
 - [ ] Fullfør støtte- og gjenopprettingsbevis for den implementerte
   [private kildeoversikten og skrivebarrieren](verification/FollowUp/PrivateInventory/IMPLEMENTATION.md):
-  Linux/andre builds, nye mappe-/kildeendringsracer, tap/konkurranse om patcher
+  diagnostiser `SourceBarrierInstalled=false` på Lilflix/Linux og verifiser
+  kontrakter der før kildebufferen aktiveres; andre builds, nye mappe-/kildeendringsracer, tap/konkurranse om patcher
   og prosessavbrudd mellom scope-JSON og integritetsmarkør. Tapt eller skadet
   klassifikasjonsautoritet feiler lukket; automatisk reparasjon er ikke levert.
 - [ ] Utvid målingene til større private A/B-samlinger, kald oppbygging,
@@ -82,10 +85,9 @@ Alfa-innstillingen deaktiverer ikke tilgangsgatene.
   `D062C89B…` har varme sekvensielle Items på 0,56–0,57 s og Tags på 0,80–0,86 s
   ved 62 566 syntetiske elementer; seks parallelle kall gir medianer på
   0,65–1,11 s. Under ett sekund er ikke dokumentert for all parallell last.
-- [ ] Etter separat avtalt installasjon: bekreft aktive brukeres Items/Views
-  på Lilflix med 200, fungerende eierkontroll og fremmedskjerming, samt
-  Items?Limit=12 under ett sekund. Kandidaten er ikke installert der.
-  Registrer eksakt DLL-hash og faktisk native tilstand.
+- [ ] Etter separat avtalt test: bekreft privat eierkontroll og fremmedskjerming
+  på Lilflix, samt Items?Limit=12 under ett sekund. Oppstart/utvalgte offentlige
+  brukerlister er verifisert, men hovedserveren har ikke nye private prøvesamlinger.
 - [ ] Avklar en faktisk tilgjengelig og personverntrygg midlertidig løsning
   sammen med J; alfa av stopper bare jobbstart, og DLL-rollback alene er
   ikke dokumentert trygg ved gjenværende private native-/Sync-/cachedata.
