@@ -1,8 +1,22 @@
 # Emby YouTube Plugin
 
-> **Alpha build: 2.0.10-alpha.1.** This branch contains an experimental personal
+> **Alpha build: 2.0.11-alpha.1.** This branch contains an experimental personal
 > YouTube feature for controlled testing on **Emby Server 4.10.1.0**. It is not
 > a general production release or a guarantee of complete isolation between users.
+
+## Changes in 2.0.11-alpha.1
+
+- Reuse a native source inventory between library changes, avoiding repeated full database scans for ordinary lists.
+- Guard native writes and recheck owner/source authority before responses are written. Persist private source roots and historic aliases; uncertain or corrupt state denies access.
+- Improve administrator settings validation and loading feedback, and handle server API keys correctly in the item-list gate.
+
+The source candidate passed 1,351 native observations and 69 component checks on
+Emby 4.10.1.0 for Windows. With 62,566 native items, warm sequential Items requests
+took about 0.56–0.57 seconds; six concurrent home requests had route medians of
+0.65–1.11 seconds. These measurements are from an isolated fixture. See the
+[implementation and evidence](verification/FollowUp/PrivateInventory/IMPLEMENTATION.md)
+and [remaining work](TODO.md). Linux and other Emby builds require separate
+verification; the access gaps described below remain open.
 
 ## Personal YouTube — closed alpha
 
@@ -11,7 +25,7 @@ IDs through **YouTube in the Emby web user menu**. Keys are encrypted on the
 server. Leaving the key field empty retains the saved key. A background job
 fetches metadata, buffers a bounded selection of videos locally, and publishes
 the collection as a normal Emby library. Channel updates replace the collection;
-deleting it revokes its references and removes its buffered media.
+deleting it requests collection removal and buffered-media cleanup.
 
 The API key supplies metadata; playback uses locally buffered media obtained
 with yt-dlp. The server needs separately installed **yt-dlp, Node.js 24 LTS,
@@ -23,6 +37,14 @@ Follow the [alpha installation and rollback instructions](verification/PersonalC
 and read the [known limitations](verification/PersonalChannels/alpha-package/KNOWN-LIMITS.md).
 Delete all personal collections and verify cleanup before returning to an older
 plugin that may lack their access controls.
+
+The alpha was installed and enabled on Lilflix on 2026-10-14; see the
+[deployment record](verification/PersonalChannels/LILFLIX-ALPHA-DEPLOYMENT.md).
+Later isolated investigations found access gaps in recommendations, metadata,
+playlists, Sync, audio/HLS and cache content. Use controlled test content;
+the alpha acceptance applies only to its recorded tests. The
+[evidence index and approval levels](verification/FollowUp/K/INDEX.md)
+separate the deployed DLL, later test builds and unverified clients.
 
 Verified scope includes Chrome playback, actual Emby AndroidTv **1.8.54g** video
 playback and active audio output, and Docker checks with real Google metadata,

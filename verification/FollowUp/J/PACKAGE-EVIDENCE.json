@@ -1,0 +1,48 @@
+{
+  "Completed": true,
+  "Package": {
+    "Version": "2.0.10-alpha.1",
+    "Status": "candidate-not-approved",
+    "ArchiveSHA256": "C9F47D74B603F2DEC0B3AC003AAA9043FD48423949058657F3A231ABA623CD3F",
+    "TrustedArchiveHashChecked": true,
+    "FilesVerified": 5,
+    "Limitation": "No server startup, native cleanup, signature or actual assembly version validation"
+  },
+  "Observations": [
+    {
+      "Label": "Candidate with trusted SHA256 accepted",
+      "Observed": true
+    },
+    {
+      "Label": "tamper rejected",
+      "Observed": true
+    },
+    {
+      "Label": "traversal rejected",
+      "Observed": true
+    },
+    {
+      "Label": "duplicate rejected",
+      "Observed": true
+    },
+    {
+      "Label": "missing rejected",
+      "Observed": true
+    },
+    {
+      "Label": "stable-version rejected",
+      "Observed": true
+    },
+    {
+      "Label": "wrong-size rejected",
+      "Observed": true
+    },
+    {
+      "Label": "wrong-archive-hash rejected",
+      "Observed": true
+    }
+  ],
+  "Cleanup": {
+    "TemporaryVariantsGone": true
+  }
+}

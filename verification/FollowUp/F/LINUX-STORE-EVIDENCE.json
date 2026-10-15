@@ -1,0 +1,97 @@
+{
+  "Completed": true,
+  "TestDataGone": true,
+  "Observations": [
+    {
+      "Label": "Production-created Unix permissions",
+      "DirectoryMode": "OtherExecute, OtherRead, GroupExecute, GroupRead, UserExecute, UserWrite, UserRead",
+      "KeyMode": "OtherRead, GroupRead, UserWrite, UserRead",
+      "ProfileMode": "OtherRead, GroupRead, UserWrite, UserRead",
+      "Classification": "Measured permissions; no hardening assertion"
+    },
+    {
+      "Label": "Identical secret has randomized ciphertext and distinct collection",
+      "Passed": true
+    },
+    {
+      "Label": "Corrupt ciphertext fails authenticated decryption",
+      "Passed": true
+    },
+    {
+      "Label": "Corrupt A does not affect B",
+      "Passed": true
+    },
+    {
+      "Label": "Invalid or replaced server key denies prepared secret",
+      "Passed": true
+    },
+    {
+      "Label": "Key failure preserves both profile files",
+      "Passed": true
+    },
+    {
+      "Label": "Invalid or replaced server key denies prepared secret",
+      "Passed": true
+    },
+    {
+      "Label": "Key failure preserves both profile files",
+      "Passed": true
+    },
+    {
+      "Label": "Missing server key denies secret retrieval",
+      "Passed": true
+    },
+    {
+      "Label": "Missing key cannot silently regenerate for existing profiles",
+      "Passed": true
+    },
+    {
+      "Label": "Missing key leaves files unchanged and remains missing",
+      "Passed": true
+    },
+    {
+      "Label": "Matching backup key recovers both secrets",
+      "Passed": true
+    },
+    {
+      "Label": "Owner key rotation invalidates old snapshot and preserves B",
+      "Passed": true
+    },
+    {
+      "Label": "Restoring old matching profile and key revives old snapshot at store layer",
+      "Passed": true
+    },
+    {
+      "Label": "Delayed real catalog response rejected after key",
+      "Passed": true
+    },
+    {
+      "Label": "Delayed A response mutation leaves B key and file unchanged",
+      "Passed": true
+    },
+    {
+      "Label": "Delayed real catalog response rejected after channels",
+      "Passed": true
+    },
+    {
+      "Label": "Delayed A response mutation leaves B key and file unchanged",
+      "Passed": true
+    },
+    {
+      "Label": "Delayed real catalog response rejected after delete",
+      "Passed": true
+    },
+    {
+      "Label": "Delayed A response mutation leaves B key and file unchanged",
+      "Passed": true
+    },
+    {
+      "Label": "Separate process can save while parent publication holds process-local gate",
+      "Passed": true
+    },
+    {
+      "Label": "Separate process A write preserves B",
+      "Passed": true
+    }
+  ]
+}

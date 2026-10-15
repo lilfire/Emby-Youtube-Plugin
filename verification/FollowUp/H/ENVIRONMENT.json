@@ -1,0 +1,21 @@
+﻿{
+    "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "ProductionChanged":  false,
+    "Sources":  [
+                    {
+                        "SHA256":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+                        "File":  "bin/Release/net6.0/Emby.YouTubePlugin.dll"
+                    },
+                    {
+                        "SHA256":  "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+                        "File":  "verification/PersonalChannels/bin/Release/net6.0/PersonalChannelsFixture.dll"
+                    },
+                    {
+                        "SHA256":  "8619F15AF77685C9BE5C5DD60EC314E791281371C99D463E1B91EC2F98F27FB0",
+                        "File":  "verification/PersonalChannels/Start-NativeClientFixture.ps1"
+                    }
+                ],
+    "Catalog":  "No Google catalog; buffered historical media sample",
+    "ServerVersion":  "4.10.1.0",
+    "Port":  18108
+}

@@ -1,0 +1,331 @@
+{
+  "Mode": "Boundary-AfterReader-File",
+  "Completed": true,
+  "Observations": [
+    {
+      "Label": "Production reference gate active and experimental guard disabled",
+      "AuditedDtoCount": 18,
+      "Installed": true,
+      "ExperimentalEnabled": false
+    },
+    {
+      "Label": "Active a own static video",
+      "Status": 200,
+      "SourceHashMatches": true,
+      "Bytes": 11071
+    },
+    {
+      "Label": "Active a own default static video source",
+      "Status": 200,
+      "SourceHashMatches": true
+    },
+    {
+      "Label": "Active a own stream HEAD",
+      "Status": 200,
+      "Bytes": 0,
+      "ContentLength": 11071
+    },
+    {
+      "Label": "Active a own stream range",
+      "Status": 206,
+      "Bytes": 128,
+      "SourcePrefixMatches": true,
+      "ContentRange": "bytes 0-127/11071"
+    },
+    {
+      "Label": "Active a own stream conditional",
+      "Status": 304,
+      "Bytes": 0,
+      "SameETag": true
+    },
+    {
+      "Label": "Active b own static video",
+      "Status": 200,
+      "SourceHashMatches": true,
+      "Bytes": 11071
+    },
+    {
+      "Label": "Active b own default static video source",
+      "Status": 200,
+      "SourceHashMatches": true
+    },
+    {
+      "Label": "Active b own stream HEAD",
+      "Status": 200,
+      "Bytes": 0,
+      "ContentLength": 11071
+    },
+    {
+      "Label": "Active b own stream range",
+      "Status": 206,
+      "Bytes": 128,
+      "SourcePrefixMatches": true,
+      "ContentRange": "bytes 0-127/11071"
+    },
+    {
+      "Label": "Active b own stream conditional",
+      "Status": 304,
+      "Bytes": 0,
+      "SameETag": true
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active a foreign b stream Full",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active a foreign b stream Head",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 0,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active a foreign b stream Range",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active a foreign b stream Conditional",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active a foreign b stream MixedSource",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active a foreign b stream MixedMissingSource",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active b foreign a stream Full",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active b foreign a stream Head",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 0,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active b foreign a stream Range",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active b foreign a stream Conditional",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active b foreign a stream MixedSource",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "PrivateNamePresent": false,
+      "EntityHeaderCount": 0,
+      "Label": "Active b foreign a stream MixedMissingSource",
+      "IsolationPass": true,
+      "MatchesForeignSource": false,
+      "DeniedDelta": 1,
+      "Bytes": 15,
+      "Status": 404,
+      "CheckedDelta": 1
+    },
+    {
+      "Playlist": false,
+      "ReferencesA": false,
+      "EntityHeaderCount": 2,
+      "Method": "Get",
+      "MatchesA": true,
+      "Label": "D initial audio A owner control",
+      "PrivateName": false,
+      "MatchesB": false,
+      "Bytes": 11071,
+      "OwnerHashPass": true,
+      "Status": 200,
+      "ContentRange": ""
+    },
+    {
+      "Playlist": false,
+      "ReferencesA": false,
+      "EntityHeaderCount": 2,
+      "Method": "Get",
+      "MatchesA": true,
+      "Label": "D initial audio B foreign control",
+      "IsolationPass": false,
+      "PrivateName": false,
+      "MatchesB": false,
+      "Bytes": 11071,
+      "Status": 200,
+      "ContentRange": ""
+    },
+    {
+      "Label": "D actual native boundary reached",
+      "Phase": "AfterReader",
+      "Mutation": "File",
+      "HttpPending": true
+    },
+    {
+      "Label": "D native boundary file mutation",
+      "WindowsSharingLock": true,
+      "Mutation": "File",
+      "WriteSucceeded": false
+    },
+    {
+      "Label": "D native boundary independent B b own static video",
+      "Status": 200,
+      "SourceHashMatches": true,
+      "Bytes": 11071
+    },
+    {
+      "Label": "D native boundary independent B b own default static video source",
+      "Status": 200,
+      "SourceHashMatches": true
+    },
+    {
+      "Label": "D native boundary independent B b own stream HEAD",
+      "Status": 200,
+      "Bytes": 0,
+      "ContentLength": 11071
+    },
+    {
+      "Label": "D native boundary independent B b own stream range",
+      "Status": 206,
+      "Bytes": 128,
+      "SourcePrefixMatches": true,
+      "ContentRange": "bytes 0-127/11071"
+    },
+    {
+      "Label": "D native boundary independent B b own stream conditional",
+      "Status": 304,
+      "Bytes": 0,
+      "SameETag": true
+    },
+    {
+      "Mutation": "File",
+      "MatchesB": false,
+      "EntityHeaderCount": 2,
+      "MatchesA": true,
+      "Label": "D actual native boundary HTTP result",
+      "Phase": "AfterReader",
+      "Bytes": 11071,
+      "Status": 200,
+      "GenericDenial": false,
+      "SourceContentProvenanceGap": false
+    },
+    {
+      "Playlist": false,
+      "ReferencesA": false,
+      "EntityHeaderCount": 2,
+      "Method": "Get",
+      "MatchesA": true,
+      "Label": "D native boundary restored A source",
+      "PrivateName": false,
+      "MatchesB": false,
+      "Bytes": 11071,
+      "OwnerHashPass": true,
+      "Status": 200,
+      "ContentRange": ""
+    },
+    {
+      "Playlist": false,
+      "ReferencesA": false,
+      "EntityHeaderCount": 0,
+      "Method": "Get",
+      "MatchesA": false,
+      "Label": "D native boundary restored foreign control",
+      "IsolationPass": true,
+      "PrivateName": false,
+      "MatchesB": false,
+      "Bytes": 15,
+      "Status": 404,
+      "ContentRange": ""
+    }
+  ],
+  "Cleanup": {
+    "NativeCleanup": {
+      "MediaGone": true,
+      "FixtureGone": true,
+      "UsersGone": true,
+      "LibrariesGone": true,
+      "GuardGone": true,
+      "ServerStopped": false
+    },
+    "ProfilesGone": true,
+    "FixtureHash": "4472FD8CD9CDF85F572E1A03D1A23C314046574F7054FCC82FC55EA88EB007D6",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "ServerStopped": true,
+    "PortFree": true,
+    "JournalGone": true
+  }
+}

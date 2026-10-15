@@ -1,0 +1,50 @@
+﻿[
+    {
+        "ForeignLibrary":  false,
+        "OwnLibrary":  true,
+        "Bytes":  1614,
+        "Actor":  "a",
+        "Status":  200,
+        "Style":  "Header"
+    },
+    {
+        "ForeignLibrary":  false,
+        "OwnLibrary":  true,
+        "Bytes":  1614,
+        "Actor":  "a",
+        "Status":  200,
+        "Style":  "Query"
+    },
+    {
+        "ForeignLibrary":  false,
+        "OwnLibrary":  true,
+        "Bytes":  1614,
+        "Actor":  "a",
+        "Status":  200,
+        "Style":  "QueryExplicitJson"
+    },
+    {
+        "ForeignLibrary":  false,
+        "OwnLibrary":  true,
+        "Bytes":  1614,
+        "Actor":  "b",
+        "Status":  200,
+        "Style":  "Header"
+    },
+    {
+        "ForeignLibrary":  false,
+        "OwnLibrary":  true,
+        "Bytes":  1614,
+        "Actor":  "b",
+        "Status":  200,
+        "Style":  "Query"
+    },
+    {
+        "ForeignLibrary":  false,
+        "OwnLibrary":  true,
+        "Bytes":  1614,
+        "Actor":  "b",
+        "Status":  200,
+        "Style":  "QueryExplicitJson"
+    }
+]

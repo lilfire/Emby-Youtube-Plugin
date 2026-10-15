@@ -1,0 +1,72 @@
+﻿[
+    {
+        "PluginHash":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+        "CleanupVerified":  true,
+        "FailedAssertions":  2,
+        "FixtureHash":  "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+        "Completed":  true,
+        "Mode":  "Content",
+        "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+        "Observations":  235
+    },
+    {
+        "PluginHash":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+        "CleanupVerified":  true,
+        "FailedAssertions":  0,
+        "FixtureHash":  "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+        "Completed":  true,
+        "Mode":  "Embedded",
+        "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+        "Observations":  205
+    },
+    {
+        "PluginHash":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+        "CleanupVerified":  true,
+        "FailedAssertions":  0,
+        "FixtureHash":  "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+        "Completed":  true,
+        "Mode":  "Public",
+        "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+        "Observations":  122
+    },
+    {
+        "PluginHash":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+        "CleanupVerified":  true,
+        "FailedAssertions":  0,
+        "FixtureHash":  "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+        "Completed":  true,
+        "Mode":  "ImageRace",
+        "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+        "Observations":  170
+    },
+    {
+        "PluginHash":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+        "CleanupVerified":  true,
+        "FailedAssertions":  0,
+        "FixtureHash":  "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+        "Completed":  true,
+        "Mode":  "SubtitleRace",
+        "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+        "Observations":  170
+    },
+    {
+        "PluginHash":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+        "CleanupVerified":  true,
+        "FailedAssertions":  0,
+        "FixtureHash":  "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+        "Completed":  true,
+        "Mode":  "ImageLease",
+        "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+        "Observations":  172
+    },
+    {
+        "PluginHash":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+        "CleanupVerified":  true,
+        "FailedAssertions":  0,
+        "FixtureHash":  "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+        "Completed":  true,
+        "Mode":  "SubtitleLease",
+        "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+        "Observations":  172
+    }
+]

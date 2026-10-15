@@ -1,0 +1,54 @@
+﻿{
+    "ProductionCreated":  true,
+    "Platform":  "Windows x64",
+    "Rules":  [
+                  {
+                      "Type":  "Allow",
+                      "Rights":  "Modify, Synchronize",
+                      "Protected":  false,
+                      "Role":  "OtherPrincipal",
+                      "Inherited":  true,
+                      "File":  "encryption.key"
+                  },
+                  {
+                      "Type":  "Allow",
+                      "Rights":  "Modify, Synchronize",
+                      "Protected":  false,
+                      "Role":  "OtherPrincipal",
+                      "Inherited":  true,
+                      "File":  "encryption.key"
+                  },
+                  {
+                      "Type":  "Allow",
+                      "Rights":  "FullControl",
+                      "Protected":  false,
+                      "Role":  "Administrators",
+                      "Inherited":  true,
+                      "File":  "encryption.key"
+                  },
+                  {
+                      "Type":  "Allow",
+                      "Rights":  "FullControl",
+                      "Protected":  false,
+                      "Role":  "System",
+                      "Inherited":  true,
+                      "File":  "encryption.key"
+                  },
+                  {
+                      "Type":  "Allow",
+                      "Rights":  "ReadAndExecute, Synchronize",
+                      "Protected":  false,
+                      "Role":  "BuiltinUsers",
+                      "Inherited":  true,
+                      "File":  "encryption.key"
+                  },
+                  {
+                      "Type":  "Allow",
+                      "Rights":  "Modify, Synchronize",
+                      "Protected":  false,
+                      "Role":  "AuthenticatedUsers",
+                      "Inherited":  true,
+                      "File":  "encryption.key"
+                  }
+              ]
+}

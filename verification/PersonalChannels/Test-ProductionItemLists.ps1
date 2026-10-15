@@ -151,7 +151,7 @@ try{
         if(Test-Path $profileRoot){
             $dir=[IO.Path]::GetFullPath($profileRoot);$expected=[IO.Path]::GetFullPath((Join-Path $root 'data/data/youtube-personal'))
             if($dir -ne $expected -or -not $dir.StartsWith([IO.Path]::GetFullPath($root)+[IO.Path]::DirectorySeparatorChar)){throw 'Unsafe profile cleanup'}
-            $names=@('encryption.key','native-reference-bindings.json','native-reference-bindings.required')+@($subjects.Values|ForEach-Object{$_.UserId+'.json'})
+            $names=@('encryption.key','native-reference-bindings.json','native-reference-bindings.required','private-source-scopes.json','private-source-scopes.required')+@($subjects.Values|ForEach-Object{$_.UserId+'.json'})
             $files=@(Get-ChildItem -LiteralPath $dir -Force)
             if(@($files|Where-Object {$_.PSIsContainer -or $_.Name -notin $names -or ($_.Attributes -band [IO.FileAttributes]::ReparsePoint)}).Count){throw 'Unexpected private files'}
             foreach($file in $files){Remove-Item -LiteralPath $file.FullName};Remove-Item -LiteralPath $dir

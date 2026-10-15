@@ -1,0 +1,247 @@
+{
+  "Completed": true,
+  "Results": [
+    {
+      "Name": "visible-state-Disabled",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Idle",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-WaitingForSettings",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Queued",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Cleaning",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Fetching",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Buffering",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Publishing",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Ready",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Cancelled",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Deleted",
+      "Passed": true
+    },
+    {
+      "Name": "visible-state-Failed",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-YouTubeKeyRejected",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-MediaToolsUnavailable",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-InvalidServerSettings",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-StorageBudgetExceeded",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-StorageUnavailable",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-YouTubeQuotaExceeded",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-YouTubeRequestFailed",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-CleanupFailed",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-RefreshFailed",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-StatusUnavailable",
+      "Passed": true
+    },
+    {
+      "Name": "sanitized-browser-error-UnknownPrivateFailure",
+      "Passed": true
+    },
+    {
+      "Name": "double-save-and-reload-no-extra-request",
+      "Passed": true
+    },
+    {
+      "Name": "expected-revision-no-owner-parameter",
+      "Passed": true
+    },
+    {
+      "Name": "save-readback",
+      "Passed": true
+    },
+    {
+      "Name": "revision-conflict-blocks-save-delete",
+      "Passed": true
+    },
+    {
+      "Name": "delete-confirmation-no-request",
+      "Passed": true
+    },
+    {
+      "Name": "double-delete-single-request",
+      "Passed": true
+    },
+    {
+      "Name": "delete-readback-clears-fields",
+      "Passed": true
+    },
+    {
+      "Name": "late-profile-account-switch-clears-private-fields",
+      "Passed": true
+    },
+    {
+      "Name": "late-job-switch-rejects-even-new-owner-response",
+      "Passed": true
+    },
+    {
+      "Name": "late-job-server-switch",
+      "Passed": true
+    },
+    {
+      "Name": "server-switch-before-poll-no-stale-profile-request",
+      "Passed": true
+    },
+    {
+      "Name": "late-job-error-clears-on-account-switch",
+      "Passed": true
+    },
+    {
+      "Name": "out-of-order-job-response",
+      "Passed": true
+    },
+    {
+      "Name": "navigation-stops-poll-and-late-response",
+      "Passed": true
+    },
+    {
+      "Name": "session-401-stops-poll-clears-fields",
+      "Passed": true
+    },
+    {
+      "Name": "session-403-stops-poll-clears-fields",
+      "Passed": true
+    },
+    {
+      "Name": "other-tab-job-revision-not-painted",
+      "Passed": true
+    },
+    {
+      "Name": "late-save-error-account-switch-clears-fields",
+      "Passed": true
+    },
+    {
+      "Name": "pause-clears-existing-job-status",
+      "Passed": true
+    },
+    {
+      "Name": "cancel-delete-no-server-mutation",
+      "Passed": true
+    },
+    {
+      "Name": "delete-conflict-blocks-mutations",
+      "Passed": true
+    },
+    {
+      "Name": "blank-key-retains-server-key",
+      "Passed": true
+    },
+    {
+      "Name": "clear-key-explicit-no-global-fallback",
+      "Passed": true
+    },
+    {
+      "Name": "cleared-key-readback",
+      "Passed": true
+    },
+    {
+      "Name": "foreign-profile-response-rejected",
+      "Passed": true
+    },
+    {
+      "Name": "two-tabs-send-same-expected-revision",
+      "Passed": true
+    },
+    {
+      "Name": "two-tabs-winning-readback-losing-conflict",
+      "Passed": true
+    },
+    {
+      "Name": "admin-disabled-worker-missing-controls-tools-restart",
+      "Passed": true
+    },
+    {
+      "Name": "admin-late-status-after-navigation",
+      "Passed": true
+    },
+    {
+      "Name": "admin-invalid-video-count-empty",
+      "Passed": true
+    },
+    {
+      "Name": "admin-invalid-video-count-0",
+      "Passed": true
+    },
+    {
+      "Name": "admin-invalid-video-count-10001",
+      "Passed": true
+    },
+    {
+      "Name": "admin-invalid-video-count-1.5",
+      "Passed": true
+    },
+    {
+      "Name": "admin-video-collection-relation",
+      "Passed": true
+    },
+    {
+      "Name": "admin-collection-storage-relation",
+      "Passed": true
+    },
+    {
+      "Name": "admin-valid-save-bytes",
+      "Passed": true
+    },
+    {
+      "Name": "admin-save-reminds-restart",
+      "Passed": true
+    }
+  ],
+  "Browser": "Microsoft Edge headless",
+  "Transport": "synthetic promises; real production controller and DOM"
+}

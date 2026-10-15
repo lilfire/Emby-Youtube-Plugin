@@ -1,0 +1,242 @@
+{
+  "Complete": true,
+  "Runtime": "8.0.22",
+  "Platform": "Microsoft Windows 10.0.19045",
+  "ProductionDLLSHA256": "93A510245B9176DA16B6615A0E04D0038530FB7ACED1752D60E78E01753AD671",
+  "TestDLLSHA256": "42FC2D4994EA628462290588707CB393767DEDCB91800BC8E0EE4859BC3C5994",
+  "Sources": {
+    "PersonalYouTubeCatalog.cs": "CB0D6E95C467EE4661D7ACEBDE1C0C4B47C4D3FDB5827849ADA81EE2E530FAFE",
+    "PersonalYouTubeVideoBuffer.cs": "24A6272D1B9E5AD8B3B008571E04ECF97EB4C5A1D8DB84FBA2E26FF29FBC7D0F",
+    "PersonalYouTubeJobs.cs": "F81B6D5568E6D4777E3CD7F63757CA30708761BEBA98A5A5003BF7E01E437BCC",
+    "PersonalYouTubeJobRuntime.cs": "3BEDA7226ADB804C18CC68BE4D53993384784FD98D991599139383114CD733AC",
+    "PersonalYouTubeInitialRefresh.cs": "F3BCBF111CAC17B4C29DB3135A84AF0EAFC3CB1B53F6A8A1AA5DD8E3AA1A9CD2",
+    "PersonalYouTubeStorageBudget.cs": "65D006FEF192894C3DBFD6AF284AF1FC226C79B7E740AE5D5B9560E2EF604E4E"
+  },
+  "Transport": "Synthetic HttpMessageHandler and synthetic executable parent/child",
+  "Observations": [
+    {
+      "Label": "A/B positive catalog controls; shared key does not coalesce requests",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Forged B owner on A snapshot denied before transport",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: quotaExceeded",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: rateLimitExceeded",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: keyInvalid",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: API_KEY_INVALID",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: unknown",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: html",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: timeout",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: network",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: missing",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: oversized",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Sanitized catalog failure: cancel",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "ResponseHeadersRead body stall outlives HttpClient timeout",
+      "Reproduced": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Explicit cancellation terminates stalled catalog body",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Late A response rejected after key rotation",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "B catalog remains functional after A rotation",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Buffer positive owner control and SHA256",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Non-media MP4-named bytes accepted without track validation",
+      "Reproduced": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Foreign page denied for B buffer",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Locked staging release reports disk error and preserves B",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "A release leaves B buffered file intact",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Downloader fail fails sanitized and removes staging",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Downloader oversize fails sanitized and removes staging",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Synthetic parent/child killed on cancel",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Staging cleaned on cancel",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Synthetic parent/child killed on profile",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Staging cleaned on profile",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Exited downloader with child-held output pipes ignores cancellation",
+      "Reproduced": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Orphan test recovers after explicit fixture child kill",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Empty budget reserves staging plus native copy",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "External plugin-tree growth is counted at next allowance",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Exhausted budget produces bounded error code",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Storage outside media/buffer ignored; no physical free-space reservation",
+      "Reproduced": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Disappeared media directory treated as zero usage",
+      "Reproduced": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Blocked budget waiter cancels",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Same-page duplicate survives selection and crashes metadata Single",
+      "Reproduced": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Duplicate failure releases downloaded staging",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Selection has no page/request ceiling for changing empty tokens",
+      "Reproduced": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Jobs failures persist correct owner-specific sanitized status",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Persisted status excludes synthetic keys/channel/provider detail",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Replacement waits for predecessor; B executor can progress independently",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Obsolete progress cannot overwrite new owner revision/status",
+      "Reproduced": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "32 bounded waiters all complete (no fairness guarantee)",
+      "Reproduced": true,
+      "RequirementMet": true
+    }
+  ],
+  "Cleanup": {
+    "FixtureRemoved": true,
+    "AllTrackedProcessesExited": true
+  }
+}

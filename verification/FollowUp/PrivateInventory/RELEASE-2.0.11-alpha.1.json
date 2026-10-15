@@ -1,0 +1,4126 @@
+{
+  "Version": "2.0.11-alpha.1",
+  "AssemblyVersion": "2.0.11.0",
+  "PluginSHA256": "2DE94E0F869D303F6E6C2870285B44FCA81852A125EFAE8B3B974C65609C1F66",
+  "CheckedAtUtc": "2026-10-15T05:12:20.590118+00:00",
+  "BuildWarnings": 0,
+  "BuildErrors": 0,
+  "Native": {
+    "Scope": "Selected actual native discovery family with own native positive controls and counts, broad ordinary folder rights, claimed other user, profile deletion and restart; require actual service/query/root-source counters for isolation verification; no universal discovery or client proof",
+    "DynamicViews": false,
+    "DiscoveryFamily": "Metadata",
+    "Completed": true,
+    "Observations": [
+      {
+        "Verified": true,
+        "Label": "Production gates installed, broad ordinary folder rights, experimental guard disabled"
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7698",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "4b7e57943a369013391ba1a5b9f97c9a_639275010501778820"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active a Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_a",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7700",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "05ba9d2e2d01fb028d6382df0865a90b_639275010501898826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active a Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_a",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_a",
+            "Id": "7702"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active a Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_a",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7698",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "4b7e57943a369013391ba1a5b9f97c9a_639275010501778820"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active a Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_a",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7700",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "05ba9d2e2d01fb028d6382df0865a90b_639275010501898826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active a Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_a",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_a",
+            "Id": "7702"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active a Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_a",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7698",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "4b7e57943a369013391ba1a5b9f97c9a_639275010501778820"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active a Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_a",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7700",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "05ba9d2e2d01fb028d6382df0865a90b_639275010501898826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active a Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_a",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_a",
+            "Id": "7702"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active a Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_a",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active b Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active b Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active b Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active b Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active b Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active b Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active b Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active b Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Active b Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Genres",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "Active anonymous Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Studios",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "Active anonymous Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Tags",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "Active anonymous Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "Label": "Production source inventory active and reused",
+        "Verified": true,
+        "Builds": 4,
+        "Hits": 18
+      },
+      {
+        "During": {
+          "Installed": true,
+          "Version": 185,
+          "Writers": 1,
+          "Readers": 0,
+          "Waiting": 0
+        },
+        "Label": "Actual repository mutation observed before native body and finalized",
+        "Fault": false,
+        "After": {
+          "Installed": true,
+          "Version": 188,
+          "Writers": 0,
+          "Readers": 0,
+          "Waiting": 0
+        },
+        "IsolationPass": true,
+        "Before": {
+          "Installed": true,
+          "Version": 184,
+          "Writers": 0,
+          "Readers": 0,
+          "Waiting": 0
+        }
+      },
+      {
+        "During": {
+          "Installed": true,
+          "Version": 189,
+          "Writers": 1,
+          "Readers": 0,
+          "Waiting": 0
+        },
+        "Label": "Actual repository mutation observed before native body and finalized",
+        "Fault": true,
+        "After": {
+          "Installed": true,
+          "Version": 190,
+          "Writers": 0,
+          "Readers": 0,
+          "Waiting": 0
+        },
+        "IsolationPass": true,
+        "Before": {
+          "Installed": true,
+          "Version": 188,
+          "Writers": 0,
+          "Readers": 0,
+          "Waiting": 0
+        }
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7698",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "4b7e57943a369013391ba1a5b9f97c9a_639275010501778820"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation a Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_a",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7700",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "05ba9d2e2d01fb028d6382df0865a90b_639275010501898826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation a Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_a",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_a",
+            "Id": "7702"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation a Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_a",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7698",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "4b7e57943a369013391ba1a5b9f97c9a_639275010501778820"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation a Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_a",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7700",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "05ba9d2e2d01fb028d6382df0865a90b_639275010501898826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation a Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_a",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_a",
+            "Id": "7702"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation a Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_a",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7698",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "4b7e57943a369013391ba1a5b9f97c9a_639275010501778820"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation a Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_a",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7700",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "05ba9d2e2d01fb028d6382df0865a90b_639275010501898826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation a Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_a",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_a",
+            "Id": "7702"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation a Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_a",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation b Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation b Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation b Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation b Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation b Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation b Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation b Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation b Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-native-source-mutation b Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Genres",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "After-native-source-mutation anonymous Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Studios",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "After-native-source-mutation anonymous Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Tags",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "After-native-source-mutation anonymous Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "Label": "Native write caused production source inventory rebuild",
+        "Verified": true,
+        "Before": 4,
+        "After": 5
+      },
+      {
+        "Label": "Actual native repository write waited for production source reader lease",
+        "IsolationPass": true,
+        "Waiting": {
+          "Installed": true,
+          "Version": 190,
+          "Writers": 0,
+          "Readers": 1,
+          "Waiting": 1
+        },
+        "After": {
+          "Installed": true,
+          "Version": 194,
+          "Writers": 0,
+          "Readers": 0,
+          "Waiting": 0
+        }
+      },
+      {
+        "Label": "Actual native collection library-options write advances source version",
+        "Before": {
+          "Installed": true,
+          "Version": 194,
+          "Writers": 0,
+          "Readers": 0,
+          "Waiting": 0
+        },
+        "IsolationPass": true,
+        "After": {
+          "Installed": true,
+          "Version": 202,
+          "Writers": 0,
+          "Readers": 0,
+          "Waiting": 0
+        }
+      },
+      {
+        "Label": "Public native positive control before corruption with explicit channel access",
+        "Actor": "a",
+        "IsolationPass": true
+      },
+      {
+        "Label": "Public native positive control before corruption with explicit channel access",
+        "Actor": "b",
+        "IsolationPass": true
+      },
+      {
+        "Label": "Same private native query has owner positive and foreign negative before corruption",
+        "Actor": "a",
+        "IsolationPass": true,
+        "OwnVideoVisible": 1
+      },
+      {
+        "Label": "Same private native query has owner positive and foreign negative before corruption",
+        "Actor": "b",
+        "IsolationPass": true,
+        "OwnVideoVisible": 0
+      },
+      {
+        "Label": "Corrupt native publication journal preserves public source and quarantines private source",
+        "Actor": "a",
+        "PrivateVisible": 0,
+        "IsolationPass": true,
+        "PublicVisible": 1
+      },
+      {
+        "Label": "Corrupt native publication journal preserves public source and quarantines private source",
+        "Actor": "b",
+        "PrivateVisible": 0,
+        "IsolationPass": true,
+        "PublicVisible": 1
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7698",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "4b7e57943a369013391ba1a5b9f97c9a_639275010501778820"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery a Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_a",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7700",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "05ba9d2e2d01fb028d6382df0865a90b_639275010501898826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery a Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_a",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_a",
+            "Id": "7702"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery a Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_a",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7698",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "4b7e57943a369013391ba1a5b9f97c9a_639275010501778820"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery a Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_a",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7700",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "05ba9d2e2d01fb028d6382df0865a90b_639275010501898826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery a Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_a",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_a",
+            "Id": "7702"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery a Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_a",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7698",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "4b7e57943a369013391ba1a5b9f97c9a_639275010501778820"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery a Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_a",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_a",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7700",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "05ba9d2e2d01fb028d6382df0865a90b_639275010501898826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery a Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_a",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_a",
+            "Id": "7702"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery a Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_a",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery b Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery b Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery b Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery b Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery b Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery b Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery b Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery b Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "After-journal-recovery b Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Genres",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "After-journal-recovery anonymous Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Studios",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "After-journal-recovery anonymous Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Tags",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "After-journal-recovery anonymous Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted a Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted a Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted a Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted a Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted a Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted a Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted a Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted a Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted a Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted b Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted b Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted b Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted b Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted b Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted b Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted b Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted b Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Deleted b Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Genres",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "Deleted anonymous Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Studios",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "Deleted anonymous Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Tags",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "Deleted anonymous Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "Verified": true,
+        "Label": "Actual restart with production gates and experimental guard disabled"
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted a Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted a Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted a Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted a Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted a Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted a Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted a Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted a Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 0,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted a Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted b Genres claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted b Studios claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted b Tags claimed subject a",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted b Genres claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted b Studios claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted b Tags claimed subject b",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeGenre_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7704",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "8704bf13c5bbcd405f46b37c5ec8c96f_639275010502443826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeGenre",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7699",
+            "Type": "Genre",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Genres",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted b Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeGenre_b",
+          "SharedNativeGenre"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeStudio_b",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7705",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {
+              "Primary": "02fcfd2202d687a170a48f1b9bdca4ce_639275010502473826"
+            },
+            "BackdropImageTags": []
+          },
+          {
+            "Name": "SharedNativeStudio",
+            "ServerId": "faa414b10408459bae6e69dcc5ddcd6e",
+            "Id": "7701",
+            "Type": "Studio",
+            "UserData": {
+              "PlaybackPositionTicks": 0,
+              "PlayCount": 0,
+              "IsFavorite": false,
+              "Played": false
+            },
+            "ImageTags": {},
+            "BackdropImageTags": []
+          }
+        ],
+        "Kind": "Studios",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted b Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeStudio_b",
+          "SharedNativeStudio"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 1,
+        "TotalRecordCount": 2,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": [
+          {
+            "Name": "PrivateNativeTag_b",
+            "Id": "7706"
+          },
+          {
+            "Name": "SharedNativeTag",
+            "Id": "7703"
+          }
+        ],
+        "Kind": "Tags",
+        "Status": 200,
+        "QueriesDelta": 1,
+        "Label": "Restarted b Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          "PrivateNativeTag_b",
+          "SharedNativeTag"
+        ],
+        "RequestsDelta": 1,
+        "IsolationPass": true,
+        "OwnPresent": true
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Genres",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "Restarted anonymous Genres claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Studios",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "Restarted anonymous Studios claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      },
+      {
+        "WritesDelta": 0,
+        "TotalRecordCount": null,
+        "DeletedPresent": false,
+        "ForeignReferencePresent": false,
+        "ForeignPresent": false,
+        "Items": null,
+        "Kind": "Tags",
+        "Status": 401,
+        "QueriesDelta": 0,
+        "Label": "Restarted anonymous Tags claimed subject none",
+        "ProductionBoundaryReached": true,
+        "Names": [
+          null
+        ],
+        "RequestsDelta": 0,
+        "IsolationPass": true,
+        "OwnPresent": false
+      }
+    ]
+  },
+  "Components": {
+    "Completed": true,
+    "ProductionDLLSHA256": "2DE94E0F869D303F6E6C2870285B44FCA81852A125EFAE8B3B974C65609C1F66",
+    "Platform": "Microsoft Windows 10.0.19045",
+    "Scope": "Production access resolver and storage; SDK library adapter with deliberately stale ancestor index and lexical path filters. No native SQL/HTTP, Emby process, Google or production data.",
+    "CandidateSafeToEnable": false,
+    "Observations": [
+      {
+        "Name": "Positive owner receives the registered active item",
+        "Pass": true
+      },
+      {
+        "Name": "Foreign account is denied that same item",
+        "Pass": true
+      },
+      {
+        "Name": "Ordinary public source works for both accounts",
+        "Pass": true
+      },
+      {
+        "Name": "Unknown private descendants denied to both accounts",
+        "Pass": true
+      },
+      {
+        "Name": "Canonical private path alias denied to both accounts",
+        "Pass": true
+      },
+      {
+        "Name": "Direct-parent candidate includes registered source",
+        "Pass": true
+      },
+      {
+        "Name": "Direct-parent candidate includes unregistered child",
+        "Pass": true
+      },
+      {
+        "Name": "Direct-parent candidate includes nested external-path child",
+        "Pass": true
+      },
+      {
+        "Name": "Direct-parent candidate includes unregistered media orphan",
+        "Pass": true
+      },
+      {
+        "Name": "Direct-parent candidate includes descendant of private physical path",
+        "Pass": true
+      },
+      {
+        "Name": "Ordinary public source is outside the candidate private scope",
+        "Pass": true
+      },
+      {
+        "Name": "Indexed ancestry misses a child when its native ancestor index is stale",
+        "Pass": true
+      },
+      {
+        "Name": "Direct parent walk covers that stale-ancestor case",
+        "Pass": true
+      },
+      {
+        "Name": "Both string-prefix candidates miss the canonical private path alias",
+        "Pass": true
+      },
+      {
+        "Name": "Private inventory replacement must remain disabled",
+        "Pass": true
+      },
+      {
+        "Name": "Unbound reserved root remains denied to its owner",
+        "Pass": true
+      },
+      {
+        "Name": "Candidate resolves the reserved GUID and its unregistered child",
+        "Pass": true
+      },
+      {
+        "Name": "Reserved child denied to both accounts",
+        "Pass": true
+      },
+      {
+        "Name": "Production inventory preserves owner positive control",
+        "Pass": true
+      },
+      {
+        "Name": "Production inventory preserves foreign negative control",
+        "Pass": true
+      },
+      {
+        "Name": "Production inventory catches the canonical alias missed by the prototype",
+        "Pass": true
+      },
+      {
+        "Name": "Production inventory catches unregistered descendants with external paths",
+        "Pass": true
+      },
+      {
+        "Name": "Production inventory catches private physical ancestors",
+        "Pass": true
+      },
+      {
+        "Name": "Production inventory catches unbound reserved children",
+        "Pass": true
+      },
+      {
+        "Name": "Production inventory retains ordinary public content",
+        "Pass": true
+      },
+      {
+        "Name": "Production inventory agrees with the full resolver for all ordinary sources",
+        "Pass": true
+      },
+      {
+        "Name": "Source fingerprints start current",
+        "Pass": true
+      },
+      {
+        "Name": "Unsupported native library keeps full-scan fallback",
+        "Pass": true
+      },
+      {
+        "Name": "In-memory reparenting invalidates a previously public snapshot",
+        "Pass": true
+      },
+      {
+        "Name": "Profile content revocation invalidates the request authority stamp",
+        "Pass": true
+      },
+      {
+        "Name": "Revoked owner loses previously allowed private source",
+        "Pass": true
+      },
+      {
+        "Name": "Public source survives private owner revocation",
+        "Pass": true
+      },
+      {
+        "Name": "Corrupt private profile fails closed without denying public source",
+        "Pass": true
+      },
+      {
+        "Name": "Complete scope authority preserves public content under corrupt journal",
+        "Pass": true
+      },
+      {
+        "Name": "Corrupt journal never grants private owner or foreign permission",
+        "Pass": true
+      },
+      {
+        "Name": "Corrupt journal still denies reserved children",
+        "Pass": true
+      },
+      {
+        "Name": "Corrupt journal still denies canonical private aliases",
+        "Pass": true
+      },
+      {
+        "Name": "Absent retired identity remains denied under journal corruption",
+        "Pass": true
+      },
+      {
+        "Name": "Absent unrelated public identity stays unknown under journal corruption",
+        "Pass": true
+      },
+      {
+        "Name": "Loss of classification authority cannot fail open",
+        "Pass": true
+      },
+      {
+        "Name": "Incomplete scope migration cannot recover a corrupt legacy journal",
+        "Pass": true
+      },
+      {
+        "Name": "Altered scope contents with restored timestamp fail the independent integrity marker",
+        "Pass": true
+      },
+      {
+        "Name": "Scope authority survives resolver restart",
+        "Pass": true
+      },
+      {
+        "Name": "Native mutation is visible before the write body",
+        "Pass": true
+      },
+      {
+        "Name": "Nested writer completion cannot release the outer mutation",
+        "Pass": true
+      },
+      {
+        "Name": "Exception/finalizer disposal is idempotent and advances the source version",
+        "Pass": true
+      }
+    ],
+    "TestDataGone": true
+  },
+  "Scope": "Versioned release rerun. Earlier full matrices and latency results remain evidence for the previous source candidate, not fresh measurements of this DLL."
+}

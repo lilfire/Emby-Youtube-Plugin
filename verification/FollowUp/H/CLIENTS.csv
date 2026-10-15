@@ -1,0 +1,12 @@
+Client,Version,Platform,Backend,Catalog,Status,Reason
+Emby Web,4.10.1.0 in Chrome 154,Windows,Windows Emby 4.10.1.0,No live catalog; historical buffered YouTube sample,Tested with finding,Actual video seek subtitle and account switch; HomeSections metadata leakage; own thumbnail 404
+Emby Android TV on living-room TV,1.8.54g,Android 12,Windows Emby 4.10.1.0,No live catalog; historical buffered YouTube sample,Bounded positive and negative checks,Actual A video and B red video; separate libraries; A hidden after stored profile deletion; no physical listening
+Emby Android TV on Pi,2.5.03g,Android 16,Not tested,Not tested,Unverified,ADB inventory found device; agreed test slot was for living-room TV only
+Emby Android mobile,Not measured,Android,Not tested,Not tested,Unverified,No mobile device in local ADB inventory or connected client surface
+Emby iPhone,Not measured,iOS,Not tested,Not tested,Unverified,No connected iPhone or agreed device access
+Emby iPad,Not measured,iPadOS,Not tested,Not tested,Unverified,No connected iPad or agreed device access
+Emby Apple TV,Not measured,tvOS,Not tested,Not tested,Unverified,No connected Apple TV or agreed device access
+Emby Samsung TV,Not measured,Tizen,Not tested,Not tested,Unverified,No connected native Samsung client or agreed device access
+Emby LG TV,Not measured,webOS,Not tested,Not tested,Unverified,No connected native LG client or agreed device access
+Download or Sync client,Not measured,Not measured,Not tested,Not tested,Unverified,No actual download client paired with B; ordinary static playback is not Sync
+Actual Google to Docker to client,Not measured,Not measured,Docker not used by H,Not tested,Unverified,Local Docker inventory had no running container; historical remote Docker Google evidence and Windows client evidence remain separate

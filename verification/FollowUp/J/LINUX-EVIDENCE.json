@@ -1,0 +1,109 @@
+{
+  "Completed": true,
+  "Runtime": "8.0.22",
+  "OS": "Linux 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026",
+  "Architecture": "X64",
+  "PluginSHA256": "ECCB1B92D991886551DD462B8E99FE1ED31F23C82861910BE234E792BD8E55B0",
+  "HarmonyVersion": "2.4.2.0",
+  "Entry": "Production Store/VideoBuffer; synthetic executable downloader; synthetic Harmony target, no Emby server or Google",
+  "Observations": [
+    {
+      "Label": "Production creation hook rejects unsupported concrete library contract",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Unsupported contract cannot pass creation availability check",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Harmony baseline owner positive, foreign negative",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Foreign higher-priority prefix can skip guard while metadata remains",
+      "Observed": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Removing conflicting prefix restores actual guard",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Patch removal detectable through metadata, actual guard gone",
+      "Observed": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Reinstall restores owner and foreign behavior",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Production loader reuses loaded Harmony assembly",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "All J Harmony patches removed",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Production buffer positive owner with executable adapter",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Production buffer rejects B using A page",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Production Linux child environment strips both LD variables",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Buffering adapter reaches actual child process before cancellation",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Production Buffering cancellation completes",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Cancelled staging physically removed",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "A cancellation preserves current B profile",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "B positive buffer after A cancellation",
+      "Observed": true,
+      "RequirementMet": true
+    },
+    {
+      "Label": "Existing but non-executable tool fails only at process launch",
+      "Observed": true,
+      "RequirementMet": false
+    },
+    {
+      "Label": "Invalid executable launch leaves no staging files",
+      "Observed": true,
+      "RequirementMet": true
+    }
+  ],
+  "Cleanup": {
+    "TestDataGone": true
+  }
+}

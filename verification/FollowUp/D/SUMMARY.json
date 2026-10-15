@@ -1,0 +1,182 @@
+[
+  {
+    "Mode": "Transport",
+    "Completed": true,
+    "Observations": 95,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 2
+  },
+  {
+    "Mode": "Hls",
+    "Completed": true,
+    "Observations": 33,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Content",
+    "Completed": true,
+    "Observations": 35,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Channel",
+    "Completed": true,
+    "Observations": 38,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Key",
+    "Completed": true,
+    "Observations": 38,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Accounts",
+    "Completed": true,
+    "Observations": 71,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Lease",
+    "Completed": true,
+    "Observations": 48,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "BeforeWrite",
+    "Completed": true,
+    "Observations": 45,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Public",
+    "Completed": true,
+    "Observations": 85,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 2
+  },
+  {
+    "Mode": "Abort",
+    "Completed": true,
+    "Observations": 41,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "F890627BFB0BD1438536C7C4EF2D79A75CDFB5B195228C30F19D143C22EFD0FD",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Boundary-AfterReader-File",
+    "Completed": true,
+    "Observations": 35,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "4472FD8CD9CDF85F572E1A03D1A23C314046574F7054FCC82FC55EA88EB007D6",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Boundary-AfterReader-Parent",
+    "Completed": true,
+    "Observations": 35,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "4472FD8CD9CDF85F572E1A03D1A23C314046574F7054FCC82FC55EA88EB007D6",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Boundary-AfterReader-Path",
+    "Completed": true,
+    "Observations": 35,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "4472FD8CD9CDF85F572E1A03D1A23C314046574F7054FCC82FC55EA88EB007D6",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Boundary-Factory-Path",
+    "Completed": true,
+    "Observations": 35,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "4472FD8CD9CDF85F572E1A03D1A23C314046574F7054FCC82FC55EA88EB007D6",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Boundary-Reader-File",
+    "Completed": true,
+    "Observations": 35,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "4472FD8CD9CDF85F572E1A03D1A23C314046574F7054FCC82FC55EA88EB007D6",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Boundary-Reader-Journal",
+    "Completed": true,
+    "Observations": 31,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "4472FD8CD9CDF85F572E1A03D1A23C314046574F7054FCC82FC55EA88EB007D6",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Boundary-Reader-Path",
+    "Completed": true,
+    "Observations": 35,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "4472FD8CD9CDF85F572E1A03D1A23C314046574F7054FCC82FC55EA88EB007D6",
+    "Timeouts": 0
+  },
+  {
+    "Mode": "Boundary-Reader-Token",
+    "Completed": true,
+    "Observations": 45,
+    "CleanupVerified": true,
+    "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "PluginHash": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "FixtureHash": "4472FD8CD9CDF85F572E1A03D1A23C314046574F7054FCC82FC55EA88EB007D6",
+    "Timeouts": 0
+  }
+]

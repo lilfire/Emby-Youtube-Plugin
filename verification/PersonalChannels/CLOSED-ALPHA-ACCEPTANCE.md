@@ -1,5 +1,10 @@
 # Lukket alfa: godkjenningskontroll 2026-10-14
 
+Historisk testgodkjenning før [Lilflix-utrullingen](LILFLIX-ALPHA-DEPLOYMENT.md).
+Senere isolerte undersøkelser påviser tilgangshull; «bestått» nedenfor gjelder
+bare den beskrevne testen og DLL-en. Se [rapportindeks og gjeldende
+godkjenningsnivåer](../FollowUp/K/INDEX.md). Ingen ny generell godkjenning gis.
+
 Leveranse: 2.0.10-alpha.1, lokal ZIP
 bin/packages/2.0.10-alpha.1-20261014T102002670.zip.
 Produksjons-DLL: SHA256

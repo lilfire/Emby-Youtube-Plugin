@@ -1,0 +1,41 @@
+﻿{
+    "TestContainers":  [
+                           {
+                               "State":  "exited",
+                               "Name":  "embytube-test"
+                           }
+                       ],
+    "TestListeners":  [
+
+                      ],
+    "FixtureProcessCount":  0,
+    "NativeLibraryDirectories":  0,
+    "MatchingTempDirectories":  0,
+    "DockerAvailable":  true,
+    "Scope":  "Local read-only snapshot; no remote Lilflix/TV readback",
+    "Limit":  "Historical native user/library ID cleanup remains recorded in chapter evidence; no server restart performed",
+    "NativeClientMediaFiles":  0,
+    "CapturedUtc":  "2026-10-14T16:47:37.0050862Z",
+    "Paths":  [
+                  {
+                      "Exists":  false,
+                      "Artifact":  "verification/PersonalChannels/bin/native-client-state.json"
+                  },
+                  {
+                      "Exists":  false,
+                      "Artifact":  "verification/WatchState/bin/emby-isolated/data/plugins/PersonalChannelsFixture.dll"
+                  },
+                  {
+                      "Exists":  false,
+                      "Artifact":  "verification/WatchState/bin/emby-isolated/data/data/youtube-personal"
+                  },
+                  {
+                      "Exists":  false,
+                      "Artifact":  "verification/FollowUp/H/bin/workspace"
+                  },
+                  {
+                      "Exists":  true,
+                      "Artifact":  "bin/followup-i-edge"
+                  }
+              ]
+}

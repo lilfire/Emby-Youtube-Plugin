@@ -1,0 +1,70 @@
+﻿{
+  "ProductionDLLSHA256": "D062C89BF60607A16A538DFC5A5E45225BD00E8DBCAF0897290FBE352861B780",
+  "Observations": [
+    {
+      "Name": "Null-user authorization without a verified key suppresses the native service",
+      "Reproduced": true
+    },
+    {
+      "Name": "Denial happens before a request scope is created",
+      "Reproduced": true
+    },
+    {
+      "Name": "Null-user result is the reported generic not-found exception",
+      "Reproduced": true
+    },
+    {
+      "Name": "Authorization adapter returned a non-null info object with null User",
+      "Reproduced": true
+    },
+    {
+      "Name": "Empty token with null User is still rejected",
+      "Reproduced": true
+    },
+    {
+      "Name": "Unknown token with null User is still rejected",
+      "Reproduced": true
+    },
+    {
+      "Name": "Account token resolving to null User is not treated as a server key",
+      "Reproduced": true
+    },
+    {
+      "Name": "Inactive server key is rejected",
+      "Reproduced": true
+    },
+    {
+      "Name": "Verified active server key reaches the native service",
+      "Reproduced": true
+    },
+    {
+      "Name": "Server-key scope carries no account",
+      "Reproduced": true
+    },
+    {
+      "Name": "Server-key scope is re-verifiable by its token",
+      "Reproduced": true
+    },
+    {
+      "Name": "Server-key result remains authorized while the key is active",
+      "Reproduced": true
+    },
+    {
+      "Name": "Revoked server key fails the result/writer recheck",
+      "Reproduced": true
+    },
+    {
+      "Name": "No source record rejects even an empty denial set",
+      "Reproduced": true
+    },
+    {
+      "Name": "Recorded empty source accepts an empty denial set",
+      "Reproduced": true
+    },
+    {
+      "Name": "New unexcluded denial rejects that same source",
+      "Reproduced": true
+    }
+  ],
+  "Limit": "Production component check with adapters and an empty library; no native HTTP, real API-key store, personal inventory, Linux runtime or latency measurement. Not a product acceptance result."
+}

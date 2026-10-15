@@ -1,0 +1,6923 @@
+[
+  {
+    "Label": "Production gates installed, broad ordinary folder rights, experimental guard disabled"
+  },
+  {
+    "Label": "Active a playlist create a",
+    "Status": 200,
+    "Created": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a playlist a actual items",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a playlist add foreign b",
+    "Status": 200,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a playlist read after foreign add",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b other account playlist read",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a playlist create b",
+    "Status": 200,
+    "Created": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a playlist b actual items",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a playlist create mixed",
+    "Status": 200,
+    "Created": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a playlist mixed actual items",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b playlist create b",
+    "Status": 200,
+    "Created": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b playlist b actual items",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b playlist add foreign a",
+    "Status": 200,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b playlist read after foreign add",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a other account playlist read",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b playlist create a",
+    "Status": 200,
+    "Created": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b playlist a actual items",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b playlist create mixed",
+    "Status": 200,
+    "Created": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b playlist mixed actual items",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "A playlist cleanup native query readback",
+    "Removed": true,
+    "CreatedCount": 6
+  },
+  {
+    "Label": "Active a Items Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Items Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Movies Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Movies Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Shows Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Shows Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Trailers Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Trailers Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Albums Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Albums Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Artists Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Artists Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Games Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Games Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Movies/Recommendations claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Movies/Recommendations claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Years claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Years claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a OfficialRatings claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a OfficialRatings claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Persons claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Persons claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Artists claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Artists claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Artists/AlbumArtists claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Artists/AlbumArtists claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Artists/Prefixes claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Artists/Prefixes claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a MusicGenres claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a MusicGenres claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Persons named a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Person ID a",
+    "Status": 404,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Person Credits a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Persons named b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a Person ID b",
+    "Status": 404,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a Person Credits b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter ParentId=7046",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter ParentId=7046",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Items Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Items Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Movies Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Movies Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Shows Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Shows Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Trailers Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Trailers Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Albums Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Albums Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Artists Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Artists Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Games Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Games Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Movies/Recommendations claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Movies/Recommendations claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Years claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Years claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b OfficialRatings claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b OfficialRatings claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Persons claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Persons claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Artists claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Artists claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Artists/AlbumArtists claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Artists/AlbumArtists claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Artists/Prefixes claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Artists/Prefixes claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b MusicGenres claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b MusicGenres claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Persons named a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Person ID a",
+    "Status": 404,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Person Credits a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Persons named b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Person ID b",
+    "Status": 404,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b Person Credits b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter ParentId=7044",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter ParentId=7044",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active anonymous Items/7048/Similar",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active anonymous Movies/Recommendations",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active anonymous Years",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active anonymous Persons",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a favorite-set target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a favorite-delete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a favorite-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a played-set target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a played-delete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a played-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a rating-set target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a rating-delete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a rating-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a favorite-set target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a favorite-delete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a favorite-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a played-set target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a played-delete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a played-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a rating-set target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a rating-delete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a rating-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a favorite-set target b claimed a",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "favorite-set",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a favorite-delete target b claimed a",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "favorite-delete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a favorite-postdelete target b claimed a",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "favorite-postdelete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a played-set target b claimed a",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "played-set",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a played-delete target b claimed a",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "played-delete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a played-postdelete target b claimed a",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "played-postdelete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a rating-set target b claimed a",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "rating-set",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a rating-delete target b claimed a",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "rating-delete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a rating-postdelete target b claimed a",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "rating-postdelete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a favorite-set target b claimed b",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "favorite-set",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a favorite-delete target b claimed b",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "favorite-delete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a favorite-postdelete target b claimed b",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "favorite-postdelete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a played-set target b claimed b",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "played-set",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a played-delete target b claimed b",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "played-delete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a played-postdelete target b claimed b",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "played-postdelete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a rating-set target b claimed b",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "rating-set",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a rating-delete target b claimed b",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "rating-delete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active a rating-postdelete target b claimed b",
+    "Status": 404,
+    "Actor": "a",
+    "Mutation": "rating-postdelete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-set target b claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-set",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-delete target b claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-delete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-postdelete target b claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-postdelete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b played-set target b claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-set",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b played-delete target b claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-delete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b played-postdelete target b claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-postdelete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b rating-set target b claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-set",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b rating-delete target b claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-delete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b rating-postdelete target b claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-postdelete",
+    "Target": "b",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-set target b claimed a",
+    "Status": 404,
+    "Actor": "b",
+    "Mutation": "favorite-set",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-delete target b claimed a",
+    "Status": 404,
+    "Actor": "b",
+    "Mutation": "favorite-delete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-postdelete target b claimed a",
+    "Status": 404,
+    "Actor": "b",
+    "Mutation": "favorite-postdelete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b played-set target b claimed a",
+    "Status": 404,
+    "Actor": "b",
+    "Mutation": "played-set",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b played-delete target b claimed a",
+    "Status": 404,
+    "Actor": "b",
+    "Mutation": "played-delete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b played-postdelete target b claimed a",
+    "Status": 404,
+    "Actor": "b",
+    "Mutation": "played-postdelete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b rating-set target b claimed a",
+    "Status": 404,
+    "Actor": "b",
+    "Mutation": "rating-set",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b rating-delete target b claimed a",
+    "Status": 404,
+    "Actor": "b",
+    "Mutation": "rating-delete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b rating-postdelete target b claimed a",
+    "Status": 404,
+    "Actor": "b",
+    "Mutation": "rating-postdelete",
+    "Target": "b",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-set target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-delete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b played-set target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b played-delete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b played-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b rating-set target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b rating-delete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b rating-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b favorite-set target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b favorite-delete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b favorite-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b played-set target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b played-delete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b played-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b rating-set target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b rating-delete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b rating-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a administrative Items/7048/Refresh?Recursive=false&MetadataRefreshMode=None&ImageRefreshMode=None",
+    "Status": 400,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active a administrative Items/7048",
+    "Status": 403,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active b administrative Items/7048/Refresh?Recursive=false&MetadataRefreshMode=None&ImageRefreshMode=None",
+    "Status": 400,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active b administrative Items/7048",
+    "Status": 403,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Active anonymous administrative Items/7048/Refresh?Recursive=false&MetadataRefreshMode=None&ImageRefreshMode=None",
+    "Status": 400,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Active anonymous administrative Items/7048",
+    "Status": 401,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Items Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Items Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Movies Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Movies Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Shows Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Shows Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Trailers Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Trailers Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Albums Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Albums Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Artists Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Artists Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Games Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Games Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Movies/Recommendations claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Movies/Recommendations claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Years claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Years claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a OfficialRatings claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a OfficialRatings claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Persons claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Persons claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Artists claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Artists claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Artists/AlbumArtists claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Artists/AlbumArtists claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Artists/Prefixes claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Artists/Prefixes claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a MusicGenres claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a MusicGenres claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Persons named a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Person ID a",
+    "Status": 404,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Person Credits a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Persons named b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a Person ID b",
+    "Status": 404,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a Person Credits b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter ParentId=7046",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter ParentId=7046",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Items Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Items Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Movies Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Movies Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Shows Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Shows Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Trailers Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Trailers Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Albums Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Albums Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Artists Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Artists Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Games Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Games Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Movies/Recommendations claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Movies/Recommendations claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Years claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Years claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b OfficialRatings claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b OfficialRatings claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Persons claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Persons claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Artists claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Artists claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Artists/AlbumArtists claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Artists/AlbumArtists claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Artists/Prefixes claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Artists/Prefixes claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b MusicGenres claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b MusicGenres claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Persons named a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Person ID a",
+    "Status": 404,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Person Credits a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Persons named b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Person ID b",
+    "Status": 404,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b Person Credits b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter ParentId=7044",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter ParentId=7044",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted anonymous Items/7048/Similar",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted anonymous Movies/Recommendations",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted anonymous Years",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted anonymous Persons",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a favorite-set target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a favorite-delete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a favorite-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a played-set target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a played-delete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a played-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a rating-set target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a rating-delete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a rating-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted a favorite-set target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a favorite-delete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a favorite-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a played-set target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a played-delete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a played-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a rating-set target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a rating-delete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a rating-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b favorite-set target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b favorite-delete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b favorite-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b played-set target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b played-delete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b played-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b rating-set target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b rating-delete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b rating-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b favorite-set target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b favorite-delete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b favorite-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b played-set target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b played-delete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b played-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b rating-set target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b rating-delete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b rating-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a administrative Items/7048/Refresh?Recursive=false&MetadataRefreshMode=None&ImageRefreshMode=None",
+    "Status": 400,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted a administrative Items/7048",
+    "Status": 403,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted b administrative Items/7048/Refresh?Recursive=false&MetadataRefreshMode=None&ImageRefreshMode=None",
+    "Status": 400,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted b administrative Items/7048",
+    "Status": 403,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Deleted anonymous administrative Items/7048/Refresh?Recursive=false&MetadataRefreshMode=None&ImageRefreshMode=None",
+    "Status": 400,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Deleted anonymous administrative Items/7048",
+    "Status": 401,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Actual restart with production gates and experimental guard disabled"
+  },
+  {
+    "Label": "Restarted a Items Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Items Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Movies Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Movies Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Shows Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Shows Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Trailers Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Trailers Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Albums Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Albums Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Artists Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Artists Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Games Similar seed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Games Similar seed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Movies/Recommendations claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Movies/Recommendations claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Years claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Years claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a OfficialRatings claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a OfficialRatings claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Persons claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Persons claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Artists claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Artists claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Artists/AlbumArtists claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Artists/AlbumArtists claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Artists/Prefixes claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Artists/Prefixes claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a MusicGenres claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a MusicGenres claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Persons named a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Person ID a",
+    "Status": 404,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Person Credits a",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Persons named b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": true,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a Person ID b",
+    "Status": 404,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a Person Credits b",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter ParentId=7046",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter ParentId=7046",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "a",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Items Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Items Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Movies Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Movies Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Shows Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Shows Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Trailers Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Trailers Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Albums Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Albums Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Artists Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Artists Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Games Similar seed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Games Similar seed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Movies/Recommendations claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Movies/Recommendations claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": [
+      null,
+      null
+    ],
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Years claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Years claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "2001",
+      "2002"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b OfficialRatings claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b OfficialRatings claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeRating_a",
+      "PrivateNativeRating_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Persons claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Persons claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativePerson_a",
+      "PrivateNativePerson_b"
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Artists claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Artists claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Artists/AlbumArtists claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Artists/AlbumArtists claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Artists/Prefixes claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Artists/Prefixes claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b MusicGenres claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b MusicGenres claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 0,
+    "Names": [],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Persons named a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Person ID a",
+    "Status": 404,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Person Credits a",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Persons named b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Person ID b",
+    "Status": 404,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b Person Credits b",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter ParentId=7044",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter StartIndex=0&Limit=1&SortBy=SortName&SortOrder=Descending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter StartIndex=1&Limit=1",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter StartIndex=0&Limit=0",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter Ids=7048,7049",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter ParentId=7044",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 1,
+    "Names": [
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter Filters=IsUnplayed",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_a_client",
+      "PrivateNativeVideo_b_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b page/filter SortBy=DateCreated&SortOrder=Ascending",
+    "Status": 200,
+    "Actor": "b",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": 2,
+    "Names": [
+      "PrivateNativeVideo_b_client",
+      "PrivateNativeVideo_a_client"
+    ],
+    "ServiceDelta": 1,
+    "QueryDelta": 1,
+    "CountPagePass": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted anonymous Items/7048/Similar",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted anonymous Movies/Recommendations",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted anonymous Years",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted anonymous Persons",
+    "Status": 401,
+    "Actor": "anonymous",
+    "ForeignContent": false,
+    "PrivateHeader": false,
+    "EntityHeaders": [],
+    "Total": null,
+    "Names": [
+      null
+    ],
+    "ServiceDelta": 0,
+    "QueryDelta": 0,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a favorite-set target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a favorite-delete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a favorite-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a played-set target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a played-delete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a played-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a rating-set target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a rating-delete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a rating-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted a favorite-set target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a favorite-delete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a favorite-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a played-set target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a played-delete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a played-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a rating-set target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a rating-delete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a rating-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "a",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b favorite-set target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b favorite-delete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b favorite-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b played-set target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b played-delete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b played-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b rating-set target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b rating-delete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b rating-postdelete target a claimed b",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "b",
+    "ExpectedAllowed": true,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b favorite-set target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b favorite-delete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b favorite-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "favorite-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b played-set target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b played-delete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": true,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b played-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "played-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b rating-set target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-set",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": false,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b rating-delete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-delete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b rating-postdelete target a claimed a",
+    "Status": 200,
+    "Actor": "b",
+    "Mutation": "rating-postdelete",
+    "Target": "a",
+    "Claim": "a",
+    "ExpectedAllowed": false,
+    "Changed": false,
+    "StateMatches": true,
+    "OtherStateStable": true,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a administrative Items/7048/Refresh?Recursive=false&MetadataRefreshMode=None&ImageRefreshMode=None",
+    "Status": 400,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted a administrative Items/7048",
+    "Status": 403,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted b administrative Items/7048/Refresh?Recursive=false&MetadataRefreshMode=None&ImageRefreshMode=None",
+    "Status": 400,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted b administrative Items/7048",
+    "Status": 403,
+    "IsolationPass": true
+  },
+  {
+    "Label": "Restarted anonymous administrative Items/7048/Refresh?Recursive=false&MetadataRefreshMode=None&ImageRefreshMode=None",
+    "Status": 400,
+    "IsolationPass": false
+  },
+  {
+    "Label": "Restarted anonymous administrative Items/7048",
+    "Status": 401,
+    "IsolationPass": true
+  }
+]

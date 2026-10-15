@@ -90,6 +90,7 @@ internal sealed class PersonalYouTubeNativeBindings
                         throw new InvalidOperationException("Private native identity is already bound.");
                     if (matches.Length == 0) next.Add(binding);
                 }
+                new PersonalYouTubePrivateScopes(Path.GetDirectoryName(_path)!).Remember(snapshot, aliases: requested);
                 if (next.Count != doc.Items.Length) Persist(new(1, next.ToArray()));
             }
         });
@@ -104,6 +105,60 @@ internal sealed class PersonalYouTubeNativeBindings
         // Always load even for an unknown/malformed alias: missing required
         // ledger must not become an Unknown/public fallback.
         lock (_gate) return Load().Items.SingleOrDefault(item => number == item.InternalId || guid == item.ItemId);
+    }
+    // One validated read of the ledger for a single list request. Decisions
+    // are identical to DecideItem; profiles are read at most once per owner.
+    internal Ledger ReadLedger() { Binding[] items; lock (_gate) items = Load().Items; return new(this, items); }
+    internal sealed class Ledger
+    {
+        private readonly PersonalYouTubeNativeBindings _bindings;
+        private readonly Dictionary<long, Binding> _byInternal;
+        private readonly Dictionary<Guid, Binding> _byItem;
+        private readonly Dictionary<Guid, PersonalYouTubeStore.View?> _profiles = new();
+        internal Ledger(PersonalYouTubeNativeBindings bindings, Binding[] items)
+        {
+            // Load() has already enforced distinct internal IDs and item IDs.
+            _bindings = bindings;
+            _byInternal = items.ToDictionary(item => item.InternalId);
+            _byItem = items.ToDictionary(item => item.ItemId);
+        }
+        internal Binding? FindInternal(long internalId) => _byInternal.TryGetValue(internalId, out var binding) ? binding : null;
+        internal Binding[] Items => _byInternal.Values.ToArray();
+        private Binding[] Matching(NativeItem item)
+        {
+            _byInternal.TryGetValue(item.InternalId, out var byInternal);
+            _byItem.TryGetValue(item.ItemId, out var byItem);
+            if (byInternal == null) return byItem == null ? Array.Empty<Binding>() : new[] { byItem };
+            return byItem == null || ReferenceEquals(byItem, byInternal) ? new[] { byInternal } : new[] { byInternal, byItem };
+        }
+        internal Access DecideItem(NativeItem item, NativeItem[] parents, Guid authenticatedOwner)
+        {
+            if (item.InternalId <= 0 || item.ItemId == Guid.Empty || parents.Length > 512
+                || parents.Any(parent => parent.InternalId <= 0 || parent.ItemId == Guid.Empty))
+                throw new ArgumentException("Actual native identities required.");
+            var direct = Matching(item);
+            var related = parents.SelectMany(parent => Matching(parent).Select(binding => (Parent: parent, Binding: binding))).ToArray();
+            if (direct.Length == 0) return related.Length == 0 ? Access.Unknown : Access.Denied;
+            if (direct.Length != 1 || direct[0].InternalId != item.InternalId || direct[0].ItemId != item.ItemId)
+                return Access.Denied;
+            var own = direct[0];
+            if (related.Any(pair => pair.Binding.InternalId != pair.Parent.InternalId || pair.Binding.ItemId != pair.Parent.ItemId
+                || pair.Binding.OwnerUserId != own.OwnerUserId || pair.Binding.CollectionId != own.CollectionId
+                || pair.Binding.GenerationId != own.GenerationId)) return Access.Denied;
+            return DecideBinding(own, authenticatedOwner);
+        }
+        private Access DecideBinding(Binding binding, Guid authenticatedOwner)
+        {
+            if (authenticatedOwner == Guid.Empty || authenticatedOwner != binding.OwnerUserId) return Access.Denied;
+            if (!_profiles.TryGetValue(binding.OwnerUserId, out var profile))
+            {
+                try { profile = _bindings._profiles.Read(binding.OwnerUserId); }
+                catch (Exception error) when (error is IOException or InvalidDataException or UnauthorizedAccessException) { profile = null; }
+                _profiles[binding.OwnerUserId] = profile;
+            }
+            return profile != null && profile.State == "Draft" && profile.CollectionId == binding.CollectionId && profile.GenerationId == binding.GenerationId
+                ? Access.Allowed : Access.Denied;
+        }
     }
     internal Access Decide(string reference, Guid authenticatedOwner)
     {
@@ -138,19 +193,7 @@ internal sealed class PersonalYouTubeNativeBindings
         if (item.InternalId <= 0 || item.ItemId == Guid.Empty || parents.Length > 512
             || parents.Any(parent => parent.InternalId <= 0 || parent.ItemId == Guid.Empty))
             throw new ArgumentException("Actual native identities required.");
-        Document doc;
-        lock (_gate) doc = Load();
-        var direct = doc.Items.Where(binding => binding.InternalId == item.InternalId || binding.ItemId == item.ItemId).ToArray();
-        var related = parents.SelectMany(parent => doc.Items.Where(binding => binding.InternalId == parent.InternalId || binding.ItemId == parent.ItemId)
-            .Select(binding => (Parent: parent, Binding: binding))).ToArray();
-        if (direct.Length == 0) return related.Length == 0 ? Access.Unknown : Access.Denied;
-        if (direct.Length != 1 || direct[0].InternalId != item.InternalId || direct[0].ItemId != item.ItemId)
-            return Access.Denied;
-        var own = direct[0];
-        if (related.Any(pair => pair.Binding.InternalId != pair.Parent.InternalId || pair.Binding.ItemId != pair.Parent.ItemId
-            || pair.Binding.OwnerUserId != own.OwnerUserId || pair.Binding.CollectionId != own.CollectionId
-            || pair.Binding.GenerationId != own.GenerationId)) return Access.Denied;
-        return DecideBinding(own, authenticatedOwner);
+        return ReadLedger().DecideItem(item, parents, authenticatedOwner);
     }
     private Access DecideBinding(Binding binding, Guid authenticatedOwner)
     {

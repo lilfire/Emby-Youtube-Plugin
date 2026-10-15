@@ -455,6 +455,7 @@ define([
             this._regionResult = { LookupSucceeded: false, Regions: [] };
             this._regionLookupRevision = 0;
             this._regionLookupApiKey = '';
+            this._serverStatusRevision = 0;
         }
 
         onResume(options) {
@@ -465,6 +466,35 @@ define([
                 value(this.view, 'selectTrendingRegion'));
             this.bindEventListeners(this.view);
             this.loadData(this.view);
+            this.checkPersonalServer();
+        }
+
+        onPause(options) {
+            this._serverStatusRevision++;
+            const status = this.view.querySelector('.ytPersonalServerStatus');
+            if (status) status.textContent = '';
+            super.onPause(options);
+        }
+
+        async checkPersonalServer() {
+            const api = client(), revision = ++this._serverStatusRevision;
+            const status = this.view.querySelector('.ytPersonalServerStatus');
+            if (!api || !status) return;
+            const owner = api.getCurrentUserId();
+            status.textContent = 'Checking running server…';
+            try {
+                const result = await api.ajax({ type: 'GET', url: api.getUrl('YouTubePlugin/PersonalServerStatus'), dataType: 'json' });
+                if (revision !== this._serverStatusRevision || client() !== api || api.getCurrentUserId() !== owner) return;
+                const controls = result.Creation && result.Creation.Installed && result.References && result.References.Installed && result.Lists && result.Lists.Installed;
+                status.textContent = 'Saved alpha setting: ' + (result.AlphaEnabled ? 'enabled' : 'disabled')
+                    + '. Worker: ' + (result.WorkerRunning ? 'running' : 'stopped')
+                    + '. Required controls: ' + (controls ? 'installed' : 'unavailable')
+                    + '. Media tool files: ' + (result.MediaToolsAvailable ? 'available' : 'missing')
+                    + '. Restart Emby after changing server settings, then check again.';
+            } catch (error) {
+                if (revision === this._serverStatusRevision && client() === api && api.getCurrentUserId() === owner)
+                    status.textContent = 'Could not read server status. Sign in as an administrator and try again.';
+            }
         }
 
         bindEventListeners(view) {
@@ -473,6 +503,8 @@ define([
             }
 
             view.youtubeConfigurationBound = true;
+            const serverReload = view.querySelector('.ytPersonalServerReload');
+            if (serverReload) serverReload.addEventListener('click', () => this.checkPersonalServer());
             bindTabNavigation(view);
 
             const form = view.querySelector('.youtubeConfigurationForm');
@@ -798,6 +830,17 @@ define([
             const config = Object.assign({}, this.config || {});
             config.ApiKey = value(view, 'txtApiKey').trim();
             if (field(view, 'chkPersonalYouTubeAlphaEnabled')) {
+                const ranges = [
+                    ['numPersonalYouTubeMaxVideos', 1, 10000],
+                    ['numPersonalYouTubeMaxVideoMiB', 1, 4096],
+                    ['numPersonalYouTubeMaxCollectionMiB', 1, 1048576],
+                    ['numPersonalYouTubeMaxStorageMiB', 2, 1048576]
+                ];
+                if (ranges.some(([id, min, max]) => !value(view, id).trim() || !Number.isInteger(Number(value(view, id))) || Number(value(view, id)) < min || Number(value(view, id)) > max)
+                    || Number(value(view, 'numPersonalYouTubeMaxVideoMiB')) > Number(value(view, 'numPersonalYouTubeMaxCollectionMiB'))
+                    || Number(value(view, 'numPersonalYouTubeMaxCollectionMiB')) > Number(value(view, 'numPersonalYouTubeMaxStorageMiB'))) {
+                    setStatus(view, 'Invalid personal YouTube limits. Use whole numbers within the displayed ranges, with video <= collection <= combined storage.'); return;
+                }
                 config.PersonalYouTubeAlphaEnabled = checked(view, 'chkPersonalYouTubeAlphaEnabled');
                 ['Downloader', 'Ffmpeg', 'Node'].forEach(tool => { config['PersonalYouTube' + tool + 'Path'] = value(view, 'txtPersonalYouTube' + tool + 'Path').trim(); });
                 config.PersonalYouTubeMaxVideos = numberValue(view, 'numPersonalYouTubeMaxVideos', 50, 1, 10000);
@@ -870,7 +913,7 @@ define([
                 this.config = pending.config;
                 setDonateButton(view);
                 if (!this._pendingSave && pending.revision === this._saveRevision) {
-                    setStatus(view, 'Saved automatically.');
+                    setStatus(view, 'Saved automatically. Restart Emby after changes to personal YouTube server settings.');
                     const savedApiKey = String(pending.config.ApiKey || '').trim();
                     if (savedApiKey !== this._regionLookupApiKey) {
                         this.refreshTrendingRegions(view, pending.apiClient, null, savedApiKey);

@@ -1,0 +1,10 @@
+﻿{
+    "WorkspaceGone":  true,
+    "MediaGone":  true,
+    "LibrariesGone":  true,
+    "UsersGone":  true,
+    "LocalActorTokensGone":  true,
+    "PortClosed":  true,
+    "ServerStopped":  true,
+    "FixtureGone":  true
+}

@@ -1,12 +1,12 @@
 # Lukket alfa
 
-Status 2026-10-14: **2.0.10-alpha.1 er klar for lukket test i dokumentert omfang.** Godkjenningskontrollen er fullført. Ikke installert på hovedserveren; ingen offentlig utgivelse er utført.
+Status 2026-10-14: **2.0.10-alpha.1 er installert og aktivert på Lilflix for lukket test.** Se [utrullingen](LILFLIX-ALPHA-DEPLOYMENT.md). Ingen offentlig binærutgivelse er dokumentert. Senere undersøkelser påviser tilgangshull; den historiske godkjenningskontrollen gjelder bare sitt prøvde omfang. Se [evidens og godkjenningsnivåer](../FollowUp/K/INDEX.md).
 
 Gjeldende pakke: [2.0.10-alpha.1](bin/packages/2.0.10-alpha.1-20261014T102002670.zip), manifeststatus `closed-alpha-ready`. DLL SHA256: `2E68B8DE68DE787DCEEB8AC30C44A417BD28126A3EE630F988F183ED193347EC`.
 
 Stue-TV med Emby AndroidTv 1.8.54g viste faktisk video, fremdrift og aktiv stereo-lydutgang. Fysisk lyd er ikke hørt med mikrofon. En 404-feil for original.mp4 ble rettet og verifisert med sju HTTP-kontroller og faktisk TV-avspilling. Samme siste DLL bestod ekte Google/to kanaler, egne/fremmede strømmer, omstart, Buffering-avbrudd/gjenoppretting og sletting i Docker.
 
-TV/nettverk er tilbakeført, Windows-fixturen ryddet og stoppet, og Docker-testprofilen slettet/testcontaineren stoppet. Hovedserverens plugin og konfigurasjon er uendret. Se [godkjenningskontrollen](CLOSED-ALPHA-ACCEPTANCE.md), [TV-resultatet](ANDROIDTV-ALPHA-RESULT.md) og [siste Docker-rapport](DOCKER-ALPHA-RELEASE-RESULT.json). Android mobil og øvrige klienter er uverifisert; full skjerming er ikke bevist.
+Etter testfasen var TV/nettverk tilbakeført, Windows-fixturen ryddet og stoppet, og Docker-testprofilen slettet/testcontaineren stoppet. Hovedserverens plugin og konfigurasjon ble senere endret under den autoriserte utrullingen. Se [godkjenningskontrollen](CLOSED-ALPHA-ACCEPTANCE.md), [TV-resultatet](ANDROIDTV-ALPHA-RESULT.md) og [Docker-rapporten](DOCKER-ALPHA-RELEASE-RESULT.json). Android mobil og øvrige klienter er uverifisert; full skjerming er ikke bevist.
 
 ## Tidligere verifisering (historiske notater)
 

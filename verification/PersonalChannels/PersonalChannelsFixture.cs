@@ -378,7 +378,7 @@ public sealed class BufferedPublicationProbe : IReturn<object> { public string O
 [Authenticated(Roles = "Admin")]
 public sealed class PersonalJobsProbe : IReturn<object> { }
 
-public sealed class FixtureService : IService, IRequiresRequest
+public sealed partial class FixtureService : IService, IRequiresRequest
 {
     public object Post(PersonalJobsProbe request) => ProductionBufferedPublication.StartJobs(_library, _files, _users);
     public Task<object> Delete(PersonalJobsProbe request) => ProductionBufferedPublication.StopJobs();

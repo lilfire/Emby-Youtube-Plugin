@@ -1,0 +1,688 @@
+[
+  {
+    "Kind": "fresh",
+    "Completed": true,
+    "RestartVerified": true,
+    "Identity": {
+      "SamePhysicalParentKey": false,
+      "SameVideoKey": false,
+      "SamePhysicalParentGuid": false,
+      "SameNativeRootKey": false,
+      "SameNativeRootGuid": false
+    },
+    "Observations": [
+      {
+        "Label": "Baseline A own",
+        "Status": 200,
+        "Expected": 200
+      },
+      {
+        "Label": "Baseline B own",
+        "Status": 200,
+        "Expected": 200
+      },
+      {
+        "Label": "Baseline B foreign A",
+        "Status": 404,
+        "Expected": 404
+      },
+      {
+        "Label": "after recreation native diagnostic",
+        "KnownPrivate": true,
+        "Quarantined": false,
+        "ParentKnownPrivate": true,
+        "ParentQuarantined": false,
+        "NativeVisible": true,
+        "NativeStandalone": true
+      },
+      {
+        "Label": "after recreation B original own",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": true
+      },
+      {
+        "Label": "after recreation A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": true
+      },
+      {
+        "Label": "after recreation A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation a old A video",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation b old A video",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated playback",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": true,
+        "CorrectOwnSource": true
+      },
+      {
+        "Label": "after recreation A recreated playback",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation b recreated raw download",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "PayloadBytes": 11071,
+        "MatchesRecreatedSource": true
+      },
+      {
+        "Label": "after recreation a recreated raw download",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "PayloadBytes": 0,
+        "MatchesRecreatedSource": false
+      },
+      {
+        "Label": "after recreation anonymous recreated raw download",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "PayloadBytes": 0,
+        "MatchesRecreatedSource": false
+      },
+      {
+        "Label": "after restart native diagnostic",
+        "KnownPrivate": true,
+        "Quarantined": false,
+        "ParentKnownPrivate": true,
+        "ParentQuarantined": false,
+        "NativeVisible": true,
+        "NativeStandalone": true
+      },
+      {
+        "Label": "after restart B original own",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": true
+      },
+      {
+        "Label": "after restart A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": true
+      },
+      {
+        "Label": "after restart A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart a old A video",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart b old A video",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated playback",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": true,
+        "CorrectOwnSource": true
+      },
+      {
+        "Label": "after restart A recreated playback",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart b recreated raw download",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "PayloadBytes": 11071,
+        "MatchesRecreatedSource": true
+      },
+      {
+        "Label": "after restart a recreated raw download",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "PayloadBytes": 0,
+        "MatchesRecreatedSource": false
+      },
+      {
+        "Label": "after restart anonymous recreated raw download",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "PayloadBytes": 0,
+        "MatchesRecreatedSource": false
+      }
+    ],
+    "Cleanup": {
+      "ServerStopped": true,
+      "NativeCleanup": {
+        "MediaGone": true,
+        "FixtureGone": true,
+        "UsersGone": true,
+        "LibrariesGone": true,
+        "GuardGone": true,
+        "ServerStopped": false
+      }
+    },
+    "Scope": "Experimental PrivacyGuard, native library recreation; not production integration"
+  },
+  {
+    "Kind": "reused",
+    "Completed": true,
+    "RestartVerified": true,
+    "Identity": {
+      "SamePhysicalParentKey": false,
+      "SameVideoKey": false,
+      "SamePhysicalParentGuid": true,
+      "SameNativeRootKey": false,
+      "SameNativeRootGuid": false
+    },
+    "Observations": [
+      {
+        "Label": "Baseline A own",
+        "Status": 200,
+        "Expected": 200
+      },
+      {
+        "Label": "Baseline B own",
+        "Status": 200,
+        "Expected": 200
+      },
+      {
+        "Label": "Baseline B foreign A",
+        "Status": 404,
+        "Expected": 404
+      },
+      {
+        "Label": "after recreation native diagnostic",
+        "KnownPrivate": true,
+        "Quarantined": false,
+        "ParentKnownPrivate": true,
+        "ParentQuarantined": true,
+        "NativeVisible": true,
+        "NativeStandalone": true
+      },
+      {
+        "Label": "after recreation B original own",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated own {reference}",
+        "Status": 404,
+        "Expected": 200,
+        "MatchesExpectation": false,
+        "CorrectOwnMarker": false,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated own {reference}",
+        "Status": 404,
+        "Expected": 200,
+        "MatchesExpectation": false,
+        "CorrectOwnMarker": false,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation a old A video",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation b old A video",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation B recreated playback",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": true,
+        "CorrectOwnSource": true
+      },
+      {
+        "Label": "after recreation A recreated playback",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after recreation b recreated raw download",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "PayloadBytes": 11071,
+        "MatchesRecreatedSource": true
+      },
+      {
+        "Label": "after recreation a recreated raw download",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "PayloadBytes": 0,
+        "MatchesRecreatedSource": false
+      },
+      {
+        "Label": "after recreation anonymous recreated raw download",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "PayloadBytes": 0,
+        "MatchesRecreatedSource": false
+      },
+      {
+        "Label": "after restart native diagnostic",
+        "KnownPrivate": true,
+        "Quarantined": false,
+        "ParentKnownPrivate": true,
+        "ParentQuarantined": true,
+        "NativeVisible": true,
+        "NativeStandalone": true
+      },
+      {
+        "Label": "after restart B original own",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated own {reference}",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": true,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated own {reference}",
+        "Status": 404,
+        "Expected": 200,
+        "MatchesExpectation": false,
+        "CorrectOwnMarker": false,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated own {reference}",
+        "Status": 404,
+        "Expected": 200,
+        "MatchesExpectation": false,
+        "CorrectOwnMarker": false,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart A foreign recreated {reference}",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart a old A video",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart b old A video",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart B recreated playback",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": true,
+        "CorrectOwnSource": true
+      },
+      {
+        "Label": "after restart A recreated playback",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "CorrectOwnMarker": null,
+        "ContainsOldA": false,
+        "ContainsRecreatedB": false
+      },
+      {
+        "Label": "after restart b recreated raw download",
+        "Status": 200,
+        "Expected": 200,
+        "MatchesExpectation": true,
+        "PayloadBytes": 11071,
+        "MatchesRecreatedSource": true
+      },
+      {
+        "Label": "after restart a recreated raw download",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "PayloadBytes": 0,
+        "MatchesRecreatedSource": false
+      },
+      {
+        "Label": "after restart anonymous recreated raw download",
+        "Status": 404,
+        "Expected": 404,
+        "MatchesExpectation": true,
+        "PayloadBytes": 0,
+        "MatchesRecreatedSource": false
+      }
+    ],
+    "Cleanup": {
+      "ServerStopped": true,
+      "NativeCleanup": {
+        "MediaGone": true,
+        "FixtureGone": true,
+        "UsersGone": true,
+        "LibrariesGone": true,
+        "GuardGone": true,
+        "ServerStopped": false
+      }
+    },
+    "Scope": "Experimental PrivacyGuard, native library recreation; not production integration"
+  }
+]

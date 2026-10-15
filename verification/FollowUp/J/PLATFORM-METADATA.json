@@ -1,0 +1,19 @@
+﻿{
+    "ContainerGone":  true,
+    "VolumeGone":  true,
+    "Persistence":  "busybox executable and synthetic data on named volume, not yt-dlp/Node/FFmpeg or native Emby state",
+    "ImageId":  "sha256:997e8c1ea1fde7d303eb455143e7be77dc4f20cb06acb11ffdcbcfaa87186ec2",
+    "Completed":  true,
+    "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "HarnessSHA256":  "9CF6CA2F7198E262657F81A96DCC644BAEF992A0D40DC5F02718F09967386C81",
+    "Readback":  [
+                     "/persist/tools/busybox: OK",
+                     "/persist/data/marker: OK",
+                     "0",
+                     "755:0:0",
+                     "644:0:0"
+                 ],
+    "ServerStarted":  false,
+    "Network":  "none",
+    "RecreatedDifferentContainer":  true
+}

@@ -1,0 +1,402 @@
+{
+  "ExpectedDistinctHashes": 40,
+  "Assemblies": [
+    {
+      "Name": "Emby.ActivityLog",
+      "Version": "4.10.1.0",
+      "SHA256": "977931AD6D7CA9AA8549CDC912908F13A4E75BA32767C842BC800B4F1D2BB94B",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Api",
+      "Version": "4.10.1.0",
+      "SHA256": "EDAB13CA38BCB0D90D0613A792E866B350658A83F5544DC5DE4CF3A6F1DA9787",
+      "Matches": [
+        {
+          "Type": "Emby.Api.UserLibrary.UserLibraryService",
+          "Method": "Post",
+          "ILHash": "DB1EC783D88823724C2D93D300DEFB0C40E76C107749F9CF1DC10E81478D4AF3"
+        },
+        {
+          "Type": "Emby.Api.Library.LibraryService",
+          "Method": "Get",
+          "ILHash": "729899A945BB781FF40674A0C908941941FB4D23A646F4BFFC63EAA86FF2B4C7"
+        },
+        {
+          "Type": "Emby.Api.Library.LibraryService",
+          "Method": "GetCount",
+          "ILHash": "697454884000CCDA0FBFDEBF3FB0129B139C73E6CD481C135F977028C4A7BAD4"
+        },
+        {
+          "Type": "Emby.Api.Library.LibraryStructureService",
+          "Method": "Get",
+          "ILHash": "A130FD218887AD79D44F17B0D5E20D13EF38CB6DF187C44B2549DAF08EE0DFA7"
+        },
+        {
+          "Type": "Emby.Api.Library.LibraryStructureService",
+          "Method": "Get",
+          "ILHash": "1CB16F47752B4418AF677DC394DE78011FDB0E551F7BCA76BAD7924DB30BD2A0"
+        }
+      ]
+    },
+    {
+      "Name": "Emby.Codecs",
+      "Version": "4.10.1.0",
+      "SHA256": "8E623D9C9BCA2E7E4F8995FC5257070EA6B1333B0F6FB93F77EFF4B3C8F29812",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Codecs.Dxva",
+      "Version": "4.10.1.0",
+      "SHA256": "7ED961B2331E1F69149B0CC0BD321E4C400F12DADA0BC3F9BAABD76D4FBF7795",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Drawing",
+      "Version": "4.10.1.0",
+      "SHA256": "9B7D3C9E80381CE4469F27E19775172C3D475D469F3D3D467692C11301199321",
+      "Matches": [
+        {
+          "Type": "Emby.Drawing.ImageProcessor",
+          "Method": "GetResizedImageCachePath",
+          "ILHash": "7CD0EDE19C22395EF13DBA3A76A7F757A44EF8CD1E0FE21A8BC28BF5A0765F4D"
+        },
+        {
+          "Type": "Emby.Drawing.ImageProcessor",
+          "Method": "ProcessImage",
+          "ILHash": "F7FEFE139B5BD9049FE7DEC85A3490D6ADEC300CC3E4F401951726A21714B7AB"
+        },
+        {
+          "Type": "Emby.Drawing.ImageProcessor",
+          "Method": "GetCacheFilePath",
+          "ILHash": "6099FEDB8EC28B3BF08D9D055EC3160991107083A62FCD98506478261505A628"
+        },
+        {
+          "Type": ".\u003CProcessImage\u003Ed__50",
+          "Method": "MoveNext",
+          "ILHash": "F1118A4EBEABCC48A75D8658E1ACF6C70BE6C193D03B8A955B9A814269999B7B"
+        }
+      ]
+    },
+    {
+      "Name": "Emby.Drawing.LibVips",
+      "Version": "4.10.1.0",
+      "SHA256": "195B1AB1FBAFADE4F06C63C3B744054CCAEFE019DDA4FF1A5688A19BA5E0E85D",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Drawing.Skia",
+      "Version": "4.10.1.0",
+      "SHA256": "6AEFD67A2AF985118B1E5A81D7211C61F66AF1AD737F471D71E5F475D2502E94",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Extensions",
+      "Version": "4.10.1.0",
+      "SHA256": "A7C29BDAD1C80CC9590054AB3BD8D6551E9B1066D2EAE5B525B50D23948A30AF",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Ffmpeg.Base",
+      "Version": "4.10.1.0",
+      "SHA256": "42E11C12E724D19E84D9D2803448EEF4CDB17D0F55BC9A59056DE40E2C153FD8",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Ffmpeg",
+      "Version": "4.10.1.0",
+      "SHA256": "A610B11C5785ABBEB6AAEDD6E69249D8DD9E4BAD2189E718B1BFB4910F36E66D",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Ffmpeg.Lib",
+      "Version": "4.10.1.0",
+      "SHA256": "3F160FA03E390D6687D46E41926A0275265EB90ADA7607A71BEE07ADF1E649C1",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.LiveTV",
+      "Version": "4.10.1.0",
+      "SHA256": "758F8A08080D563C9651689D434580B480039D6A6ED70458346A60CF03B2E521",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.LocalMetadata",
+      "Version": "4.10.1.0",
+      "SHA256": "FF1E59092E83CAAA98CEB72549506E5F3F45AC3D5683C540CFDC46C49DBB1012",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Media.Model",
+      "Version": "4.10.1.0",
+      "SHA256": "68FC615A6A126B4A121B1D7C921E11394F7C254AA20D0BE7E75A18655643F57C",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Naming",
+      "Version": "4.10.1.0",
+      "SHA256": "78A6FADA5F49F91253D4D8EF306588F3341E00665EF8D9E9C575235432B4BBE9",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Notifications",
+      "Version": "4.10.1.0",
+      "SHA256": "8DC69886D18B7F9DA16FCEDAE8AFC1304A42441D1BC57F33115BB725EE5DC627",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Photos",
+      "Version": "4.10.1.0",
+      "SHA256": "A6118AC7095DFDCE7AB2A992A6914C0CE0BB278565441A697AAA1E82629DC33C",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.ProcessRun",
+      "Version": "4.10.1.0",
+      "SHA256": "903ACE4370272224AD4CAB56A0E805B477121AE88820976EB54B98B6BC22CF56",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Providers",
+      "Version": "4.10.1.0",
+      "SHA256": "09B76550A8782947C449F8311F226CE3D05F1BF3A38211C537BBCC89D0DB6985",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Resources",
+      "Version": "4.10.1.0",
+      "SHA256": "0338D7E3C919CEBE3F5157A6257FE44E23C770AFADC00BA534C450D673C07111",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Server.Connect",
+      "Version": "4.10.1.0",
+      "SHA256": "7053E87FB61EB2E4A285B0420D2D7AA81565770C8F23FDDA512CABD64A91A5AA",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Server.Implementations",
+      "Version": "4.10.1.0",
+      "SHA256": "924B39C008897B4EA9DE8B056BAEBFE59424CA2E831F32A4CF4F290E5E192C58",
+      "Matches": [
+        {
+          "Type": "Emby.Server.Implementations.Session.SessionWebSocketListener",
+          "Method": "ProcessMessage",
+          "ILHash": "78E5066A9C7F4D3FAB5C9C6A7E275F7048B50F4A8713D28ADFC851183FA5F454"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Services.EmptyHttpResult",
+          "Method": "WriteToAsync",
+          "ILHash": "78E5066A9C7F4D3FAB5C9C6A7E275F7048B50F4A8713D28ADFC851183FA5F454"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Services.ServiceController",
+          "Method": "Execute",
+          "ILHash": "8BA7FF537CD85A04E017952B69ED59468D65F557CCC3D62ACB14CBE24EF4F2CA"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetVirtualFolders",
+          "ILHash": "E13F2F1B97A829D9C1C54902741CFEE96AAC04C8E08FFC598554614DAF8E1EAB"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemList",
+          "ILHash": "4E4FC9A569C68970A8616F1B7CADBB564C18709DBE95748B8B08FEC0F56D3FFB"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemList",
+          "ILHash": "FD5A95C974B2E735682142BF65C1C827BA95A79D29B9B38E94B89C6FCE81ECBE"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemList",
+          "ILHash": "9743414BD403372893AF90D309A035DDC7DE0E7BD2D30970078A4BBC1D0A3EAE"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemList",
+          "ILHash": "105EDD92145B8A4A3883ECC833EB59D50EA418FD03C8728C120A075DDF32251D"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemIds",
+          "ILHash": "251E983E97E666ABB59FA35C2B18E7F1C6650D1447AB1724B361FA5FEB0BD752"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetStudios",
+          "ILHash": "2B8D25A2AC5D86A3C8E3D43745EB7BC717160FFE0D7B2989C1239549284E3C7E"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetAllGenres",
+          "ILHash": "9DA0A1592BD855346743AF16D75D077C915D6C86BD1B83E0E49D84F8343CBF67"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetGenres",
+          "ILHash": "DEC60207871102AFD013D71872EECEA2959D3E42BC3B7A1465A8FF10081943EC"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetTags",
+          "ILHash": "6699BD63996CAEF1D99D4CCBD046C270A9E4B3AFE458795F7AD317B77DEF1E7D"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemsResult",
+          "ILHash": "8E64EC37B04F6D9712A5EB68FF0F2C281C3CC96C141BAA2491303954306F069E"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemsResult",
+          "ILHash": "9F29F152CDC7F80F51CF66B059E0B4CF81168604DC5E7DFAB200193A6B3277A7"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemsResult",
+          "ILHash": "828A667BDD6F3D07D5799552211F3C332D5E1EE2D4E4F91CF6FE295588CD4D5A"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "CreateItem",
+          "ILHash": "9ACE3CB9AA9B9E8B3E139ABB3660A4112FF73DB10C3058D1B9C7E113D0EB491F"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "AddVirtualFolder",
+          "ILHash": "D1B76D1B04009C52581FE12CA8BD22C54159CC68D3704C58C53C7ACCEF7E5C2B"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "AddVirtualFolder",
+          "ILHash": "7E434D454448AD6C10712C378C5F2A2B4A70CD2B8EF615A22862D171E56B5025"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.UserViewManager",
+          "Method": "GetUserViews",
+          "ILHash": "BC63BE59DFC9A0DB61A41FC202EF808C878B13449CA40B825D2F1981D8159CF9"
+        },
+        {
+          "Type": "Emby.Server.Implementations.HttpServer.FileWriter",
+          "Method": "WriteToAsync",
+          "ILHash": "C727A5F81B37C15D6DFAB13492CCA85C01F8055AD7E4828C7FF0EDA9AE875F8C"
+        },
+        {
+          "Type": "Emby.Server.Implementations.HttpServer.HttpResultFactory",
+          "Method": "GetStaticFileResult",
+          "ILHash": "2F31DF16E9D4669F8D95C3945A1D88A705DF182AF7635397030FD0D061C8A782"
+        },
+        {
+          "Type": "Emby.Server.Implementations.HttpServer.HttpResultFactory",
+          "Method": "GetStaticResult",
+          "ILHash": "4C716F3B7CB1817B7B1B25FD24854AF16614FA227E09B1DA38D5F22A545ACB11"
+        },
+        {
+          "Type": "Emby.Server.Implementations.HttpServer.StreamWriter",
+          "Method": "WriteToAsync",
+          "ILHash": "6958BC6F05CD86EC1762FAF3AC2D12967D5C92C413A02E9A111A3374A9BA1C35"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Data.SqliteItemRepository",
+          "Method": "GetTags",
+          "ILHash": "10E642254294B22BEC2B7D4F69954DE5BF39582D9D20806404D411C2D1F18334"
+        },
+        {
+          "Type": ".\u003C\u003Ec__DisplayClass30_0",
+          "Method": "\u003CGetStaticFileResult\u003Eb__0",
+          "ILHash": "6EF1D70DA9C84A39140CC50C0166C4A8A9670A07ED10ECB324632061E649FC1B"
+        }
+      ]
+    },
+    {
+      "Name": "Emby.Server.MediaEncoding",
+      "Version": "4.10.1.0",
+      "SHA256": "EE400E035CE49BBDD28A71EAA734634B1937E37295A8E2EFC1767E117DBFC5B1",
+      "Matches": [
+        {
+          "Type": "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder",
+          "Method": "GetSubtitleJob",
+          "ILHash": "648D30A8D9F44E7D8BF0F4A0BDBEDB7DE587BEA890F3AC304F610E3AD885648A"
+        },
+        {
+          "Type": "Emby.Server.MediaEncoding.Api.PlaystateService",
+          "Method": "Post",
+          "ILHash": "4125023F4E13D0805D20F0DB56567B920889850F900FDFA5EAAD7FEA9F68B6B4"
+        },
+        {
+          "Type": ".\u003CGetSubtitleJob\u003Ed__20",
+          "Method": "MoveNext",
+          "ILHash": "71C777FEC44EF018D12A6E4A7B832F442C03FFE53C44ED4DDC9664423D194288"
+        },
+        {
+          "Type": ".\u003CProcessRequest\u003Ed__8",
+          "Method": "MoveNext",
+          "ILHash": "63B25855AF2D4B9E471FD2583870FA79CAAC2E9E07880CEA7A8CAA241CB7D3B6"
+        }
+      ]
+    },
+    {
+      "Name": "Emby.Server.Sync",
+      "Version": "4.10.1.0",
+      "SHA256": "8656B3BA3F1003303BF1A9DAB71227785CC235E5D4A6FD768EF8EB9161AD8E8D",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Server.Updater",
+      "Version": "4.10.1.0",
+      "SHA256": "E7B16331E1F0B53D9E7799ED545CAADF62B405D936D01266EA35780CC1143B52",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Sqlite",
+      "Version": "4.10.1.0",
+      "SHA256": "1F5767B1EE7810D084096922CBD0EC6996ABA9112952F858DBD9ADFA748D25B4",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Web",
+      "Version": "4.10.1.0",
+      "SHA256": "88E03D890C400F4B92EC11D0869985DAD56E70C78C4D209DE9FB4DA6B3F482E8",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Web.GenericEdit",
+      "Version": "4.10.1.0",
+      "SHA256": "80D97A14D7AB921B2379381353F71203BC3821A1DD0F54EB57E57D48FDF01915",
+      "Matches": []
+    },
+    {
+      "Name": "Emby.Web.GenericUI",
+      "Version": "4.10.1.0",
+      "SHA256": "1BAE3BDEAC2A93ECD6B4314FF2E563FFCB4BC39AF9147E9F36883DE5F8CC2F03",
+      "Matches": []
+    },
+    {
+      "Name": "EmbyServer",
+      "Version": "4.10.1.0",
+      "SHA256": "FF424101E860911B69AB795377913901C5D63254057D21F90527AA4A4B7025DC",
+      "Matches": []
+    },
+    {
+      "Name": "MediaBrowser.Controller",
+      "Version": "4.10.1.0",
+      "SHA256": "5ECF94897A7BBDBE28790F78D6597FA073C7329120F5216C71D4C70DF6B2B59D",
+      "Matches": [
+        {
+          "Type": "MediaBrowser.Controller.Entities.BaseItem",
+          "Method": "GetDefaultMediaSourceId",
+          "ILHash": "CD50AC8D2CB3110C3F0E52B356F4CAA4E6CE3422F3BF34E3042FE6A522C6DB22"
+        },
+        {
+          "Type": "MediaBrowser.Controller.Entities.BaseItem",
+          "Method": "GetAllItemsForMediaSources",
+          "ILHash": "D5DB52411B126F017217D8D1CE66E60A324D522F2F33D5B6FF0F4BA01D486E81"
+        }
+      ]
+    }
+  ],
+  "Limitation": "Offline raw IL hash inventory; neither complete contract match nor runtime support proof"
+}

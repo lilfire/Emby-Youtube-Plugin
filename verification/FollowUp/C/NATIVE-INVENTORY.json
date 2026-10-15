@@ -1,0 +1,781 @@
+﻿{
+    "Scope":  "Four selected native asset types, depth \u003c= 4; external interface implementations are not a complete transitive inventory",
+    "InspectionTruncated":  false,
+    "Methods":  [
+                    {
+                        "Method":  "System.Guid GetMD5(System.String)",
+                        "BodyHash":  "AAB616F79A61517F847EE0A8376D4491CC3AA14395251E54249BE99EA9D5EF72",
+                        "Depth":  0,
+                        "Type":  "MediaBrowser.Common.Extensions.BaseExtensions",
+                        "Calls":  [
+                                      "MediaBrowser.Common.Extensions.BaseExtensions::MediaBrowser.Model.Cryptography.ICryptoProvider get_CryptographyProvider()",
+                                      "MediaBrowser.Model.Cryptography.ICryptoProvider::System.Guid GetMD5(System.String)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Guid GetMD5(System.String)",
+                        "BodyHash":  "759B80A39D4B1C41D6619F8C46DE356BEFE3971AA5A841E432A9FADF9CF7F233",
+                        "Depth":  0,
+                        "Type":  "Emby.Server.Implementations.Cryptography.CryptographyProvider",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.String] GetSubtitles(System.String, MediaBrowser.Model.MediaInfo.MediaProtocol, Boolean, System.Collections.Generic.IDictionary`2[System.String,System.String], MediaBrowser.Model.Entities.MediaStream, System.String, Int64, Int64, Boolean, MediaBrowser.Model.Dlna.EncodingContext, System.Threading.CancellationToken)",
+                        "BodyHash":  "14668B80F899ECECB74FB6F699CB4A72D5E31C33B413B1C39807EBFA0CCD651E",
+                        "Depth":  0,
+                        "Type":  "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.Object] Any(Emby.Api.Subtitles.GetSubtitle)",
+                        "BodyHash":  "7022922FF8E2919BB59B9953224B662A2E905701F91857D4FCE569BB51C0EC64",
+                        "Depth":  0,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.Tuple`2[MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob,MediaBrowser.Model.Entities.MediaStream]] GetSubtitles(Emby.Api.Subtitles.GetSubtitle, Boolean, System.Threading.CancellationToken)",
+                        "BodyHash":  "D06BFCB666BB40339709D44078F0CBCB0A1B01900E4D90F15A273BAC0B15DC37",
+                        "Depth":  0,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Object Get(Emby.Api.Images.GetItemImage)",
+                        "BodyHash":  "BD7BAB13E13BC76DC83C26A2831F1242582413DD36470E306524E83A6CC6F6A2",
+                        "Depth":  0,
+                        "Type":  "Emby.Api.Images.ImageService",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Library.ILibraryManager get_LibraryManager()",
+                                      "Emby.Api.Images.GetItemImage::System.String get_Id()",
+                                      "Emby.Api.Images.GetItemImage::System.String get_MediaSourceId()",
+                                      "MediaBrowser.Controller.Library.ILibraryManager::Int64 GetInternalId(System.String, System.String)",
+                                      "Emby.Api.Images.ImageService::System.Threading.Tasks.Task`1[System.Object] GetImage(Emby.Api.Images.ImageRequest, Int64, MediaBrowser.Controller.Entities.BaseItem, Boolean)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Object Head(Emby.Api.Images.GetItemImage)",
+                        "BodyHash":  "8E2E114B4AF70B370BE2D75A0435344B26D0C658157D1855D1181DA29F645CD2",
+                        "Depth":  0,
+                        "Type":  "Emby.Api.Images.ImageService",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Library.ILibraryManager get_LibraryManager()",
+                                      "Emby.Api.Images.GetItemImage::System.String get_Id()",
+                                      "Emby.Api.Images.GetItemImage::System.String get_MediaSourceId()",
+                                      "MediaBrowser.Controller.Library.ILibraryManager::Int64 GetInternalId(System.String, System.String)",
+                                      "Emby.Api.Images.ImageService::System.Threading.Tasks.Task`1[System.Object] GetImage(Emby.Api.Images.ImageRequest, Int64, MediaBrowser.Controller.Entities.BaseItem, Boolean)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.String GetResizedImageCachePath()",
+                        "BodyHash":  "7CD0EDE19C22395EF13DBA3A76A7F757A44EF8CD1E0FE21A8BC28BF5A0765F4D",
+                        "Depth":  0,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "MediaBrowser.Common.Configuration.IApplicationPaths::System.String get_ImageCachePath()"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task ProcessImage(MediaBrowser.Controller.Drawing.ImageProcessingOptions, System.IO.Stream, System.Threading.CancellationToken)",
+                        "BodyHash":  "45C0AAA0AEBFCD6FC893B7BC94F5A4E2B3DA1D3F9295AC36DE3C39505489ABAD",
+                        "Depth":  0,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.Tuple`3[System.String,System.String,System.DateTimeOffset]] ProcessImage(MediaBrowser.Controller.Drawing.ImageProcessingOptions, System.Threading.CancellationToken)",
+                        "BodyHash":  "F7FEFE139B5BD9049FE7DEC85A3490D6ADEC300CC3E4F401951726A21714B7AB",
+                        "Depth":  0,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Void MoveNext()",
+                        "BodyHash":  "B9D852922020687EBA2460989DE8498FEC55026FDD245D929607B99C578D3B22",
+                        "Depth":  1,
+                        "Type":  "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder+\u003cGetSubtitles\u003ed__21",
+                        "Calls":  [
+                                      "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder::System.Threading.Tasks.Task`1[MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob] GetSubtitleJob(System.String, MediaBrowser.Model.MediaInfo.MediaProtocol, Boolean, System.Collections.Generic.IDictionary`2[System.String,System.String], MediaBrowser.Model.Entities.MediaStream, System.String, Int64, Int64, Boolean, Boolean, MediaBrowser.Model.Dlna.EncodingContext, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob::System.Threading.Tasks.Task WaitForCompletion(System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob::System.String get_OutputPath()"
+                                  ]
+                    },
+                    {
+                        "Method":  "Void MoveNext()",
+                        "BodyHash":  "64CF699B00B2ECDC0EF6C0167BDE586E3E1AB98096DB083776E6312FC52322DD",
+                        "Depth":  1,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003cAny\u003ed__9",
+                        "Calls":  [
+                                      "Emby.Api.Subtitles.GetSubtitle::System.String get_Format()",
+                                      "Emby.Api.Subtitles.GetSubtitle::Void set_Format(System.String)",
+                                      "Emby.Api.Subtitles.GetSubtitle::Boolean get_SetFilename()",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Library.ILibraryManager get_LibraryManager()",
+                                      "Emby.Api.Subtitles.GetSubtitle::System.String get_Id()",
+                                      "MediaBrowser.Controller.Library.LibraryManagerExtensions::MediaBrowser.Controller.Entities.BaseItem GetItemById(MediaBrowser.Controller.Library.ILibraryManager, System.String)",
+                                      "MediaBrowser.Controller.Library.IMediaSourceManager::System.Collections.Generic.List`1[MediaBrowser.Model.Dto.MediaSourceInfo] GetStaticMediaSources(MediaBrowser.Controller.Entities.BaseItem, Boolean, Boolean, MediaBrowser.Model.Dlna.DeviceProfile, MediaBrowser.Controller.Entities.User)",
+                                      "MediaBrowser.Model.Dto.MediaSourceInfo::System.Collections.Generic.List`1[MediaBrowser.Model.Entities.MediaStream] get_MediaStreams()",
+                                      "MediaBrowser.Model.Entities.MediaStream::System.String get_Path()",
+                                      "MediaBrowser.Controller.Api.BaseApiService::Void SetContentDisposition(System.Collections.Generic.IDictionary`2[System.String,System.String], System.String)",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Net.IHttpResultFactory get_ResultFactory()",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Model.Services.IRequest get_Request()",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_Path(System.String)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_ResponseHeaders(System.Collections.Generic.IDictionary`2[System.String,System.String])",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_AllowCacheTransform(Boolean)",
+                                      "MediaBrowser.Controller.Net.IHttpResultFactory::System.Threading.Tasks.Task`1[System.Object] GetStaticFileResult(MediaBrowser.Model.Services.IRequest, MediaBrowser.Controller.Net.StaticFileResultOptions)",
+                                      "Emby.Api.Subtitles.GetSubtitle::Boolean get_AddVttTimeMap()",
+                                      "Emby.Api.Subtitles.GetSubtitle::Boolean get_AllowChunkedResponse()",
+                                      "MediaBrowser.Model.Services.IRequest::System.Threading.CancellationToken get_CancellationToken()",
+                                      "Emby.Api.Subtitles.SubtitleService::System.Threading.Tasks.Task`1[System.Tuple`2[MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob,MediaBrowser.Model.Entities.MediaStream]] GetSubtitles(Emby.Api.Subtitles.GetSubtitle, Boolean, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob::System.String get_OutputPath()",
+                                      "MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob::System.Threading.Tasks.Task WaitForCompletion(System.Threading.CancellationToken)",
+                                      "MediaBrowser.Model.IO.IFileSystem::System.IO.Stream GetFileStream(System.String, MediaBrowser.Model.IO.FileOpenMode, MediaBrowser.Model.IO.FileAccessMode, MediaBrowser.Model.IO.FileOpenOptions)",
+                                      "Emby.Api.Subtitles.GetSubtitle::System.String get_VttTimestampMap()",
+                                      "MediaBrowser.Model.Net.MimeTypes::System.String GetMimeType(System.String)",
+                                      "MediaBrowser.Controller.Net.IHttpResultFactory::System.Object GetResult(MediaBrowser.Model.Services.IRequest, System.ReadOnlySpan`1[System.Char], System.String, System.Collections.Generic.IDictionary`2[System.String,System.String])",
+                                      "MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob::Boolean get_IsChunked()",
+                                      "MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob::Boolean get_IsCompleted()",
+                                      "MediaBrowser.Controller.Net.ProgressiveStreamWriterOptions::Void set_Path(System.String)",
+                                      "MediaBrowser.Controller.Net.ProgressiveStreamWriterOptions::Void set_IsCompleted(System.Func`1[System.Boolean])",
+                                      "MediaBrowser.Controller.Net.ProgressiveStreamWriterOptions::Void set_ResponseHeaders(System.Collections.Generic.Dictionary`2[System.String,System.String])",
+                                      "MediaBrowser.Controller.Net.IHttpResultFactory::System.Object GetProgressiveStreamWriterResult(MediaBrowser.Controller.Net.ProgressiveStreamWriterOptions)",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Model.Logging.ILogger get_Logger()",
+                                      "MediaBrowser.Model.Logging.ILogger::Void ErrorException(System.String, System.Exception, System.Object[])"
+                                  ]
+                    },
+                    {
+                        "Method":  "Void MoveNext()",
+                        "BodyHash":  "8CD930F4DDBEBADDC3B8C30CAC5CE036E2CE1A99E43103DF1730A5507BEDA9AF",
+                        "Depth":  1,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003cGetSubtitles\u003ed__10",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Library.ILibraryManager get_LibraryManager()",
+                                      "Emby.Api.Subtitles.GetSubtitle::System.String get_Id()",
+                                      "MediaBrowser.Controller.Library.LibraryManagerExtensions::MediaBrowser.Controller.Entities.BaseItem GetItemById(MediaBrowser.Controller.Library.ILibraryManager, System.String)",
+                                      "MediaBrowser.Controller.Library.IMediaSourceManager::System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[MediaBrowser.Model.Dto.MediaSourceInfo]] GetPlayackMediaSources(MediaBrowser.Controller.Entities.BaseItem, MediaBrowser.Controller.Entities.User, Boolean, Boolean, Boolean, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Model.Dto.MediaSourceInfo::System.Collections.Generic.List`1[MediaBrowser.Model.Entities.MediaStream] get_MediaStreams()",
+                                      "MediaBrowser.Model.Dto.MediaSourceInfo::System.String get_Path()",
+                                      "MediaBrowser.Model.Dto.MediaSourceInfo::MediaBrowser.Model.MediaInfo.MediaProtocol get_Protocol()",
+                                      "MediaBrowser.Model.Dto.MediaSourceInfo::MediaBrowser.Model.IO.FileSystemMetadata ToFileSystemMetadata()",
+                                      "MediaBrowser.Model.Dto.MediaSourceInfo::System.String get_Container()",
+                                      "MediaBrowser.Model.IO.IMediaMountManager::System.Threading.Tasks.Task`1[MediaBrowser.Model.IO.IMediaMount] Mount(MediaBrowser.Model.IO.FileSystemMetadata, System.String, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Model.IO.IMediaMount::MediaBrowser.Model.IO.FileSystemMetadata get_MountedPathInfo()",
+                                      "MediaBrowser.Model.IO.FileSystemMetadata::System.String get_FullName()",
+                                      "MediaBrowser.Model.IO.IMediaMount::MediaBrowser.Model.MediaInfo.MediaProtocol get_MountedProtocol()",
+                                      "MediaBrowser.Model.Entities.MediaStream::Boolean get_IsExternal()",
+                                      "MediaBrowser.Model.Dto.MediaSourceInfo::System.Collections.Generic.Dictionary`2[System.String,System.String] get_RequiredHttpHeaders()",
+                                      "Emby.Api.Subtitles.GetSubtitle::System.String get_Format()",
+                                      "Emby.Api.Subtitles.GetSubtitle::Int64 get_StartPositionTicks()",
+                                      "Emby.Api.Subtitles.GetSubtitle::System.Nullable`1[System.Int64] get_EndPositionTicks()",
+                                      "Emby.Api.Subtitles.GetSubtitle::Boolean get_CopyTimestamps()",
+                                      "MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder::System.Threading.Tasks.Task`1[MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob] GetSubtitleJob(System.String, MediaBrowser.Model.MediaInfo.MediaProtocol, Boolean, System.Collections.Generic.IDictionary`2[System.String,System.String], MediaBrowser.Model.Entities.MediaStream, System.String, Int64, Int64, Boolean, Boolean, MediaBrowser.Model.Dlna.EncodingContext, System.Threading.CancellationToken)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.Object] GetImage(Emby.Api.Images.ImageRequest, Int64, MediaBrowser.Controller.Entities.BaseItem, Boolean)",
+                        "BodyHash":  "5DCF3625998E6BD054C81131E7B223ED030DB139F44836C5AE0CDA0A03E8D6AA",
+                        "Depth":  1,
+                        "Type":  "Emby.Api.Images.ImageService",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Void MoveNext()",
+                        "BodyHash":  "CC1975DBE7C9E0FEC1DFB5D3FA09E9309E21278A416F7F6C0F5D46978DF7AC69",
+                        "Depth":  1,
+                        "Type":  "Emby.Drawing.ImageProcessor+\u003cProcessImage\u003ed__40",
+                        "Calls":  [
+                                      "Emby.Drawing.ImageProcessor::System.Threading.Tasks.Task`1[System.Tuple`3[System.String,System.String,System.DateTimeOffset]] ProcessImage(MediaBrowser.Controller.Drawing.ImageProcessingOptions, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Model.IO.IFileSystem::System.IO.Stream GetFileStream(System.String, MediaBrowser.Model.IO.FileOpenMode, MediaBrowser.Model.IO.FileAccessMode, MediaBrowser.Model.IO.FileShareMode, Int32, MediaBrowser.Model.IO.FileOpenOptions)"
+                                  ]
+                    },
+                    {
+                        "Method":  "Void MoveNext()",
+                        "BodyHash":  "F1118A4EBEABCC48A75D8658E1ACF6C70BE6C193D03B8A955B9A814269999B7B",
+                        "Depth":  1,
+                        "Type":  "Emby.Drawing.ImageProcessor+\u003cProcessImage\u003ed__50",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::MediaBrowser.Controller.Entities.ItemImageInfo get_Image()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::MediaBrowser.Controller.Entities.BaseItem get_Item()",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::Boolean get_IsLocalFile()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Int64 get_ItemId()",
+                                      "MediaBrowser.Controller.Library.ILibraryManager::MediaBrowser.Controller.Entities.BaseItem GetItemById(Int64)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Int32 get_ImageIndex()",
+                                      "MediaBrowser.Controller.Library.ILibraryManager::System.Threading.Tasks.Task`1[MediaBrowser.Controller.Entities.ItemImageInfo] ConvertImageToLocal(MediaBrowser.Controller.Entities.BaseItem, MediaBrowser.Controller.Entities.ItemImageInfo, Int32, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::System.String get_Path()",
+                                      "MediaBrowser.Model.IO.IFileSystem::Boolean ContainsSubPath(System.String, System.String)",
+                                      "MediaBrowser.Controller.IServerApplicationPaths::System.String get_InternalMetadataPath()",
+                                      "MediaBrowser.Controller.Library.ILibraryManager::System.String GetCachedImage(MediaBrowser.Controller.Entities.BaseItem, System.String)",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::System.DateTimeOffset get_DateModified()",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::Int32 get_Width()",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::Int32 get_Height()",
+                                      "Emby.Drawing.ImageProcessor::System.String GetInputFormat(System.String)",
+                                      "Emby.Drawing.ImageProcessor::System.Collections.Generic.List`1[MediaBrowser.Controller.Drawing.IImageEncoder] GetEncodersForImage(System.String)",
+                                      "MediaBrowser.Model.Net.MimeTypes::System.String GetMimeType(System.String)",
+                                      "Emby.Drawing.ImageProcessor::System.Collections.Generic.List`1[MediaBrowser.Model.Drawing.ImageFeatures] GetImageFeatures(System.String)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::MediaBrowser.Model.Drawing.ImageFormat[] get_SupportedOutputFormats()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::MediaBrowser.Controller.Providers.IImageEnhancer[] get_Enhancers()",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::Void set_DateModified(System.DateTimeOffset)",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::MediaBrowser.Model.Entities.ImageType get_Type()",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::Void set_Type(MediaBrowser.Model.Entities.ImageType)",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::Void set_Path(System.String)",
+                                      "Emby.Drawing.ImageProcessor::System.Threading.Tasks.Task`1[System.ValueTuple`3[System.String,System.DateTimeOffset,System.Collections.Generic.List`1[MediaBrowser.Model.Drawing.ImageFeatures]]] GetEnhancedImage(MediaBrowser.Controller.Entities.ItemImageInfo, System.Collections.Generic.List`1[MediaBrowser.Model.Drawing.ImageFeatures], MediaBrowser.Controller.Drawing.ImageProcessingOptions, MediaBrowser.Controller.Entities.BaseItem, Int32, MediaBrowser.Controller.Providers.IImageEnhancer[], System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::System.Nullable`1[MediaBrowser.Model.Drawing.ImageOrientation] get_Orientation()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Boolean HasDefaultOptions(System.String, System.Nullable`1[MediaBrowser.Model.Drawing.ImageSize])",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Boolean get_RequiresAutoOrientation()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Int32 get_Quality()",
+                                      "Emby.Drawing.ImageProcessor::MediaBrowser.Model.Drawing.ImageFormat GetOutputFormat(MediaBrowser.Model.Drawing.ImageFormat[], System.Collections.Generic.List`1[MediaBrowser.Model.Drawing.ImageFeatures], MediaBrowser.Controller.Drawing.ImageProcessingOptions)",
+                                      "Emby.Drawing.ImageProcessor::System.ValueTuple`2[System.String,System.DateTimeOffset] GetSupportedImage(MediaBrowser.Controller.Entities.ItemImageInfo, System.String, System.String, MediaBrowser.Controller.Drawing.IImageEncoder)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Int32 get_Width()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Int32 get_Height()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Int32 get_MaxWidth()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Int32 get_MaxHeight()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Int32 get_Blur()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::System.String get_BackgroundColor()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::System.String get_ForegroundLayer()",
+                                      "Emby.Drawing.ImageProcessor::System.String GetCacheFilePath(System.String, Int32, Int32, Int32, Int32, Int32, System.DateTimeOffset, MediaBrowser.Model.Drawing.ImageFormat, System.Nullable`1[System.Int32], System.String, System.String)",
+                                      "Emby.Drawing.ImageProcessor::Void CheckDisposed()",
+                                      "MediaBrowser.Model.IO.IFileSystem::Boolean FileExists(System.String)",
+                                      "MediaBrowser.Common.Configuration.IApplicationPaths::System.String get_TempDirectory()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Boolean get_CropWhiteSpace()",
+                                      "Emby.Drawing.ImageProcessor::Boolean ContainerSupportsTransparency(System.String)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_CropWhiteSpace(Boolean)",
+                                      "MediaBrowser.Controller.Drawing.IImageEncoder::System.String EncodeImage(System.String, System.String, Boolean, System.Nullable`1[MediaBrowser.Model.Drawing.ImageOrientation], Int32, MediaBrowser.Controller.Drawing.ImageProcessingOptions, MediaBrowser.Model.Drawing.ImageFormat)",
+                                      "MediaBrowser.Controller.Drawing.IImageEncoder::System.String get_Name()",
+                                      "MediaBrowser.Model.Logging.ILogger::Void Debug(System.String, System.Object[])",
+                                      "MediaBrowser.Model.IO.IFileSystem::System.String GetDirectoryName(System.String)",
+                                      "MediaBrowser.Model.IO.IFileSystem::Void CreateDirectory(System.String)",
+                                      "MediaBrowser.Model.IO.IFileSystem::Void MoveFile(System.String, System.String, Boolean)",
+                                      "Emby.Drawing.ImageProcessor::System.String GetMimeType(MediaBrowser.Model.Drawing.ImageFormat, System.String)",
+                                      "MediaBrowser.Model.IO.IFileSystem::System.DateTimeOffset GetLastWriteTimeUtc(System.String, Boolean)",
+                                      "MediaBrowser.Controller.Entities.BaseItem::MediaBrowser.Controller.Entities.ItemImageInfo[] get_ImageInfos()",
+                                      "MediaBrowser.Controller.Entities.BaseItem::MediaBrowser.Controller.Entities.ItemImageInfo GetImageInfo(MediaBrowser.Model.Entities.ImageType, Int32)",
+                                      "MediaBrowser.Controller.Entities.BaseItem::Void RemoveImage(MediaBrowser.Controller.Entities.ItemImageInfo)",
+                                      "MediaBrowser.Controller.Entities.BaseItem::Void UpdateToRepository(MediaBrowser.Controller.Library.ItemUpdateType)",
+                                      "MediaBrowser.Model.Logging.ILogger::Void ErrorException(System.String, System.Exception, System.Object[])"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob] GetSubtitleJob(System.String, MediaBrowser.Model.MediaInfo.MediaProtocol, Boolean, System.Collections.Generic.IDictionary`2[System.String,System.String], MediaBrowser.Model.Entities.MediaStream, System.String, Int64, Int64, Boolean, Boolean, MediaBrowser.Model.Dlna.EncodingContext, System.Threading.CancellationToken)",
+                        "BodyHash":  "648D30A8D9F44E7D8BF0F4A0BDBEDB7DE587BEA890F3AC304F610E3AD885648A",
+                        "Depth":  2,
+                        "Type":  "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Void .ctor()",
+                        "BodyHash":  "3147656800E2C89097A17CDD8AD86F40106372E40659EDE3772EC4B7576A702D",
+                        "Depth":  2,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003c\u003ec__DisplayClass9_0",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean \u003cAny\u003eb__0(MediaBrowser.Model.Dto.MediaSourceInfo)",
+                        "BodyHash":  "A84EF90E4B968F261ACE7449B33F28A20445CAEBA887FC84712ED125656717A2",
+                        "Depth":  2,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003c\u003ec__DisplayClass9_0",
+                        "Calls":  [
+                                      "MediaBrowser.Model.Dto.MediaSourceInfo::System.String get_Id()",
+                                      "Emby.Api.Subtitles.GetSubtitle::System.String get_MediaSourceId()"
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean \u003cAny\u003eb__1(MediaBrowser.Model.Entities.MediaStream)",
+                        "BodyHash":  "C6188080D4B4332ACB6A981C9EC26306B8B291E412562D6EB18E931C2843D5D1",
+                        "Depth":  2,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003c\u003ec__DisplayClass9_0",
+                        "Calls":  [
+                                      "MediaBrowser.Model.Entities.MediaStream::MediaBrowser.Model.Entities.MediaStreamType get_Type()",
+                                      "MediaBrowser.Model.Entities.MediaStream::Int32 get_Index()",
+                                      "Emby.Api.Subtitles.GetSubtitle::Int32 get_Index()"
+                                  ]
+                    },
+                    {
+                        "Method":  "Void .ctor()",
+                        "BodyHash":  "3147656800E2C89097A17CDD8AD86F40106372E40659EDE3772EC4B7576A702D",
+                        "Depth":  2,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003c\u003ec__DisplayClass9_1",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean \u003cAny\u003eb__2()",
+                        "BodyHash":  "E0FF23AEAF78982E2705BDA59C8677B37F2F9C290D1BE6CB86DC65B94DD78C26",
+                        "Depth":  2,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003c\u003ec__DisplayClass9_1",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.MediaEncoding.ISubtitleConversionJob::Boolean get_IsCompleted()"
+                                  ]
+                    },
+                    {
+                        "Method":  "Void .ctor()",
+                        "BodyHash":  "3147656800E2C89097A17CDD8AD86F40106372E40659EDE3772EC4B7576A702D",
+                        "Depth":  2,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003c\u003ec__DisplayClass10_0",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean \u003cGetSubtitles\u003eb__0(MediaBrowser.Model.Dto.MediaSourceInfo)",
+                        "BodyHash":  "CC1138B2C580A8A6DAA131DE376EF0EAEC5293D3698C2C843111561DA1307410",
+                        "Depth":  2,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003c\u003ec__DisplayClass10_0",
+                        "Calls":  [
+                                      "MediaBrowser.Model.Dto.MediaSourceInfo::System.String get_Id()",
+                                      "Emby.Api.Subtitles.GetSubtitle::System.String get_MediaSourceId()"
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean \u003cGetSubtitles\u003eb__1(MediaBrowser.Model.Entities.MediaStream)",
+                        "BodyHash":  "86899B53333CA546961894A96B8D1226D8C4570DDC536AE9CF022E3CA5E2762D",
+                        "Depth":  2,
+                        "Type":  "Emby.Api.Subtitles.SubtitleService+\u003c\u003ec__DisplayClass10_0",
+                        "Calls":  [
+                                      "MediaBrowser.Model.Entities.MediaStream::MediaBrowser.Model.Entities.MediaStreamType get_Type()",
+                                      "MediaBrowser.Model.Entities.MediaStream::Int32 get_Index()",
+                                      "Emby.Api.Subtitles.GetSubtitle::Int32 get_Index()"
+                                  ]
+                    },
+                    {
+                        "Method":  "Void MoveNext()",
+                        "BodyHash":  "94B70D1ACA162B79FD9CAD5E1B6311A4E184366F0C7A51CFD59D7CA70AFAEFDB",
+                        "Depth":  2,
+                        "Type":  "Emby.Api.Images.ImageService+\u003cGetImage\u003ed__22",
+                        "Calls":  [
+                                      "Emby.Api.Images.DeleteImageRequest::MediaBrowser.Model.Entities.ImageType get_Type()",
+                                      "Emby.Api.Images.ImageRequest::System.String get_Tag()",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Model.Services.IRequest get_Request()",
+                                      "MediaBrowser.Model.Services.IRequest::System.Threading.CancellationToken get_CancellationToken()",
+                                      "Emby.Api.Images.ImageService::System.Threading.Tasks.Task`1[System.Object] GetChapterImageResult(Emby.Api.Images.ImageRequest, Int64, Boolean, System.Nullable`1[System.TimeSpan], System.Threading.CancellationToken)",
+                                      "Emby.Api.Images.ImageRequest::Int64 get_PositionTicks()",
+                                      "Emby.Api.Images.ImageService::System.Threading.Tasks.Task`1[System.Object] GetThumbnailImageResult(Emby.Api.Images.ImageRequest, Int64, Int64, Boolean, System.Nullable`1[System.TimeSpan], Boolean, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Library.ILibraryManager get_LibraryManager()",
+                                      "Emby.Api.Images.ImageRequest::Int32 get_Index()",
+                                      "MediaBrowser.Controller.Library.ILibraryManager::System.Tuple`2[System.Type,MediaBrowser.Controller.Entities.ItemImageInfo] GetTypeAndImageInfo(Int64, MediaBrowser.Model.Entities.ImageType, Int32, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.Library.ILibraryManager::MediaBrowser.Controller.Entities.ItemImageInfo GetImageInfo(Int64, MediaBrowser.Model.Entities.ImageType, Int32, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.Entities.BaseItem::MediaBrowser.Controller.Entities.ItemImageInfo GetImageInfo(MediaBrowser.Model.Entities.ImageType, Int32)",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Net.IAuthorizationContext get_AuthorizationContext()",
+                                      "MediaBrowser.Controller.Net.IAuthorizationContext::MediaBrowser.Controller.Net.AuthorizationInfo GetAuthorizationInfo(MediaBrowser.Model.Services.IRequest)",
+                                      "MediaBrowser.Controller.Net.AuthorizationInfo::System.String get_Token()",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Configuration.IServerConfigurationManager get_ConfigurationManager()",
+                                      "MediaBrowser.Controller.Configuration.IServerConfigurationManager::MediaBrowser.Model.Configuration.ServerConfiguration get_Configuration()",
+                                      "MediaBrowser.Model.Configuration.ServerConfiguration::Boolean get_ValidateImageTags()",
+                                      "Emby.Api.Images.ImageRequest::Boolean get_EnableImageEnhancers()",
+                                      "MediaBrowser.Controller.Drawing.IImageProcessor::MediaBrowser.Controller.Providers.IImageEnhancer[] get_ImageEnhancers()",
+                                      "MediaBrowser.Controller.Library.ILibraryManager::MediaBrowser.Controller.Entities.BaseItem GetItemById(Int64)",
+                                      "MediaBrowser.Controller.Drawing.IImageProcessor::System.String GetImageCacheTag(MediaBrowser.Controller.Entities.BaseItem, MediaBrowser.Controller.Entities.ItemImageInfo)",
+                                      "MediaBrowser.Controller.Drawing.IImageProcessor::System.String GetImageCacheTag(MediaBrowser.Controller.Entities.ItemImageInfo)",
+                                      "MediaBrowser.Controller.Entities.BaseItem::System.String get_Name()",
+                                      "MediaBrowser.Controller.Drawing.IImageProcessor::MediaBrowser.Controller.Providers.IImageEnhancer[] GetSupportedEnhancers(MediaBrowser.Controller.Entities.BaseItem, MediaBrowser.Model.Entities.ImageType)",
+                                      "Emby.Api.Images.ImageRequest::System.Nullable`1[System.Boolean] get_CropWhitespace()",
+                                      "Emby.Api.Images.ImageService::MediaBrowser.Model.Drawing.ImageFormat[] GetOutputFormats(Emby.Api.Images.ImageRequest)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_CropWhiteSpace(Boolean)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_Enhancers(MediaBrowser.Controller.Providers.IImageEnhancer[])",
+                                      "Emby.Api.Images.ImageRequest::Int32 get_Height()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_Height(Int32)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_ImageIndex(Int32)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_Image(MediaBrowser.Controller.Entities.ItemImageInfo)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_Item(MediaBrowser.Controller.Entities.BaseItem)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_ItemId(Int64)",
+                                      "Emby.Api.Images.ImageRequest::Int32 get_MaxHeight()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_MaxHeight(Int32)",
+                                      "Emby.Api.Images.ImageRequest::Int32 get_MaxWidth()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_MaxWidth(Int32)",
+                                      "Emby.Api.Images.ImageRequest::Int32 get_Quality()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_Quality(Int32)",
+                                      "Emby.Api.Images.ImageRequest::Int32 get_Width()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_Width(Int32)",
+                                      "Emby.Api.Images.ImageRequest::Int32 get_Blur()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_Blur(Int32)",
+                                      "Emby.Api.Images.ImageRequest::System.String get_BackgroundColor()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_BackgroundColor(System.String)",
+                                      "Emby.Api.Images.ImageRequest::System.String get_ForegroundLayer()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_ForegroundLayer(System.String)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_SupportedOutputFormats(MediaBrowser.Model.Drawing.ImageFormat[])",
+                                      "Emby.Api.Images.ImageRequest::Boolean get_AutoOrient()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_RequiresAutoOrientation(Boolean)",
+                                      "Emby.Api.Images.ImageRequest::Boolean get_KeepAnimation()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_KeepAnimation(Boolean)",
+                                      "MediaBrowser.Controller.Drawing.IImageProcessor::System.Threading.Tasks.Task`1[System.Tuple`3[System.String,System.String,System.DateTimeOffset]] ProcessImage(MediaBrowser.Controller.Drawing.ImageProcessingOptions, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Net.IHttpResultFactory get_ResultFactory()",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_CacheDuration(System.Nullable`1[System.TimeSpan])",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_ResponseHeaders(System.Collections.Generic.IDictionary`2[System.String,System.String])",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_ContentType(System.String)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_DateLastModified(System.Nullable`1[System.DateTimeOffset])",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_IsHeadRequest(Boolean)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_Path(System.String)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_FileShare(MediaBrowser.Model.IO.FileShareMode)",
+                                      "MediaBrowser.Controller.Net.IHttpResultFactory::System.Threading.Tasks.Task`1[System.Object] GetStaticFileResult(MediaBrowser.Model.Services.IRequest, MediaBrowser.Controller.Net.StaticFileResultOptions)"
+                                  ]
+                    },
+                    {
+                        "Method":  "Void .ctor()",
+                        "BodyHash":  "8C2DE4712723569151D1DD1114B66B67D151C037ABD723E960BADE7836C0B9DF",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor+\u003c\u003ec__DisplayClass50_0",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.String GetInputFormat(System.String)",
+                        "BodyHash":  "2A6E40BEF3540ACC112D07FC81291D488F0BE86EAD406A25458048C6CBDC8352",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Collections.Generic.List`1[MediaBrowser.Controller.Drawing.IImageEncoder] GetEncodersForImage(System.String)",
+                        "BodyHash":  "362414BBFC5642816C98D583F44EB3F984B5362EF3F02A8971B98F0E750C3EFA",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Drawing.IImageEncoder::Boolean get_SupportsImageEncoding()",
+                                      "MediaBrowser.Controller.Drawing.IImageEncoder::System.String[] get_SupportedInputFormats()"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Collections.Generic.List`1[MediaBrowser.Model.Drawing.ImageFeatures] GetImageFeatures(System.String)",
+                        "BodyHash":  "9344B313748F27ED0C80F84DB6008DD23CC5B07F3F1A7B416DA599E53DD0E8A7",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "Emby.Drawing.ImageProcessor::Boolean ContainerSupportsAnimation(System.String)",
+                                      "Emby.Drawing.ImageProcessor::Boolean ContainerSupportsTransparency(System.String)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.ValueTuple`3[System.String,System.DateTimeOffset,System.Collections.Generic.List`1[MediaBrowser.Model.Drawing.ImageFeatures]]] GetEnhancedImage(MediaBrowser.Controller.Entities.ItemImageInfo, System.Collections.Generic.List`1[MediaBrowser.Model.Drawing.ImageFeatures], MediaBrowser.Controller.Drawing.ImageProcessingOptions, MediaBrowser.Controller.Entities.BaseItem, Int32, MediaBrowser.Controller.Providers.IImageEnhancer[], System.Threading.CancellationToken)",
+                        "BodyHash":  "A2CFE1D1B3464BCAEBB0DF7ECEB60312A2CF43D9F04742E2FCC81339AF178931",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "MediaBrowser.Model.Drawing.ImageFormat GetOutputFormat(MediaBrowser.Model.Drawing.ImageFormat[], System.Collections.Generic.List`1[MediaBrowser.Model.Drawing.ImageFeatures], MediaBrowser.Controller.Drawing.ImageProcessingOptions)",
+                        "BodyHash":  "0A14672313A37951397328DF0D4D573607A68FB023E754767CD92998F5FD867B",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "Emby.Drawing.ImageProcessor::MediaBrowser.Model.Drawing.ImageFormat[] GetSupportedImageOutputFormats()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Boolean get_KeepAnimation()"
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean \u003cProcessImage\u003eb__0(MediaBrowser.Controller.Drawing.IImageEncoder)",
+                        "BodyHash":  "72A857C70B3019A0263043E2FA4D93474218BAFB4AB6A5BE039D81B8C2DDB2DA",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor+\u003c\u003ec__DisplayClass50_0",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Drawing.IImageEncoder::MediaBrowser.Model.Drawing.ImageFormat[] get_SupportedOutputFormats()"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.ValueTuple`2[System.String,System.DateTimeOffset] GetSupportedImage(MediaBrowser.Controller.Entities.ItemImageInfo, System.String, System.String, MediaBrowser.Controller.Drawing.IImageEncoder)",
+                        "BodyHash":  "FE09ECED185E7C6CEBB931D98B8F18EEBE9B1E968CC0C577F402761FA63CE757",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::System.DateTimeOffset get_DateModified()",
+                                      "MediaBrowser.Controller.Drawing.IImageEncoder::System.String[] get_SupportedInputFormats()",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::System.String get_Path()",
+                                      "MediaBrowser.Common.Extensions.BaseExtensions::System.Guid GetMD5(System.String)",
+                                      "Emby.Drawing.ImageProcessor::System.String GetConvertedImageCachePath()",
+                                      "MediaBrowser.Controller.Drawing.IImageEncoder::Boolean get_SupportsImageEncoding()",
+                                      "MediaBrowser.Controller.Drawing.IImageEncoder::MediaBrowser.Model.Drawing.ImageFormat[] get_SupportedOutputFormats()",
+                                      "MediaBrowser.Model.IO.IFileSystem::MediaBrowser.Model.IO.FileSystemMetadata GetFileInfo(System.String)",
+                                      "MediaBrowser.Model.IO.FileSystemMetadata::Boolean get_Exists()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_Quality(Int32)",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Void set_Image(MediaBrowser.Controller.Entities.ItemImageInfo)",
+                                      "MediaBrowser.Controller.Drawing.IImageEncoder::System.String EncodeImage(System.String, System.String, Boolean, System.Nullable`1[MediaBrowser.Model.Drawing.ImageOrientation], Int32, MediaBrowser.Controller.Drawing.ImageProcessingOptions, MediaBrowser.Model.Drawing.ImageFormat)",
+                                      "MediaBrowser.Model.IO.IFileSystem::System.DateTimeOffset GetLastWriteTimeUtc(System.String)",
+                                      "MediaBrowser.Model.IO.FileSystemMetadata::System.DateTimeOffset get_LastWriteTimeUtc()"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.String GetCacheFilePath(System.String, Int32, Int32, Int32, Int32, Int32, System.DateTimeOffset, MediaBrowser.Model.Drawing.ImageFormat, System.Nullable`1[System.Int32], System.String, System.String)",
+                        "BodyHash":  "6099FEDB8EC28B3BF08D9D055EC3160991107083A62FCD98506478261505A628",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "Emby.Drawing.ImageProcessor::System.String GetResizedImageCachePath()",
+                                      "Emby.Drawing.ImageProcessor::System.String GetCachePath(System.String, System.String, System.String)"
+                                  ]
+                    },
+                    {
+                        "Method":  "Void CheckDisposed()",
+                        "BodyHash":  "3A57822E3A08C7F668E0546F7BABBF90B7DA5A1DFE11A6150081F5ED6F7773DD",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean ContainerSupportsTransparency(System.String)",
+                        "BodyHash":  "E7A403239B674CA4BD432D6D9EB357F350A68C2ADBDC82DF768207CF8CE5F2DA",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.String GetMimeType(MediaBrowser.Model.Drawing.ImageFormat, System.String)",
+                        "BodyHash":  "A633CA59BCE2974763B6301806A1C825B1DEF5D60BE4D0E4261CB4D4423DC67C",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "MediaBrowser.Model.Net.MimeTypes::System.String GetMimeType(System.String)"
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean \u003cProcessImage\u003eb__1(MediaBrowser.Controller.Entities.ItemImageInfo)",
+                        "BodyHash":  "D5A1C5652EDC052B6BDF1331EAC53B3A94CF67E77341B46E9C160ABD12FCFC61",
+                        "Depth":  2,
+                        "Type":  "Emby.Drawing.ImageProcessor+\u003c\u003ec__DisplayClass50_0",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Void MoveNext()",
+                        "BodyHash":  "71C777FEC44EF018D12A6E4A7B832F442C03FFE53C44ED4DDC9664423D194288",
+                        "Depth":  3,
+                        "Type":  "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder+\u003cGetSubtitleJob\u003ed__20",
+                        "Calls":  [
+                                      "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder::System.Threading.Tasks.Task`1[Emby.Server.MediaEncoding.Subtitles.SubtitleConversionJob] GetReadableFile(System.String, MediaBrowser.Model.MediaInfo.MediaProtocol, Boolean, System.Collections.Generic.IDictionary`2[System.String,System.String], MediaBrowser.Model.Entities.MediaStream, System.String, Int64, Int64, Boolean, Boolean, MediaBrowser.Model.Dlna.EncodingContext, System.Threading.CancellationToken)",
+                                      "Emby.Server.MediaEncoding.Subtitles.SubtitleConversionJob::System.String get_OutputPath()",
+                                      "Emby.Server.MediaEncoding.Subtitles.SubtitleConversionJob::System.String get_OutputFormat()",
+                                      "Emby.Server.MediaEncoding.Subtitles.SubtitleConversionJob::System.Threading.Tasks.Task WaitForCompletion(System.Threading.CancellationToken)",
+                                      "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder::System.Threading.Tasks.Task`1[System.String] ConvertSubtitlesToJson(System.String, Boolean, System.String, System.Threading.CancellationToken)",
+                                      "Emby.Server.MediaEncoding.Subtitles.SubtitleConversionJob::Void set_OutputFormat(System.String)",
+                                      "Emby.Server.MediaEncoding.Subtitles.SubtitleConversionJob::Void set_Protocol(MediaBrowser.Model.MediaInfo.MediaProtocol)",
+                                      "Emby.Server.MediaEncoding.Subtitles.SubtitleConversionJob::Void set_OutputPath(System.String)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.Object] GetChapterImageResult(Emby.Api.Images.ImageRequest, Int64, Boolean, System.Nullable`1[System.TimeSpan], System.Threading.CancellationToken)",
+                        "BodyHash":  "6B1D7AD3287EB7F2B7B5742C025513F7F63780010CBA4201ACB7C3F068E82ED3",
+                        "Depth":  3,
+                        "Type":  "Emby.Api.Images.ImageService",
+                        "Calls":  [
+                                      "Emby.Api.Images.ImageRequest::Int32 get_Index()",
+                                      "MediaBrowser.Controller.Persistence.IItemRepository::MediaBrowser.Model.Entities.ChapterInfo GetChapter(Int64, Int32, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Model.Entities.ChapterInfo::System.String get_ImagePath()",
+                                      "Emby.Api.Images.DeleteImageRequest::MediaBrowser.Model.Entities.ImageType get_Type()",
+                                      "MediaBrowser.Model.Entities.ChapterInfo::Int64 get_StartPositionTicks()",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Model.Services.IRequest get_Request()",
+                                      "MediaBrowser.Model.Services.IRequest::System.Threading.CancellationToken get_CancellationToken()",
+                                      "Emby.Api.Images.ImageService::System.Threading.Tasks.Task`1[System.Object] GetThumbnailImageResult(Emby.Api.Images.ImageRequest, Int64, Int64, Boolean, System.Nullable`1[System.TimeSpan], Boolean, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Model.Entities.ChapterInfo::System.DateTimeOffset get_ImageDateModified()",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::Void set_DateModified(System.DateTimeOffset)",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::Void set_Path(System.String)",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::Void set_Type(MediaBrowser.Model.Entities.ImageType)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.Object] GetThumbnailImageResult(Emby.Api.Images.ImageRequest, Int64, Int64, Boolean, System.Nullable`1[System.TimeSpan], Boolean, System.Threading.CancellationToken)",
+                        "BodyHash":  "A2B77158D547F702FF88945A12691E98852E850944C47FB86989B0DE7B124439",
+                        "Depth":  3,
+                        "Type":  "Emby.Api.Images.ImageService",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "MediaBrowser.Model.Drawing.ImageFormat[] GetOutputFormats(Emby.Api.Images.ImageRequest)",
+                        "BodyHash":  "8607176FA8A4E22E47C1B18252DF18DC32AC65C4ED4AD1F87928D8C4D4CE284A",
+                        "Depth":  3,
+                        "Type":  "Emby.Api.Images.ImageService",
+                        "Calls":  [
+                                      "Emby.Api.Images.ImageRequest::System.String get_Format()",
+                                      "Emby.Api.Images.ImageService::MediaBrowser.Model.Drawing.ImageFormat[] GetClientSupportedFormats()"
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean ContainerSupportsAnimation(System.String)",
+                        "BodyHash":  "F57F9A084E0D0810C966ADF8454D30030E5D0A308651FB720EB174B93CFD53C8",
+                        "Depth":  3,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Void MoveNext()",
+                        "BodyHash":  "D52F3B7F763733CAF8E93B3D95C64B0922B5E68D43C994D287BC2F242AD1A0EB",
+                        "Depth":  3,
+                        "Type":  "Emby.Drawing.ImageProcessor+\u003cGetEnhancedImage\u003ed__68",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::System.String get_Path()",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::System.DateTimeOffset get_DateModified()",
+                                      "MediaBrowser.Controller.Drawing.ImageProcessingOptions::Boolean get_KeepAnimation()",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::MediaBrowser.Model.Entities.ImageType get_Type()",
+                                      "Emby.Drawing.ImageProcessor::System.String GetImageCacheTag(MediaBrowser.Controller.Entities.BaseItem, MediaBrowser.Controller.Entities.ItemImageInfo, MediaBrowser.Controller.Providers.IImageEnhancer[])",
+                                      "Emby.Drawing.ImageProcessor::System.Threading.Tasks.Task`1[System.ValueTuple`2[System.String,System.Boolean]] GetEnhancedImageInternal(System.String, MediaBrowser.Controller.Entities.BaseItem, MediaBrowser.Model.Entities.ImageType, Int32, MediaBrowser.Controller.Providers.IImageEnhancer[], System.String, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Model.IO.IFileSystem::System.DateTimeOffset GetLastWriteTimeUtc(System.String)",
+                                      "MediaBrowser.Model.Logging.ILogger::Void ErrorException(System.String, System.Exception, System.Object[])"
+                                  ]
+                    },
+                    {
+                        "Method":  "MediaBrowser.Model.Drawing.ImageFormat[] GetSupportedImageOutputFormats()",
+                        "BodyHash":  "FC7570822398716AE2142C23EB4EBC75EF675998FC0F4672E81FD647DABE9B4D",
+                        "Depth":  3,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean \u003cGetOutputFormat\u003eb__52_1(MediaBrowser.Model.Drawing.ImageFormat)",
+                        "BodyHash":  "9D4BF79E556522CEF45E5D0C76C20423AF939DA1F519DBBAD2D73A11B4937C29",
+                        "Depth":  3,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "Emby.Drawing.ImageProcessor::Boolean ContainerSupportsAnimation(System.String)"
+                                  ]
+                    },
+                    {
+                        "Method":  "Boolean \u003cGetOutputFormat\u003eb__52_0(MediaBrowser.Model.Drawing.ImageFormat)",
+                        "BodyHash":  "2AFC5A81D700A98A76AE99B00E4DF68CC817069B6859DBD59D673FF5F7DB2576",
+                        "Depth":  3,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "Emby.Drawing.ImageProcessor::Boolean ContainerSupportsTransparency(System.String)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.String GetConvertedImageCachePath()",
+                        "BodyHash":  "38008087EAF4F0F74894A88C476ED9724C8F000A96A9B28E60E249EBF5FE5DF6",
+                        "Depth":  3,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "MediaBrowser.Common.Configuration.IApplicationPaths::System.String get_ImageCachePath()"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.String GetCachePath(System.String, System.String, System.String)",
+                        "BodyHash":  "EF3395C3ABF7C27DA5A6784C4EB9E3E2FF83FEA25E0494F0FE5E8C8A07503DC1",
+                        "Depth":  3,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "MediaBrowser.Common.Extensions.BaseExtensions::System.Guid GetMD5(System.String)",
+                                      "Emby.Drawing.ImageProcessor::System.String GetCachePath(System.String, System.String)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[Emby.Server.MediaEncoding.Subtitles.SubtitleConversionJob] GetReadableFile(System.String, MediaBrowser.Model.MediaInfo.MediaProtocol, Boolean, System.Collections.Generic.IDictionary`2[System.String,System.String], MediaBrowser.Model.Entities.MediaStream, System.String, Int64, Int64, Boolean, Boolean, MediaBrowser.Model.Dlna.EncodingContext, System.Threading.CancellationToken)",
+                        "BodyHash":  "E50D33800C7DDC9C50C5296C8F1B9B3792742508B4F269F6827CEE51F1ABBC69",
+                        "Depth":  4,
+                        "Type":  "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.String] ConvertSubtitlesToJson(System.String, Boolean, System.String, System.Threading.CancellationToken)",
+                        "BodyHash":  "984A8D7C31E55FE05FA65D47EABED3F09692A5B850BD232BF41836D9FBA81835",
+                        "Depth":  4,
+                        "Type":  "Emby.Server.MediaEncoding.Subtitles.SubtitleEncoder",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "Void MoveNext()",
+                        "BodyHash":  "0B1E398F0B1519A013DA355D50E559302C0210E52F8E41686DB83E724DD701E7",
+                        "Depth":  4,
+                        "Type":  "Emby.Api.Images.ImageService+\u003cGetThumbnailImageResult\u003ed__24",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Library.ILibraryManager get_LibraryManager()",
+                                      "MediaBrowser.Controller.Library.ILibraryManager::System.Tuple`2[System.Guid,System.String] GetGuidAndPath(Int64, System.Threading.CancellationToken)",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Model.Logging.ILogger get_Logger()",
+                                      "Emby.Api.Images.ImageRequest::Int32 get_MaxWidth()",
+                                      "MediaBrowser.Controller.Entities.Video::MediaBrowser.Controller.Entities.ThumbnailSetInfo[] GetThumbnailSetInfos(System.String, System.Guid, MediaBrowser.Controller.Providers.IDirectoryService, Int32, Boolean)",
+                                      "MediaBrowser.Controller.Entities.ThumbnailSetInfo::System.String get_Path()",
+                                      "MediaBrowser.Model.IO.IFileSystem::System.DateTimeOffset GetLastWriteTimeUtc(System.String, Boolean)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_CacheDuration(System.Nullable`1[System.TimeSpan])",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_ResponseHeaders(System.Collections.Generic.IDictionary`2[System.String,System.String])",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_DateLastModified(System.Nullable`1[System.DateTimeOffset])",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_IsHeadRequest(Boolean)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_Path(System.String)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_ContentType(System.String)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_ForcePartialFileCopy(Boolean)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_ContentFactory(System.Func`4[System.Int64,System.Int64,System.Threading.CancellationToken,System.Threading.Tasks.Task`1[MediaBrowser.Model.IO.StreamHandler]])",
+                                      "MediaBrowser.Common.Extensions.BaseExtensions::System.Guid GetMD5(System.String)",
+                                      "MediaBrowser.Controller.Net.StaticResultOptions::Void set_CacheKey(System.Guid)",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Controller.Net.IHttpResultFactory get_ResultFactory()",
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Model.Services.IRequest get_Request()",
+                                      "MediaBrowser.Controller.Net.IHttpResultFactory::System.Threading.Tasks.Task`1[System.Object] GetStaticResult(MediaBrowser.Model.Services.IRequest, MediaBrowser.Controller.Net.StaticResultOptions)"
+                                  ]
+                    },
+                    {
+                        "Method":  "MediaBrowser.Model.Drawing.ImageFormat[] GetClientSupportedFormats()",
+                        "BodyHash":  "8E627FF98A46F5205752CA9789A35C37C1A221B48C0E56615E29AA8FB8618D5E",
+                        "Depth":  4,
+                        "Type":  "Emby.Api.Images.ImageService",
+                        "Calls":  [
+                                      "MediaBrowser.Controller.Api.BaseApiService::MediaBrowser.Model.Services.IRequest get_Request()",
+                                      "MediaBrowser.Model.Services.IRequest::System.String[] get_AcceptTypes()",
+                                      "MediaBrowser.Model.Services.IRequest::MediaBrowser.Model.Services.QueryParamCollection get_QueryString()",
+                                      "MediaBrowser.Model.Services.QueryParamCollection::System.String get_Item(System.String)",
+                                      "Emby.Api.Images.ImageService::Boolean SupportsFormat(System.String[], System.String, System.String, Boolean)",
+                                      "MediaBrowser.Model.Services.IRequest::System.String get_UserAgent()"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.String GetImageCacheTag(MediaBrowser.Controller.Entities.BaseItem, MediaBrowser.Controller.Entities.ItemImageInfo, MediaBrowser.Controller.Providers.IImageEnhancer[])",
+                        "BodyHash":  "C0FA702EA50D5A8488313A56D627FF01D60A845806EDD7650646F4EAAD5C2B46",
+                        "Depth":  4,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+                                      "Emby.Drawing.ImageProcessor::System.String GetImageCacheTag(MediaBrowser.Controller.Entities.ItemImageInfo)",
+                                      "MediaBrowser.Controller.Entities.ItemImageInfo::MediaBrowser.Model.Entities.ImageType get_Type()",
+                                      "MediaBrowser.Controller.Providers.IImageEnhancer::System.String GetConfigurationCacheKey(MediaBrowser.Controller.Entities.BaseItem, MediaBrowser.Model.Entities.ImageType)",
+                                      "MediaBrowser.Model.Logging.ILogger::Void ErrorException(System.String, System.Exception, System.Object[])",
+                                      "MediaBrowser.Common.Extensions.BaseExtensions::System.Guid GetMD5(System.String)"
+                                  ]
+                    },
+                    {
+                        "Method":  "System.Threading.Tasks.Task`1[System.ValueTuple`2[System.String,System.Boolean]] GetEnhancedImageInternal(System.String, MediaBrowser.Controller.Entities.BaseItem, MediaBrowser.Model.Entities.ImageType, Int32, MediaBrowser.Controller.Providers.IImageEnhancer[], System.String, System.Threading.CancellationToken)",
+                        "BodyHash":  "76CCB58517700C89C0A6A936FD0C3E49457DB5B7933DCE89F13E6EED8F0779FF",
+                        "Depth":  4,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    },
+                    {
+                        "Method":  "System.String GetCachePath(System.String, System.String)",
+                        "BodyHash":  "2DD3EC7DE388F2020F897BC6C03E545D5DC48F292690C747AB02DFD88A48C84A",
+                        "Depth":  4,
+                        "Type":  "Emby.Drawing.ImageProcessor",
+                        "Calls":  [
+
+                                  ]
+                    }
+                ]
+}

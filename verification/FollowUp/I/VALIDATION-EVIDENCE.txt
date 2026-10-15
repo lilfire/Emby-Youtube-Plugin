@@ -1,0 +1,80 @@
+C:\Program Files\dotnet\sdk\8.0.416\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [<repo>/verification\FollowUp\I\Validation.csproj]
+[
+  {
+    "Name": "disabled-empty-tools",
+    "Passed": true
+  },
+  {
+    "Name": "enabled-existing-files",
+    "Passed": true
+  },
+  {
+    "Name": "enabled-empty-tools",
+    "Passed": true
+  },
+  {
+    "Name": "relative-path",
+    "Passed": true
+  },
+  {
+    "Name": "missing-absolute-file",
+    "Passed": true
+  },
+  {
+    "Name": "directory-is-not-tool",
+    "Passed": true
+  },
+  {
+    "Name": "control-character",
+    "Passed": true
+  },
+  {
+    "Name": "zero-videos",
+    "Passed": true
+  },
+  {
+    "Name": "too-many-videos",
+    "Passed": true
+  },
+  {
+    "Name": "oversized-video",
+    "Passed": true
+  },
+  {
+    "Name": "video-over-collection",
+    "Passed": true
+  },
+  {
+    "Name": "collection-over-storage",
+    "Passed": true
+  },
+  {
+    "Name": "oversized-budget",
+    "Passed": true
+  },
+  {
+    "Name": "maximum-boundaries",
+    "Passed": true
+  },
+  {
+    "Name": "metadata-current-publisher-expression",
+    "Input": "Rock \u0026 roll",
+    "Overview": "Rock \u0026amp; roll",
+    "Passed": true,
+    "Limitation": "Expression reproduction, not native Android TV rendering"
+  },
+  {
+    "Name": "metadata-current-publisher-expression",
+    "Input": "Rock \u0026amp; roll",
+    "Overview": "Rock \u0026amp;amp; roll",
+    "Passed": true,
+    "Limitation": "Expression reproduction, not native Android TV rendering"
+  },
+  {
+    "Name": "metadata-current-publisher-expression",
+    "Input": "\u003Cscript\u003Ealert(\u0027synthetic\u0027)\u003C/script\u003E",
+    "Overview": "\u0026lt;script\u0026gt;alert(\u0026#39;synthetic\u0026#39;)\u0026lt;/script\u0026gt;",
+    "Passed": true,
+    "Limitation": "Expression reproduction, not native Android TV rendering"
+  }
+]

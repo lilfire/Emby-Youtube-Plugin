@@ -1,0 +1,143 @@
+{
+  "ExpectedDistinctHashes": 40,
+  "Assemblies": [
+    {
+      "Name": "Emby.Server.Implementations",
+      "Version": "4.10.1.0",
+      "SHA256": "00C8DE4D8DE23C6518ADF92C03D11CC43352310EE90EBF712A414908D9F2FB1D",
+      "Matches": [
+        {
+          "Type": "Emby.Server.Implementations.Session.SessionWebSocketListener",
+          "Method": "ProcessMessage",
+          "ILHash": "78E5066A9C7F4D3FAB5C9C6A7E275F7048B50F4A8713D28ADFC851183FA5F454"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Services.EmptyHttpResult",
+          "Method": "WriteToAsync",
+          "ILHash": "78E5066A9C7F4D3FAB5C9C6A7E275F7048B50F4A8713D28ADFC851183FA5F454"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Services.ServiceController",
+          "Method": "Execute",
+          "ILHash": "8BA7FF537CD85A04E017952B69ED59468D65F557CCC3D62ACB14CBE24EF4F2CA"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetVirtualFolders",
+          "ILHash": "E13F2F1B97A829D9C1C54902741CFEE96AAC04C8E08FFC598554614DAF8E1EAB"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemList",
+          "ILHash": "4E4FC9A569C68970A8616F1B7CADBB564C18709DBE95748B8B08FEC0F56D3FFB"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemList",
+          "ILHash": "FD5A95C974B2E735682142BF65C1C827BA95A79D29B9B38E94B89C6FCE81ECBE"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemList",
+          "ILHash": "9743414BD403372893AF90D309A035DDC7DE0E7BD2D30970078A4BBC1D0A3EAE"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemList",
+          "ILHash": "105EDD92145B8A4A3883ECC833EB59D50EA418FD03C8728C120A075DDF32251D"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemIds",
+          "ILHash": "251E983E97E666ABB59FA35C2B18E7F1C6650D1447AB1724B361FA5FEB0BD752"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetStudios",
+          "ILHash": "2B8D25A2AC5D86A3C8E3D43745EB7BC717160FFE0D7B2989C1239549284E3C7E"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetAllGenres",
+          "ILHash": "9DA0A1592BD855346743AF16D75D077C915D6C86BD1B83E0E49D84F8343CBF67"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetGenres",
+          "ILHash": "DEC60207871102AFD013D71872EECEA2959D3E42BC3B7A1465A8FF10081943EC"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetTags",
+          "ILHash": "6699BD63996CAEF1D99D4CCBD046C270A9E4B3AFE458795F7AD317B77DEF1E7D"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemsResult",
+          "ILHash": "8E64EC37B04F6D9712A5EB68FF0F2C281C3CC96C141BAA2491303954306F069E"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemsResult",
+          "ILHash": "9F29F152CDC7F80F51CF66B059E0B4CF81168604DC5E7DFAB200193A6B3277A7"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "GetItemsResult",
+          "ILHash": "828A667BDD6F3D07D5799552211F3C332D5E1EE2D4E4F91CF6FE295588CD4D5A"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "CreateItem",
+          "ILHash": "9ACE3CB9AA9B9E8B3E139ABB3660A4112FF73DB10C3058D1B9C7E113D0EB491F"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "AddVirtualFolder",
+          "ILHash": "D1B76D1B04009C52581FE12CA8BD22C54159CC68D3704C58C53C7ACCEF7E5C2B"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.LibraryManager",
+          "Method": "AddVirtualFolder",
+          "ILHash": "7E434D454448AD6C10712C378C5F2A2B4A70CD2B8EF615A22862D171E56B5025"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Library.UserViewManager",
+          "Method": "GetUserViews",
+          "ILHash": "BC63BE59DFC9A0DB61A41FC202EF808C878B13449CA40B825D2F1981D8159CF9"
+        },
+        {
+          "Type": "Emby.Server.Implementations.HttpServer.FileWriter",
+          "Method": "WriteToAsync",
+          "ILHash": "C727A5F81B37C15D6DFAB13492CCA85C01F8055AD7E4828C7FF0EDA9AE875F8C"
+        },
+        {
+          "Type": "Emby.Server.Implementations.HttpServer.HttpResultFactory",
+          "Method": "GetStaticFileResult",
+          "ILHash": "2F31DF16E9D4669F8D95C3945A1D88A705DF182AF7635397030FD0D061C8A782"
+        },
+        {
+          "Type": "Emby.Server.Implementations.HttpServer.HttpResultFactory",
+          "Method": "GetStaticResult",
+          "ILHash": "4C716F3B7CB1817B7B1B25FD24854AF16614FA227E09B1DA38D5F22A545ACB11"
+        },
+        {
+          "Type": "Emby.Server.Implementations.HttpServer.StreamWriter",
+          "Method": "WriteToAsync",
+          "ILHash": "6958BC6F05CD86EC1762FAF3AC2D12967D5C92C413A02E9A111A3374A9BA1C35"
+        },
+        {
+          "Type": "Emby.Server.Implementations.Data.SqliteItemRepository",
+          "Method": "GetTags",
+          "ILHash": "10E642254294B22BEC2B7D4F69954DE5BF39582D9D20806404D411C2D1F18334"
+        },
+        {
+          "Type": ".\u003C\u003Ec__DisplayClass30_0",
+          "Method": "\u003CGetStaticFileResult\u003Eb__0",
+          "ILHash": "6EF1D70DA9C84A39140CC50C0166C4A8A9670A07ED10ECB324632061E649FC1B"
+        }
+      ]
+    }
+  ],
+  "Limitation": "Offline raw IL hash inventory; neither complete contract match nor runtime support proof"
+}

@@ -32,6 +32,7 @@ internal sealed class PersonalYouTubePublicationJournal
     }
     internal string MediaPath(Entry entry) => Path.Combine(_mediaRoot,
         entry.OwnerUserId.ToString("N"), entry.CollectionId.ToString("N"), entry.GenerationId.ToString("N"));
+    internal bool IsPrivatePath(string canonical) => Under(canonical, _mediaRoot);
     internal Entry[] Pending()
     {
         lock (_gate) return Load().Entries.Where(entry => entry.State == "Preparing").ToArray();
@@ -97,6 +98,7 @@ internal sealed class PersonalYouTubePublicationJournal
                     return;
                 }
                 result = new(snapshot.OwnerUserId, snapshot.CollectionId, snapshot.GenerationId, snapshot.Revision, "Preparing", null);
+                new PersonalYouTubePrivateScopes(Path.GetDirectoryName(_path)!).Remember(snapshot);
                 Persist(new(1, doc.Entries.Append(result).ToArray()));
             }
         })) throw new InvalidOperationException("Private publication snapshot is stale.");
@@ -121,6 +123,7 @@ internal sealed class PersonalYouTubePublicationJournal
                     || _bindings.Find(rootId.ToString("N")) != null)
                     throw new InvalidOperationException("Native root identity cannot be reserved.");
                 if (pending.ReservedRootId == rootId) return;
+                new PersonalYouTubePrivateScopes(Path.GetDirectoryName(_path)!).Remember(snapshot, rootId);
                 Persist(new(1, doc.Entries.Select(entry => entry == pending ? entry with { ReservedRootId = rootId } : entry).ToArray()));
             }
         });
@@ -157,20 +160,23 @@ internal sealed class PersonalYouTubePublicationJournal
         if (long.TryParse(reference, System.Globalization.NumberStyles.Integer, System.Globalization.CultureInfo.InvariantCulture, out var id) && id > 0)
             number = id;
         else if (Guid.TryParse(reference, out var itemId) && itemId != Guid.Empty) guid = itemId;
-        var canonical = number?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? guid?.ToString("N") ?? reference;
-        var binding = _bindings.Find(canonical);
-        Document doc;
-        lock (_gate) doc = Load();
-        if (binding != null || doc.Entries.Any(entry => guid.HasValue && (entry.ReservedRootId == guid || entry.Root?.ItemId == guid)
-            || number.HasValue && entry.Root?.InternalId == number)) return Access.Denied;
-        return Access.Unknown;
+        return ReadSnapshot().ContainsAlias(number, guid) ? Access.Denied : Access.Unknown;
     }
     internal long[] DeniedRegisteredIds(Guid authenticatedOwner)
+    {
+        try { return DeniedRegisteredIdsCore(authenticatedOwner); }
+        catch (Exception error) when (error is IOException or InvalidDataException or UnauthorizedAccessException)
+        { return new PersonalYouTubePrivateScopes(Path.GetDirectoryName(_path)!).ReadComplete().Numbers; }
+    }
+    private long[] DeniedRegisteredIdsCore(Guid authenticatedOwner)
     {
         var snapshot = _bindings.ReadAccessSnapshot(authenticatedOwner);
         Document doc;
         lock (_gate) doc = Load();
         var denied = snapshot.DeniedIds.ToHashSet();
+        var authority = new PersonalYouTubePrivateScopes(Path.GetDirectoryName(_path)!).Reconcile(snapshot.Items, doc.Entries);
+        var registered = snapshot.Items.Select(item => item.InternalId).ToHashSet();
+        denied.UnionWith(authority.Numbers.Where(number => !registered.Contains(number)));
         foreach (var binding in snapshot.Items)
         {
             var entry = doc.Entries.SingleOrDefault(value => value.GenerationId == binding.GenerationId);
@@ -182,34 +188,79 @@ internal sealed class PersonalYouTubePublicationJournal
     // Include configured physical locations for virtual roots whose own Path
     // is elsewhere. These locations must be obtained from the native server.
     internal Access DecideSources(NativeItem item, IEnumerable<NativeItem> ancestors, Guid authenticatedOwner, IEnumerable<string> actualSources)
+        => ReadSnapshot().DecideSources(item, ancestors.ToArray(), authenticatedOwner, actualSources);
+    // One validated read of ledger and journal for a single list request.
+    // A missing/corrupt required file fails the whole read, as per item before.
+    internal Snapshot ReadSnapshot()
     {
-        var parents = ancestors.ToArray();
-        var native = _bindings.DecideItem(item, parents, authenticatedOwner);
+        var authority = new PersonalYouTubePrivateScopes(Path.GetDirectoryName(_path)!);
+        PersonalYouTubeNativeBindings.Ledger ledger;
         Document doc;
-        lock (_gate) doc = Load();
-        foreach (var reserved in doc.Entries.Where(entry => entry.ReservedRootId.HasValue
-            && (entry.ReservedRootId == item.ItemId || parents.Any(parent => parent.ItemId == entry.ReservedRootId))))
-            if (reserved.State != "Active" || reserved.OwnerUserId != authenticatedOwner
-                || !(reserved.Root == item || reserved.Root.HasValue && parents.Contains(reserved.Root.Value))) return Access.Denied;
-        Entry? pathEntry = null;
-        var sources = actualSources.ToArray();
-        if (sources.Length > 512) throw new ArgumentException("Too many native source locations.");
-        foreach (var actualPath in sources.Where(path => !string.IsNullOrEmpty(path)))
+        try
         {
-            var path = Path.GetFullPath(actualPath);
-            if (Under(path, _mediaRoot))
-            {
-                var matched = doc.Entries.SingleOrDefault(entry => Under(path, MediaPath(entry)));
-                if (matched == null || matched.State != "Active" || pathEntry != null && pathEntry != matched) return Access.Denied;
-                pathEntry = matched;
-            }
+            ledger = _bindings.ReadLedger();
+            lock (_gate) doc = Load();
         }
-        var binding = _bindings.Find(item.InternalId.ToString(System.Globalization.CultureInfo.InvariantCulture));
-        var entry = binding == null ? null : doc.Entries.SingleOrDefault(value => value.GenerationId == binding.GenerationId);
-        if (pathEntry != null && entry != pathEntry) return Access.Denied;
-        if (entry != null && (entry.State != "Active" || entry.OwnerUserId != authenticatedOwner
-            || entry.OwnerUserId != binding!.OwnerUserId || entry.CollectionId != binding.CollectionId
-            || !(entry.Root == item || entry.Root.HasValue && parents.Contains(entry.Root.Value)))) return Access.Denied;
-        return native;
+        catch (Exception error) when (error is IOException or InvalidDataException or UnauthorizedAccessException)
+        { return new(this, null, Array.Empty<Entry>(), authority.ReadComplete()); }
+        return new(this, ledger, doc.Entries, authority.Reconcile(ledger.Items, doc.Entries));
+    }
+    internal sealed class Snapshot
+    {
+        private readonly PersonalYouTubePublicationJournal _journal;
+        private readonly PersonalYouTubeNativeBindings.Ledger? _ledger;
+        private readonly PersonalYouTubePrivateScopes.Snapshot _authority;
+        private readonly Entry[] _entries;
+        private readonly Entry[] _reserved;
+        private readonly (Entry Entry, string Media)[] _media;
+        internal long[] PrivateNumbers => _authority.Numbers;
+        internal Guid[] PrivateGuids => _authority.Guids;
+        internal bool ContainsAlias(long? number, Guid? guid) => _authority.Contains(number, guid);
+        internal Snapshot(PersonalYouTubePublicationJournal journal, PersonalYouTubeNativeBindings.Ledger? ledger, Entry[] entries, PersonalYouTubePrivateScopes.Snapshot authority)
+        {
+            _journal = journal; _ledger = ledger; _entries = entries; _authority = authority;
+            _reserved = entries.Where(entry => entry.ReservedRootId.HasValue).ToArray();
+            _media = entries.Select(entry => (entry, journal.MediaPath(entry))).ToArray();
+        }
+        internal Access DecideSources(NativeItem item, NativeItem[] parents, Guid authenticatedOwner, IEnumerable<string> actualSources)
+        {
+            if (item.InternalId <= 0 || item.ItemId == Guid.Empty || parents.Length > 512
+                || parents.Any(parent => parent.InternalId <= 0 || parent.ItemId == Guid.Empty))
+                throw new ArgumentException("Actual native identities required.");
+            var sources = actualSources.ToArray();
+            if (sources.Length > 512) throw new ArgumentException("Too many native source locations.");
+            var classifiedPrivate = _authority.Contains(item) || parents.Any(_authority.Contains);
+            if (_ledger == null)
+            {
+                // The complete independent authority only classifies. When
+                // either publication document is unavailable, quarantine every
+                // known/private-path source; never reconstruct owner permission.
+                return classifiedPrivate || sources.Where(path => !string.IsNullOrEmpty(path))
+                    .Any(path => Under(Path.GetFullPath(path), _journal._mediaRoot)) ? Access.Denied : Access.Unknown;
+            }
+            var native = _ledger.DecideItem(item, parents, authenticatedOwner);
+            if (native == Access.Unknown && classifiedPrivate) return Access.Denied;
+            foreach (var reserved in _reserved.Where(entry => entry.ReservedRootId == item.ItemId || parents.Any(parent => parent.ItemId == entry.ReservedRootId)))
+                if (reserved.State != "Active" || reserved.OwnerUserId != authenticatedOwner
+                    || !(reserved.Root == item || reserved.Root.HasValue && parents.Contains(reserved.Root.Value))) return Access.Denied;
+            Entry? pathEntry = null;
+            foreach (var actualPath in sources.Where(path => !string.IsNullOrEmpty(path)))
+            {
+                var path = Path.GetFullPath(actualPath);
+                if (Under(path, _journal._mediaRoot))
+                {
+                    var matched = _media.Where(value => Under(path, value.Media)).Select(value => value.Entry).SingleOrDefault();
+                    if (matched == null || matched.State != "Active" || pathEntry != null && pathEntry != matched) return Access.Denied;
+                    pathEntry = matched;
+                }
+            }
+            var binding = _ledger.FindInternal(item.InternalId);
+            var entry = binding == null ? null : _entries.SingleOrDefault(value => value.GenerationId == binding.GenerationId);
+            if (pathEntry != null && entry != pathEntry) return Access.Denied;
+            if (entry != null && (entry.State != "Active" || entry.OwnerUserId != authenticatedOwner
+                || entry.OwnerUserId != binding!.OwnerUserId || entry.CollectionId != binding.CollectionId
+                || !(entry.Root == item || entry.Root.HasValue && parents.Contains(entry.Root.Value)))) return Access.Denied;
+            return native;
+        }
     }
 }

@@ -1,0 +1,25 @@
+{
+  "Scope": "SQLite in-memory predicate reproduction; no executed Emby query or native path-persistence proof.",
+  "SQLiteVersion": "3.50.4",
+  "MatchedIds": [
+    1
+  ],
+  "CanonicalPrivateIds": [
+    1,
+    2
+  ],
+  "Observations": [
+    {
+      "Name": "Native-shaped prefix matches the direct private path",
+      "Pass": true
+    },
+    {
+      "Name": "Native-shaped prefix excludes the ordinary public path",
+      "Pass": true
+    },
+    {
+      "Name": "Canonical private alias is omitted by the lexical predicate",
+      "Pass": true
+    }
+  ]
+}

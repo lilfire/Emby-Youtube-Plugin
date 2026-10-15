@@ -6,6 +6,7 @@
     <AssemblyName>PersonalChannelsFixture</AssemblyName>
   </PropertyGroup>
   <ItemGroup><ProjectReference Include="../../Emby.YouTubePlugin.csproj" /></ItemGroup>
+  <ItemGroup><Compile Include="../FollowUp/A/ApiAudit.cs" /></ItemGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony" Version="2.4.2" PrivateAssets="all" GeneratePathProperty="true" />
     <EmbeddedResource Include="$(PkgLib_Harmony)/lib/net6.0/0Harmony.dll" LogicalName="PersonalChannelsFixture.Harmony.dll" />

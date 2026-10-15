@@ -1,0 +1,79 @@
+﻿{
+    "Commit":  "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+    "Source":  [
+                   {
+                       "SHA256":  "04F9C4A951FE87C73969F0CE6C9C98B646B959089B7252988C497BF2F3626879",
+                       "File":  "PersonalYouTubeNativeCreation.cs"
+                   },
+                   {
+                       "SHA256":  "4E377A1F464E9E82A28F21C4800C0B2F0ADA4E6F821D6B4B4CFDE731B3FBAB6D",
+                       "File":  "PersonalYouTubeNativeCreationHook.cs"
+                   },
+                   {
+                       "SHA256":  "F88FF07A76E6CBE5B2FA4CCAA0BD08DF4113161663182B4D739637405615E716",
+                       "File":  "PersonalYouTubeNativePublisher.cs"
+                   },
+                   {
+                       "SHA256":  "31D1FD1E5B08CE535E5893A626733F1B42C44048EEEFF24DE6AFFD95482577BD",
+                       "File":  "PersonalYouTubePublicationJournal.cs"
+                   },
+                   {
+                       "SHA256":  "84561455A468F9524B795063B28241B39D8683B62374A72DB7867FBB7FCBE3CE",
+                       "File":  "PersonalYouTubeLifecycle.cs"
+                   },
+                   {
+                       "SHA256":  "27BD14E31651D71D2DC5BEC91E090A00B52858120EC80DE55106FD42604013DC",
+                       "File":  "PersonalYouTubeNativeBindings.cs"
+                   },
+                   {
+                       "SHA256":  "F27E99FAFE145C4DBD94BA9EB0071AB034301C7B7FE78DB7EBDCCA45BB33FA66",
+                       "File":  "PersonalYouTubeNativeAccess.cs"
+                   },
+                   {
+                       "SHA256":  "2CD083F2C2EDFD1BB52B59044C50895CEFA697237784A672DE83C0D3A904103E",
+                       "File":  "PersonalYouTubeStore.cs"
+                   },
+                   {
+                       "SHA256":  "F81B6D5568E6D4777E3CD7F63757CA30708761BEBA98A5A5003BF7E01E437BCC",
+                       "File":  "PersonalYouTubeJobs.cs"
+                   },
+                   {
+                       "SHA256":  "3BEDA7226ADB804C18CC68BE4D53993384784FD98D991599139383114CD733AC",
+                       "File":  "PersonalYouTubeJobRuntime.cs"
+                   },
+                   {
+                       "SHA256":  "F3BCBF111CAC17B4C29DB3135A84AF0EAFC3CB1B53F6A8A1AA5DD8E3AA1A9CD2",
+                       "File":  "PersonalYouTubeInitialRefresh.cs"
+                   },
+                   {
+                       "SHA256":  "C226786280F23948C4F4AB04017D269F527586BF5CBCA15E76D1F69131252134",
+                       "File":  "PluginEntryPoint.cs"
+                   }
+               ],
+    "MainServerChanged":  false,
+    "NoEmbyServerStarted":  true,
+    "ContainerGone":  true,
+    "Platforms":  [
+                      {
+                          "Observations":  87,
+                          "TestDataGone":  true,
+                          "Skipped":  [
+                                          "cleanup.symlink: OS denied link creation",
+                                          "cleanup.storage-root-link: OS denied link creation"
+                                      ],
+                          "Platform":  "Windows",
+                          "Runtime":  "8.0.22",
+                          "UnmetRequirementObservations":  9
+                      },
+                      {
+                          "Observations":  89,
+                          "TestDataGone":  true,
+                          "Skipped":  [
+
+                                      ],
+                          "Platform":  "Linux",
+                          "Runtime":  "8.0.32",
+                          "UnmetRequirementObservations":  10
+                      }
+                  ]
+}

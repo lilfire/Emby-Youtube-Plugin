@@ -1,0 +1,12 @@
+{
+  "users.db": {
+    "UsersTotal": 2,
+    "SyntheticNameMatches": 0,
+    "Limit": "Name-marker search plus historical native ID readback; not an identity inventory"
+  },
+  "library.db": {
+    "SyntheticMediaMatches": 0,
+    "SyncJobsRemaining": 0,
+    "SyncItemsRemaining": 0
+  }
+}

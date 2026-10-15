@@ -1,0 +1,194 @@
+{
+  "Completed": true,
+  "ProductionDLLSHA256": "D062C89BF60607A16A538DFC5A5E45225BD00E8DBCAF0897290FBE352861B780",
+  "Platform": "Microsoft Windows 10.0.19045",
+  "Scope": "Production access resolver and storage; SDK library adapter with deliberately stale ancestor index and lexical path filters. No native SQL/HTTP, Emby process, Google or production data.",
+  "CandidateSafeToEnable": false,
+  "Observations": [
+    {
+      "Name": "Positive owner receives the registered active item",
+      "Pass": true
+    },
+    {
+      "Name": "Foreign account is denied that same item",
+      "Pass": true
+    },
+    {
+      "Name": "Ordinary public source works for both accounts",
+      "Pass": true
+    },
+    {
+      "Name": "Unknown private descendants denied to both accounts",
+      "Pass": true
+    },
+    {
+      "Name": "Canonical private path alias denied to both accounts",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes registered source",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes unregistered child",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes nested external-path child",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes unregistered media orphan",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes descendant of private physical path",
+      "Pass": true
+    },
+    {
+      "Name": "Ordinary public source is outside the candidate private scope",
+      "Pass": true
+    },
+    {
+      "Name": "Indexed ancestry misses a child when its native ancestor index is stale",
+      "Pass": true
+    },
+    {
+      "Name": "Direct parent walk covers that stale-ancestor case",
+      "Pass": true
+    },
+    {
+      "Name": "Both string-prefix candidates miss the canonical private path alias",
+      "Pass": true
+    },
+    {
+      "Name": "Private inventory replacement must remain disabled",
+      "Pass": true
+    },
+    {
+      "Name": "Unbound reserved root remains denied to its owner",
+      "Pass": true
+    },
+    {
+      "Name": "Candidate resolves the reserved GUID and its unregistered child",
+      "Pass": true
+    },
+    {
+      "Name": "Reserved child denied to both accounts",
+      "Pass": true
+    },
+    {
+      "Name": "Production inventory preserves owner positive control",
+      "Pass": true
+    },
+    {
+      "Name": "Production inventory preserves foreign negative control",
+      "Pass": true
+    },
+    {
+      "Name": "Production inventory catches the canonical alias missed by the prototype",
+      "Pass": true
+    },
+    {
+      "Name": "Production inventory catches unregistered descendants with external paths",
+      "Pass": true
+    },
+    {
+      "Name": "Production inventory catches private physical ancestors",
+      "Pass": true
+    },
+    {
+      "Name": "Production inventory catches unbound reserved children",
+      "Pass": true
+    },
+    {
+      "Name": "Production inventory retains ordinary public content",
+      "Pass": true
+    },
+    {
+      "Name": "Production inventory agrees with the full resolver for all ordinary sources",
+      "Pass": true
+    },
+    {
+      "Name": "Source fingerprints start current",
+      "Pass": true
+    },
+    {
+      "Name": "Unsupported native library keeps full-scan fallback",
+      "Pass": true
+    },
+    {
+      "Name": "In-memory reparenting invalidates a previously public snapshot",
+      "Pass": true
+    },
+    {
+      "Name": "Profile content revocation invalidates the request authority stamp",
+      "Pass": true
+    },
+    {
+      "Name": "Revoked owner loses previously allowed private source",
+      "Pass": true
+    },
+    {
+      "Name": "Public source survives private owner revocation",
+      "Pass": true
+    },
+    {
+      "Name": "Corrupt private profile fails closed without denying public source",
+      "Pass": true
+    },
+    {
+      "Name": "Complete scope authority preserves public content under corrupt journal",
+      "Pass": true
+    },
+    {
+      "Name": "Corrupt journal never grants private owner or foreign permission",
+      "Pass": true
+    },
+    {
+      "Name": "Corrupt journal still denies reserved children",
+      "Pass": true
+    },
+    {
+      "Name": "Corrupt journal still denies canonical private aliases",
+      "Pass": true
+    },
+    {
+      "Name": "Absent retired identity remains denied under journal corruption",
+      "Pass": true
+    },
+    {
+      "Name": "Absent unrelated public identity stays unknown under journal corruption",
+      "Pass": true
+    },
+    {
+      "Name": "Loss of classification authority cannot fail open",
+      "Pass": true
+    },
+    {
+      "Name": "Incomplete scope migration cannot recover a corrupt legacy journal",
+      "Pass": true
+    },
+    {
+      "Name": "Altered scope contents with restored timestamp fail the independent integrity marker",
+      "Pass": true
+    },
+    {
+      "Name": "Scope authority survives resolver restart",
+      "Pass": true
+    },
+    {
+      "Name": "Native mutation is visible before the write body",
+      "Pass": true
+    },
+    {
+      "Name": "Nested writer completion cannot release the outer mutation",
+      "Pass": true
+    },
+    {
+      "Name": "Exception/finalizer disposal is idempotent and advances the source version",
+      "Pass": true
+    }
+  ],
+  "TestDataGone": true
+}

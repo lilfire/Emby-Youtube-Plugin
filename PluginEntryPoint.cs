@@ -45,6 +45,7 @@ namespace Emby.YouTubePlugin
         private readonly IHttpServer _httpServer;
         private readonly IAuthorizationContext _authorization;
         private readonly IHttpResultFactory _personalResults;
+        private readonly MediaBrowser.Controller.Security.IAuthenticationRepository _authentications;
         private readonly CancellationTokenSource _lifetimeCts = new();
         private readonly CancellationToken _lifetimeToken;
         private readonly object _resumeDispatchLifetimeGate = new();
@@ -155,7 +156,8 @@ namespace Emby.YouTubePlugin
             MediaBrowser.Model.Tasks.ITaskManager taskManager,
             IHttpServer httpServer,
             IAuthorizationContext authorization,
-            IHttpResultFactory personalResults)
+            IHttpResultFactory personalResults,
+            MediaBrowser.Controller.Security.IAuthenticationRepository authentications)
         {
             Plugin.InitializeApplicationHost(applicationHost);
             _sessionManager = sessionManager;
@@ -165,6 +167,7 @@ namespace Emby.YouTubePlugin
             _httpServer = httpServer;
             _authorization = authorization;
             _personalResults = personalResults;
+            _authentications = authentications;
             _lifetimeToken = _lifetimeCts.Token;
             _homeSectionManager = new YouTubeHomeSectionManager(userManager, userViewManager);
             _folderWatchState = new YouTubeFolderWatchStateSynchronizer(libraryManager, userDataManager, userManager, tasks: taskManager, channels: channelManager);
@@ -190,7 +193,7 @@ namespace Emby.YouTubePlugin
                         ? "[YT] Audited personal item service gate installed."
                         : "[YT] Personal item service gate unavailable: " + serviceGate.Error);
                     var listGate = PersonalYouTubeItemListGate.Install(_httpServer, _libraryManager, _authorization,
-                        Path.Combine(Plugin.DataPath, "youtube-personal"), _personalResults);
+                        Path.Combine(Plugin.DataPath, "youtube-personal"), _personalResults, _authentications);
                     YouTubeChannel.LogPublic(listGate.Installed
                         ? "[YT] Audited personal item-list gate installed."
                         : "[YT] Personal item-list gate unavailable: " + listGate.Error);

@@ -1,0 +1,80 @@
+{
+  "Scope": "B investigation; completed runs do not prove full isolation",
+  "Runs": [
+    {
+      "Kind": "private",
+      "Observations": 213,
+      "FailedAssertions": 95,
+      "UnverifiedDlnaProbes": 6,
+      "ConvertedOutputs": [
+        {
+          "Label": "Native a converted bytes",
+          "Hash": "430B2CE786C666E27FB2F30AC782C5A68F41A431100AF0BF7D6880E8F78A6A3A",
+          "Duration": "6.000000",
+          "Codec": "mpeg4",
+          "Kind": "BConverted",
+          "Bytes": 12405
+        },
+        {
+          "Label": "Native b converted bytes",
+          "Hash": "2D3312E318A88325DF976927AEA5B715CACAD779CC8DA42E7F47B7EE097B6934",
+          "Duration": "6.000000",
+          "Codec": "mpeg4",
+          "Kind": "BConverted",
+          "Bytes": 12405
+        }
+      ]
+    },
+    {
+      "Kind": "public",
+      "Observations": 213,
+      "FailedAssertions": 82,
+      "UnverifiedDlnaProbes": 6,
+      "ConvertedOutputs": [
+        {
+          "Label": "Native a converted bytes",
+          "Hash": "430B2CE786C666E27FB2F30AC782C5A68F41A431100AF0BF7D6880E8F78A6A3A",
+          "Duration": "6.000000",
+          "Codec": "mpeg4",
+          "Kind": "BConverted",
+          "Bytes": 12405
+        },
+        {
+          "Label": "Native b converted bytes",
+          "Hash": "2D3312E318A88325DF976927AEA5B715CACAD779CC8DA42E7F47B7EE097B6934",
+          "Duration": "6.000000",
+          "Codec": "mpeg4",
+          "Kind": "BConverted",
+          "Bytes": 12405
+        }
+      ]
+    }
+  ],
+  "CollisionRuns": [
+    {
+      "Kind": "fresh",
+      "Identity": {
+        "SamePhysicalParentKey": false,
+        "SameVideoKey": false,
+        "SamePhysicalParentGuid": false,
+        "SameNativeRootKey": false,
+        "SameNativeRootGuid": false
+      },
+      "Observations": 37,
+      "ExpectationMismatches": 0
+    },
+    {
+      "Kind": "reused",
+      "Identity": {
+        "SamePhysicalParentKey": false,
+        "SameVideoKey": false,
+        "SamePhysicalParentGuid": true,
+        "SameNativeRootKey": false,
+        "SameNativeRootGuid": false
+      },
+      "Observations": 37,
+      "ExpectationMismatches": 4
+    }
+  ],
+  "DeclaredRelevantRoutes": 73
+}

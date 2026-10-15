@@ -1,0 +1,10 @@
+﻿{
+    "Entry":  "Standalone harness referencing production assembly, not running Emby server",
+    "ContainerGone":  true,
+    "Uid":  0,
+    "Umask":  "0022",
+    "LinuxPluginHash":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "WindowsPluginHash":  "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+    "Image":  "sha256:997e8c1ea1fde7d303eb455143e7be77dc4f20cb06acb11ffdcbcfaa87186ec2",
+    "Network":  "none"
+}

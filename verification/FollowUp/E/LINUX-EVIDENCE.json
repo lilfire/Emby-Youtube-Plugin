@@ -1,0 +1,547 @@
+{
+  "Completed": true,
+  "Platform": "Linux",
+  "Runtime": "8.0.32",
+  "PluginVersion": "2.0.10.0",
+  "PluginSHA256": "AD5D3A3BC97308A085AD5BAB71911F54D25E2C37C7553E12FDA39DE449AEB0D8",
+  "TestSHA256": "AF863F8F6C509C39CE31BA9262036B14543441771F7C74F023E8943BC7CB76CA",
+  "Scope": "Production components; synthetic SDK library adapter; real child process kills; no Emby server, Google or downloader",
+  "Observations": [
+    {
+      "Id": "identity.baseline.owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner A allowed"
+    },
+    {
+      "Id": "identity.baseline.foreign",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Foreign B denied A"
+    },
+    {
+      "Id": "identity.baseline.other-owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner B still allowed"
+    },
+    {
+      "Id": "identity.unregistered",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Unknown descendant denied even to owner before durable registration"
+    },
+    {
+      "Id": "identity.registered",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Registered descendant has paired owner/foreign decisions"
+    },
+    {
+      "Id": "identity.reparent",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Reparenting across owners cannot transfer binding"
+    },
+    {
+      "Id": "identity.detached",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Detached bound child denied without active root ancestry"
+    },
+    {
+      "Id": "identity.same-name-new-account",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "New account GUID cannot inherit owner identity"
+    },
+    {
+      "Id": "identity.retired",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Registered old aliases stay denied without new snapshot"
+    },
+    {
+      "Id": "identity.unseen-removed",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "Never-registered, already absent descendant has no durable provenance; not proof of HTTP leakage"
+    },
+    {
+      "Id": "identity.reuse",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Numeric ID and GUID reuse rejected independently"
+    },
+    {
+      "Id": "identity.other-after-delete",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B unaffected by A profile deletion"
+    },
+    {
+      "Id": "mismatch.baseline.owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner A allowed"
+    },
+    {
+      "Id": "mismatch.baseline.foreign",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Foreign B denied A"
+    },
+    {
+      "Id": "mismatch.baseline.other-owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner B still allowed"
+    },
+    {
+      "Id": "mismatch.missing-entry-own",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "Valid journal missing A entry permits bound A child without private physical source"
+    },
+    {
+      "Id": "mismatch.missing-entry-list",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "Missing A journal entry not added to owner\u0027s pre-query denial IDs"
+    },
+    {
+      "Id": "mismatch.missing-entry-path",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Private media source compensates for missing journal entry only when supplied"
+    },
+    {
+      "Id": "mismatch.missing-entry-foreign",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Foreign owner still denied by binding; missing entry is not demonstrated cross-owner byte leakage"
+    },
+    {
+      "Id": "mismatch.missing-entry-B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B unaffected by omitted A entry"
+    },
+    {
+      "Id": "mismatch.owner-entry",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner mismatch quarantines A and preserves B"
+    },
+    {
+      "Id": "mismatch.revision-resume",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Publication revision mismatch rejects resume"
+    },
+    {
+      "Id": "mismatch.revision-access",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "Revision mismatch is not quarantined at journal access boundary"
+    },
+    {
+      "Id": "mismatch.corrupt-global",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "Global corrupt journal blocks unaffected B too"
+    },
+    {
+      "Id": "mismatch.corrupt-profile-A",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Corrupt A profile denies A"
+    },
+    {
+      "Id": "mismatch.corrupt-profile-B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B access survives corrupt A profile"
+    },
+    {
+      "Id": "mismatch.corrupt-startup",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "One corrupt profile aborts RepairInterrupted; JobRuntime.Start disposes all jobs on this exception"
+    },
+    {
+      "Id": "mismatch.marker",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Missing required marker fails closed"
+    },
+    {
+      "Id": "mismatch.missing-journal",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Missing required journal fails closed"
+    },
+    {
+      "Id": "mismatch.write-failure",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Journal rename target failure rejects Begin"
+    },
+    {
+      "Id": "mismatch.write-failure-temp",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Failed journal write cleans temporary file"
+    },
+    {
+      "Id": "mismatch.write-failure-marker",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Failed first journal write leaves fail-closed marker"
+    },
+    {
+      "Id": "recovery.baseline.owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner A allowed"
+    },
+    {
+      "Id": "recovery.baseline.foreign",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Foreign B denied A"
+    },
+    {
+      "Id": "recovery.baseline.other-owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner B still allowed"
+    },
+    {
+      "Id": "recovery.read-active",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Adapter supplies matching root, source, bound video and actual file"
+    },
+    {
+      "Id": "recovery.missing-root",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Missing native A root cannot be resumed"
+    },
+    {
+      "Id": "recovery.rollover-A",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Missing root rotates A generation"
+    },
+    {
+      "Id": "recovery.keep-B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B remains resumable after A repair"
+    },
+    {
+      "Id": "recovery.pre-journal-orphan",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "Retired staging created before Begin is not discovered by journal-only CleanupAsync"
+    },
+    {
+      "Id": "cleanup.baseline.owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner A allowed"
+    },
+    {
+      "Id": "cleanup.baseline.foreign",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Foreign B denied A"
+    },
+    {
+      "Id": "cleanup.baseline.other-owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner B still allowed"
+    },
+    {
+      "Id": "cleanup.native-media-staging",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Retired root, owned media and staging removed"
+    },
+    {
+      "Id": "cleanup.idempotent",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Retry retains durable identity tombstone"
+    },
+    {
+      "Id": "cleanup.other",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B files and resume survive A cleanup"
+    },
+    {
+      "Id": "cleanup.unexpected",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Unexpected media retained for explicit handling"
+    },
+    {
+      "Id": "cleanup.non-atomic",
+      "Reproduced": true,
+      "RequirementMet": null,
+      "Observation": "Native removal precedes disk rejection; cleanup is retryable, not atomic"
+    },
+    {
+      "Id": "cleanup.symlink",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Generation directory link rejected; outside sentinel intact"
+    },
+    {
+      "Id": "cleanup.storage-root-link",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "Configured storage root symlink is followed; target staging deleted"
+    },
+    {
+      "Id": "restore.baseline.owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner A allowed"
+    },
+    {
+      "Id": "restore.baseline.foreign",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Foreign B denied A"
+    },
+    {
+      "Id": "restore.baseline.other-owner",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Owner B still allowed"
+    },
+    {
+      "Id": "restore.deleted-before",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Current deletion denies A"
+    },
+    {
+      "Id": "restore.coherent",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Coherent file backup restores key, profile, binding and journal against matching adapter native state"
+    },
+    {
+      "Id": "restore.replays-revocation",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "Older coherent backup reactivates previously deleted generation; no external monotonic revocation anchor"
+    },
+    {
+      "Id": "restore.key-mismatch",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Wrong encryption key prevents preparation"
+    },
+    {
+      "Id": "restore.key-access",
+      "Reproduced": true,
+      "RequirementMet": false,
+      "Observation": "Access decision does not decrypt key; key mismatch does not quarantine already active native media"
+    },
+    {
+      "Id": "restore.native-mismatch",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Mismatched native GUID cannot resume"
+    },
+    {
+      "Id": "restore.unsupported-version",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "No migration from unsupported journal version; fails closed"
+    },
+    {
+      "Id": "hook.unsupported",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Unverified SDK adapter cannot satisfy native hook contract"
+    },
+    {
+      "Id": "hook.publisher-blocked",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Publisher blocks before journal/media/native mutation when hook unavailable"
+    },
+    {
+      "Id": "crash.Waiting.process",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Actual .NET child forcibly terminated at persisted component boundary"
+    },
+    {
+      "Id": "crash.Waiting.B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B binding/journal positive control after new process"
+    },
+    {
+      "Id": "crash.Waiting.pre-journal",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Pre-journal generation retained; job runtime must restart work"
+    },
+    {
+      "Id": "crash.Buffering.process",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Actual .NET child forcibly terminated at persisted component boundary"
+    },
+    {
+      "Id": "crash.Buffering.B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B binding/journal positive control after new process"
+    },
+    {
+      "Id": "crash.Buffering.pre-journal",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Pre-journal generation retained; job runtime must restart work"
+    },
+    {
+      "Id": "crash.Preparing.process",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Actual .NET child forcibly terminated at persisted component boundary"
+    },
+    {
+      "Id": "crash.Preparing.B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B binding/journal positive control after new process"
+    },
+    {
+      "Id": "crash.Preparing.denied",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Unfinished A publication denied to owner and foreign"
+    },
+    {
+      "Id": "crash.Preparing.repair",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Repair rotates incomplete generation"
+    },
+    {
+      "Id": "crash.Preparing.cleanup",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Retired partially copied media removed with adapter native state"
+    },
+    {
+      "Id": "crash.Reserved.process",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Actual .NET child forcibly terminated at persisted component boundary"
+    },
+    {
+      "Id": "crash.Reserved.B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B binding/journal positive control after new process"
+    },
+    {
+      "Id": "crash.Reserved.denied",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Unfinished A publication denied to owner and foreign"
+    },
+    {
+      "Id": "crash.Reserved.repair",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Repair rotates incomplete generation"
+    },
+    {
+      "Id": "crash.Reserved.cleanup",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Retired partially copied media removed with adapter native state"
+    },
+    {
+      "Id": "crash.Publishing.process",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Actual .NET child forcibly terminated at persisted component boundary"
+    },
+    {
+      "Id": "crash.Publishing.B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B binding/journal positive control after new process"
+    },
+    {
+      "Id": "crash.Publishing.denied",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Unfinished A publication denied to owner and foreign"
+    },
+    {
+      "Id": "crash.Publishing.repair",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Repair rotates incomplete generation"
+    },
+    {
+      "Id": "crash.Publishing.cleanup",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Retired partially copied media removed with adapter native state"
+    },
+    {
+      "Id": "crash.Active.process",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Actual .NET child forcibly terminated at persisted component boundary"
+    },
+    {
+      "Id": "crash.Active.B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B binding/journal positive control after new process"
+    },
+    {
+      "Id": "crash.Active.resume",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Activated component state resumes; foreign remains denied"
+    },
+    {
+      "Id": "crash.Cleaning.process",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Actual .NET child forcibly terminated at persisted component boundary"
+    },
+    {
+      "Id": "crash.Cleaning.B",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "B binding/journal positive control after new process"
+    },
+    {
+      "Id": "crash.Cleaning.retry",
+      "Reproduced": true,
+      "RequirementMet": true,
+      "Observation": "Cleanup retry finishes remaining files and preserves B"
+    }
+  ],
+  "Skipped": [],
+  "TestDataGone": true
+}

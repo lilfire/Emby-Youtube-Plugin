@@ -1,0 +1,648 @@
+{
+  "Checks": [
+    {
+      "Check": "A-private selected evidence available",
+      "Passed": true
+    },
+    {
+      "Check": "A-public selected evidence available",
+      "Passed": true
+    },
+    {
+      "Check": "A-races selected evidence available",
+      "Passed": true
+    },
+    {
+      "Check": "C-content selected evidence available",
+      "Passed": true
+    },
+    {
+      "Check": "C-public selected evidence available",
+      "Passed": true
+    },
+    {
+      "Check": "D-transport selected evidence available",
+      "Passed": true
+    },
+    {
+      "Check": "D-public selected evidence available",
+      "Passed": true
+    },
+    {
+      "Check": "G-components selected evidence available",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/ApiAudit.cs",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/Build-RouteMap.py",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/PRIVATE-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/Probe-A.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/PUBLIC-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/RACE-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/ROUTES.csv",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/Run-A.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/Run-Races.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/A/SUMMARY.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/Build-Evidence.py",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/COLLISION-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/FINAL-CLEANUP.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/PRIVATE-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/Probe-B.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/PUBLIC-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/ROUTES.csv",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/Run-B.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/Run-Collision.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/B/SUMMARY.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Accounts-C.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Collect-C.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Content-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Embedded-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Formats-C.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/ImageLease-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/ImageRace-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/NATIVE-INVENTORY.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Probe-C.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/PROVENANCE.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Public-C.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Public-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Run-C.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/Start-Embedded.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/SubtitleLease-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/SubtitleRace-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/C/SUMMARY.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Abort-D.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Abort-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Accounts-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/BeforeWrite-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Boundary-AfterReader-File-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Boundary-AfterReader-Parent-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Boundary-AfterReader-Path-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Boundary-D.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Boundary-Factory-Path-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Boundary-Reader-File-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Boundary-Reader-Journal-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Boundary-Reader-Path-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Boundary-Reader-Token-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/BoundaryFixture.csproj",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Channel-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Collect-D.py",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Content-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/FINAL-CLEANUP.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Hls-D.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Hls-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Key-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Lease-D.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Lease-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/NativeVideoBoundary.cs",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Probe-D.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Public-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/ROUTES.csv",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Run-D.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Start-D.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/SUMMARY.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/D/Transport-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/E/E.csproj",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/E/LINUX-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/E/Program.cs",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/E/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/E/Run-E.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/E/SUMMARY.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/E/WINDOWS-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/Collect-Permissions-F.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/FINAL-CLEANUP.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/INTEGRATION-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/LINUX-STORE-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/Probe-F.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/Program.cs",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/REGRESSION-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/Run-F.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/Run-Store-F.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/STORE-METADATA.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/StoreChecks.csproj",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/WINDOWS-PERMISSIONS.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/F/WINDOWS-STORE-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/G/G.csproj",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/G/Program.cs",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/G/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/G/Run-G.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/G/WINDOWS-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/Bind-H.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/Cleanup-H.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/CLEANUP.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/CLIENTS.csv",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/ENVIRONMENT.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/HTTP.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/PREFLIGHT.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/Prepare-H.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/Probe-H.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/REVOCATION.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/TV-SESSION.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/UI.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/H/WEB-AUTH.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/BASELINE-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/BROWSER-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/browser-tests.js",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/FINAL-CLEANUP.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/Program.cs",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/Run-Browser.mjs",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/SOURCE-HASHES.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/VALIDATION-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/VALIDATION-EVIDENCE.txt",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/I/Validation.csproj",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/INSTALLATION-PLAN.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/J.csproj",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/LINUX-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/LINUX-NATIVE-INVENTORY.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/PACKAGE-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/PLATFORM-METADATA.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/Program.cs",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/Run-J.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/test_package.py",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/verify_package.py",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/WINDOWS-EVIDENCE.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/J/WINDOWS-NATIVE-INVENTORY.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/K/Build-Index.py",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/K/CLEANUP-READBACK.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/K/DATABASE-READBACK.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/K/INDEX.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/K/Inspect-Databases.py",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/K/Read-Cleanup.ps1",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/K/REGRESSION.json",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/K/REPORT.md",
+      "Passed": true
+    },
+    {
+      "Check": "indexed hash: verification/FollowUp/K/Verify-K.py",
+      "Passed": true
+    },
+    {
+      "Check": "recorded E/I and fresh G production source hashes match",
+      "Passed": true
+    },
+    {
+      "Check": "fresh G completed with all 44 observations reproduced",
+      "Passed": true
+    },
+    {
+      "Check": "fresh G fixture and child processes cleaned",
+      "Passed": true
+    },
+    {
+      "Check": "publication preflight has no unreviewed matches",
+      "Passed": true
+    },
+    {
+      "Check": "no active local fixture process or listeners",
+      "Passed": true
+    }
+  ],
+  "SourceDrift": [],
+  "FreshG": {
+    "ProductionDLLSHA256": "ECCB1B92D991886551DD462B8E99FE1ED31F23C82861910BE234E792BD8E55B0",
+    "Observations": 44,
+    "RequirementNotMet": 7,
+    "Cleanup": {
+      "FixtureRemoved": true,
+      "AllTrackedProcessesExited": true
+    }
+  },
+  "Passed": true,
+  "Limit": "Evidence integrity and bounded synthetic G rerun; no new native HTTP/client/Google or remote cleanup acceptance"
+}

@@ -135,6 +135,21 @@ namespace Emby.YouTubePlugin
             {
                 var config = plugin.Options;
 
+                // Validate the merged snapshot before mutating the live configuration.
+                if (dto.PersonalYouTubeAlphaEnabled.HasValue || dto.PersonalYouTubeDownloaderPath != null
+                    || dto.PersonalYouTubeFfmpegPath != null || dto.PersonalYouTubeNodePath != null
+                    || dto.PersonalYouTubeMaxVideos.HasValue || dto.PersonalYouTubeMaxVideoBytes.HasValue
+                    || dto.PersonalYouTubeMaxCollectionBytes.HasValue || dto.PersonalYouTubeMaxStorageBytes.HasValue)
+                    PersonalYouTubeConfigurationValidation.Validate(
+                        dto.PersonalYouTubeAlphaEnabled ?? config.PersonalYouTubeAlphaEnabled,
+                        dto.PersonalYouTubeDownloaderPath ?? config.PersonalYouTubeDownloaderPath,
+                        dto.PersonalYouTubeFfmpegPath ?? config.PersonalYouTubeFfmpegPath,
+                        dto.PersonalYouTubeNodePath ?? config.PersonalYouTubeNodePath,
+                        dto.PersonalYouTubeMaxVideos ?? config.PersonalYouTubeMaxVideos,
+                        dto.PersonalYouTubeMaxVideoBytes ?? config.PersonalYouTubeMaxVideoBytes,
+                        dto.PersonalYouTubeMaxCollectionBytes ?? config.PersonalYouTubeMaxCollectionBytes,
+                        dto.PersonalYouTubeMaxStorageBytes ?? config.PersonalYouTubeMaxStorageBytes);
+
                 // Only overwrite fields the page actually sent. Strings/numbers/bools
                 // are nullable on the DTO so a partial payload can't wipe other values.
                 if (dto.ApiKey != null) config.ApiKey = dto.ApiKey;
@@ -194,9 +209,9 @@ namespace Emby.YouTubePlugin
             {
                 return JsonSerializer.Deserialize<ConfigDto>(json, JsonOptions);
             }
-            catch (JsonException ex)
+            catch (JsonException)
             {
-                throw new ArgumentException($"Malformed YouTube configuration payload: {ex.Message}", ex);
+                throw new ArgumentException("Malformed YouTube configuration payload.");
             }
         }
 

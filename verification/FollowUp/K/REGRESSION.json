@@ -1,0 +1,16 @@
+{
+  "Purpose": "Bounded investigation regression; successful reproduction is not privacy acceptance",
+  "Execution": "Sequential, isolated fixture only. Never deploy or use Lilflix. Reserve port 18096 and require native cleanup readback after every run.",
+  "Cases": [
+    {"ID":"A-private","Command":"powershell -NoProfile -File verification/FollowUp/A/Run-A.ps1","Evidence":"verification/FollowUp/A/PRIVATE-EVIDENCE.json","Controls":"Own native content; foreign and forged identity; deletion/restart; paging; known Similar/metadata/playlist gaps"},
+    {"ID":"A-public","Command":"powershell -NoProfile -File verification/FollowUp/A/Run-A.ps1 -PublicSource","Evidence":"verification/FollowUp/A/PUBLIC-EVIDENCE.json","Controls":"Same native A source unbound/public, B private; public compatibility and private denials"},
+    {"ID":"A-races","Command":"powershell -NoProfile -File verification/FollowUp/A/Run-Races.ps1","Evidence":"verification/FollowUp/A/RACE-EVIDENCE.json","Controls":"Query, result and writer revocation; independent B control"},
+    {"ID":"C-content","Command":"powershell -NoProfile -File verification/FollowUp/C/Run-C.ps1 -Mode Content","Evidence":"verification/FollowUp/C/Content-EVIDENCE.json","Controls":"Own/foreign image and subtitle bytes; cache-content mismatch sentinels"},
+    {"ID":"C-public","Command":"powershell -NoProfile -File verification/FollowUp/C/Run-C.ps1 -Mode Public","Evidence":"verification/FollowUp/C/Public-EVIDENCE.json","Controls":"Public native asset compatibility alongside private source"},
+    {"ID":"D-transport","Command":"powershell -NoProfile -File verification/FollowUp/D/Run-D.ps1 -Mode Transport","Evidence":"verification/FollowUp/D/Transport-EVIDENCE.json","Controls":"Owner/foreign bytes, source binding, HEAD/range/conditional and audio gap"},
+    {"ID":"D-public","Command":"powershell -NoProfile -File verification/FollowUp/D/Run-D.ps1 -Mode Public","Evidence":"verification/FollowUp/D/Public-EVIDENCE.json","Controls":"Ordinary unbound native media; private B; unsupported dynamic routes retained as unknown"},
+    {"ID":"G-components","Command":"dotnet run --project verification/FollowUp/G/G.csproj -c Release -- verification/FollowUp/K/bin/runtime-g","Evidence":"verification/FollowUp/K/bin/runtime-g/WINDOWS-EVIDENCE.json","Controls":"A/B positive catalog and buffer; forged owner; late key rotation; body/child hangs and cleanup"}
+  ],
+  "Evaluation": "Compare each labeled observation with its prior evidence and inspect bytes/content, not only HTTP status. Record any delta and DLL/source hashes. Known failures are defect sentinels until corrected and reverified. Exit 0 means a completed reproduction only.",
+  "Excluded": "Sync/live/DLNA, actual clients, Linux/native crash and full publication remain chapter-specific mandatory gates before broader approval. This package cannot replace them."
+}

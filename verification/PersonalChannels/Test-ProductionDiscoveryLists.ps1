@@ -1,4 +1,4 @@
-param([switch]$RequireIsolation,[switch]$InspectNative,[switch]$DynamicViews,[ValidateSet('None','Views','Latest','Suggestions','Counts','Genres','Studios','Tags','GenresImage','StudiosImage','TagsImage','Search')][string]$WriterRace='None',[switch]$AfterWriteCheckRace,[ValidateSet('Standard','Suggestions','Counts','Metadata','Search','SearchHistory')][string]$DiscoveryFamily='Standard',[switch]$InspectCounts,[switch]$FixtureMovies,[switch]$InspectMetadataReferences,[switch]$PublicMetadataA,[switch]$InspectMetadataImages,[switch]$DerivedMetadataImages,[ValidateSet('Name','NameIndex','Id')][string]$MetadataImageStyle='Name',[switch]$HistoryMutationRace)
+﻿param([switch]$InspectSourceInventory,[switch]$RequireIsolation,[switch]$InspectNative,[switch]$DynamicViews,[ValidateSet('None','Views','Latest','Suggestions','Counts','Genres','Studios','Tags','GenresImage','StudiosImage','TagsImage','Search')][string]$WriterRace='None',[switch]$AfterWriteCheckRace,[ValidateSet('Standard','Suggestions','Counts','Metadata','Search','SearchHistory')][string]$DiscoveryFamily='Standard',[switch]$InspectCounts,[switch]$FixtureMovies,[switch]$InspectMetadataReferences,[switch]$PublicMetadataA,[switch]$InspectMetadataImages,[switch]$DerivedMetadataImages,[ValidateSet('Name','NameIndex','Id')][string]$MetadataImageStyle='Name',[switch]$HistoryMutationRace)
 $isImageWriter=$WriterRace -in @('GenresImage','StudiosImage','TagsImage')
 if($HistoryMutationRace -and ($DiscoveryFamily -ne 'SearchHistory' -or $WriterRace -ne 'None' -or $PublicMetadataA)){throw 'History mutation timing requires its own private SearchHistory matrix'}
 if($isImageWriter -and -not $InspectMetadataImages){throw 'Metadata image writer requires its image matrix'}
@@ -123,6 +123,11 @@ function HistoryAction($label,$actor,$claim,$ids,$searched,$clear,$expectedAllow
     if($expectedAllowed -and -not $pass){throw 'Own native search history positive control failed'}
 }
 function Discovery($phase,$aActive){
+    if($env:PERSONAL_YOUTUBE_A_PROBE){
+        . $env:PERSONAL_YOUTUBE_A_PROBE
+        Invoke-AProbe $phase $aActive
+        return
+    }
     if($DiscoveryFamily -eq 'SearchHistory'){
         $aId=[string]$subjects.a.References[1];$bId=[string]$subjects.b.References[1]
         if($aActive){
@@ -390,6 +395,78 @@ try{
     if($state.ExperimentalEnabled -or -not $state.Production.Installed -or -not $lists.Installed){throw 'Production-only discovery boundary not ready'}
     $rows.Add(@{Label='Production gates installed, broad ordinary folder rights, experimental guard disabled';Verified=$true})
     Discovery 'Active' $true
+    if($InspectSourceInventory){
+        $warm=Call 'PersonalChannelsFixture/ProductionItemList'
+        if(-not $warm.SourceBarrierInstalled -or $warm.SourceInventoryBuilds -lt 1 -or $warm.SourceInventoryHits -lt 1){throw 'Production source inventory is not active and reused'}
+        $rows.Add(@{Label='Production source inventory active and reused';Verified=$true;Builds=$warm.SourceInventoryBuilds;Hits=$warm.SourceInventoryHits})
+        foreach($fault in @($false,$true)){
+            $audit=Call 'PersonalChannelsFixture/NativeSourceInventoryAudit' $admin Post @{ItemKey=[long]$subjects.a.References[1];Fault=$fault}
+            if(-not $audit.Before.Installed -or $audit.Before.Writers -ne 0 -or $audit.During.Writers -lt 1 -or
+                $audit.During.Version -le $audit.Before.Version -or $audit.After.Writers -ne 0 -or
+                $audit.After.Version -le $audit.During.Version -or $audit.Threw -ne $fault){throw 'Native repository mutation boundary failed'}
+            $rows.Add(@{Label='Actual repository mutation observed before native body and finalized';Fault=$fault;IsolationPass=$true;Before=$audit.Before;During=$audit.During;After=$audit.After})
+        }
+        Discovery 'After-native-source-mutation' $true
+        $rebuilt=Call 'PersonalChannelsFixture/ProductionItemList'
+        if($rebuilt.SourceInventoryBuilds -le $warm.SourceInventoryBuilds){throw 'Native write did not invalidate the production source inventory'}
+        $rows.Add(@{Label='Native write caused production source inventory rebuild';Verified=$true;Before=$warm.SourceInventoryBuilds;After=$rebuilt.SourceInventoryBuilds})
+        $readerAudit=Call 'PersonalChannelsFixture/NativeSourceInventoryAudit' $admin Post @{ItemKey=[long]$subjects.a.References[1];Reader=$true}
+        if(-not $readerAudit.TransactionWriteRejected -or $readerAudit.Waiting.Readers -lt 1 -or $readerAudit.Waiting.Waiting -lt 1 -or $readerAudit.Waiting.Writers -ne 0 -or
+            $readerAudit.After.Readers -ne 0 -or $readerAudit.After.Writers -ne 0 -or $readerAudit.After.Waiting -ne 0){throw 'Native writer/reader lease exclusion failed'}
+        $rows.Add(@{Label='Actual native repository write waited for production source reader lease';IsolationPass=$true;Waiting=$readerAudit.Waiting;After=$readerAudit.After})
+        $optionsAudit=Call 'PersonalChannelsFixture/NativeSourceInventoryAudit' $admin Post @{ItemKey=[long]$subjects.a.References[1];OptionsRootKey=[long]$subjects.a.References[0]}
+        if(-not $optionsAudit.Before.Installed -or $optionsAudit.After.Version -le $optionsAudit.Before.Version -or $optionsAudit.After.Writers -ne 0){throw 'Native collection library-options mutation did not invalidate source inventory'}
+        $rows.Add(@{Label='Actual native collection library-options write advances source version';IsolationPass=$true;Before=$optionsAudit.Before;After=$optionsAudit.After})
+        $channelPolicies=@{}
+        foreach($actor in @('a','b')){
+            $policy=(Call "Users/$($subjects[$actor].UserId)").Policy
+            $channelPolicies[$actor]=[bool]$policy.EnableAllChannels
+            $policy.EnableAllChannels=$true
+            Call "Users/$($subjects[$actor].UserId)/Policy" $admin Post $policy | Out-Null
+        }
+        $publicItems=Call 'Items?Recursive=true&IncludeItemTypes=Video&Limit=100'
+        $public=@($publicItems.Items | Where-Object {$_.Name -notlike 'PrivateNative*'})
+        if($public.Count -eq 0){throw 'Missing functioning public native source for journal-corruption control'}
+        $publicId=[string]$public[0].Id
+        $publicQuery='Items?SearchTerm='+[Uri]::EscapeDataString([string]$public[0].Name)+'&Recursive=true&IncludeItemTypes=Video&Limit=100'
+        foreach($actor in @('a','b')){
+            $baseline=Call $publicQuery $subjects[$actor].Headers
+            if(@($baseline.Items|Where-Object Id -eq $publicId).Count -ne 1){throw 'Public native positive control does not function before corruption'}
+            $rows.Add(@{Label='Public native positive control before corruption with explicit channel access';Actor=$actor;IsolationPass=$true})
+        }
+        $journalPath=Join-Path $profileRoot 'publication-journal.json'
+        $privateQuery="Items?ParentId=$($subjects.a.References[0])&Recursive=true"
+        foreach($actor in @('a','b')){
+            $baseline=Call $privateQuery $subjects[$actor].Headers
+            $ownCount=@($baseline.Items|Where-Object Id -eq $subjects.a.References[1]).Count
+            $safe=if($actor -eq 'a'){$ownCount -eq 1}else{@($baseline.Items).Count -eq 0}
+            if(-not $safe){throw 'Private native paired control does not function before corruption'}
+            $rows.Add(@{Label='Same private native query has owner positive and foreign negative before corruption';Actor=$actor;IsolationPass=$safe;OwnVideoVisible=$ownCount})
+        }
+        $journalMarker=Join-Path $profileRoot 'publication-journal.required'
+        $savedJournal=if(Test-Path -LiteralPath $journalPath){[IO.File]::ReadAllBytes($journalPath)}else{$null}
+        $savedMarker=if(Test-Path -LiteralPath $journalMarker){[IO.File]::ReadAllBytes($journalMarker)}else{$null}
+        try{
+            [IO.File]::WriteAllText($journalPath,'{')
+            [IO.File]::WriteAllBytes($journalMarker,[byte[]]@(1))
+            foreach($actor in @('a','b')){
+                $visible=Call $publicQuery $subjects[$actor].Headers
+                $private=Call $privateQuery $subjects[$actor].Headers
+                $safe=@($visible.Items|Where-Object Id -eq $publicId).Count -eq 1 -and @($private.Items).Count -eq 0
+                $rows.Add(@{Label='Corrupt native publication journal preserves public source and quarantines private source';Actor=$actor;IsolationPass=$safe;PublicVisible=@($visible.Items).Count;PrivateVisible=@($private.Items).Count})
+                if(-not $safe){throw 'Native journal-corruption isolation failed'}
+            }
+        }finally{
+            if($null -eq $savedJournal){Remove-Item -LiteralPath $journalPath}else{[IO.File]::WriteAllBytes($journalPath,$savedJournal)}
+            if($null -eq $savedMarker){Remove-Item -LiteralPath $journalMarker}else{[IO.File]::WriteAllBytes($journalMarker,$savedMarker)}
+            foreach($actor in @('a','b')){
+                $policy=(Call "Users/$($subjects[$actor].UserId)").Policy
+                $policy.EnableAllChannels=$channelPolicies[$actor]
+                Call "Users/$($subjects[$actor].UserId)/Policy" $admin Post $policy | Out-Null
+            }
+        }
+        Discovery 'After-journal-recovery' $true
+    }
     if($InspectNative){
         $inspection=Call 'PersonalChannelsFixture/NativeBoundaryInspection'
         $inspection|ConvertTo-Json -Depth 10|Set-Content (Join-Path $PSScriptRoot 'bin/native-discovery-boundary-inventory.json') -Encoding UTF8
@@ -578,6 +655,7 @@ try{
 }finally{
     $name=if($RequireIsolation){'production-discovery-protected-results.json'}else{'production-discovery-diagnostic-results.json'}
     if($InspectCounts){$name=$name.Replace('discovery-','discovery-counts-inspection-')}
+    if($InspectSourceInventory){$name=$name.Replace('discovery-','discovery-source-inventory-')}
     if($FixtureMovies){$name=$name.Replace('counts-inspection-','counts-movies-inspection-')}
     if($DiscoveryFamily -ne 'Standard'){$name=$name.Replace('discovery-',('discovery-'+$DiscoveryFamily.ToLowerInvariant()+'-'))}
     if($InspectMetadataReferences){$name=$name.Replace('metadata-','metadata-references-')}
@@ -596,7 +674,7 @@ try{
         if(Test-Path -LiteralPath $profileRoot){
             $dir=[IO.Path]::GetFullPath($profileRoot);$expected=[IO.Path]::GetFullPath((Join-Path $root 'data/data/youtube-personal'))
             if($dir -ne $expected -or -not $dir.StartsWith([IO.Path]::GetFullPath($root)+[IO.Path]::DirectorySeparatorChar)){throw 'Unsafe discovery profile cleanup'}
-            $names=@('encryption.key','native-reference-bindings.json','native-reference-bindings.required')+@($subjects.Values|ForEach-Object{$_.UserId+'.json'})
+            $names=@('encryption.key','native-reference-bindings.json','native-reference-bindings.required','private-source-scopes.json','private-source-scopes.required')+@($subjects.Values|ForEach-Object{$_.UserId+'.json'})
             $files=@(Get-ChildItem -LiteralPath $dir -Force)
             if(@($files|Where-Object {$_.PSIsContainer -or $_.Name -notin $names -or ($_.Attributes -band [IO.FileAttributes]::ReparsePoint)}).Count){throw 'Unexpected discovery profile file'}
             foreach($file in $files){Remove-Item -LiteralPath $file.FullName}

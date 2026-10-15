@@ -1,0 +1,18 @@
+﻿{
+    "ProductionGate":  true,
+    "ExperimentalGuard":  false,
+    "Controls":  [
+                     {
+                         "Actor":  "a",
+                         "ForeignDetail":  404,
+                         "BroadNativeFolders":  true,
+                         "OwnDetail":  200
+                     },
+                     {
+                         "Actor":  "b",
+                         "ForeignDetail":  404,
+                         "BroadNativeFolders":  true,
+                         "OwnDetail":  200
+                     }
+                 ]
+}

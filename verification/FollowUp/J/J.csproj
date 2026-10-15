@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AssemblyName>PersonalYouTubeVerification</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../Emby.YouTubePlugin.csproj" />
+    <Reference Include="0Harmony"><HintPath>$(NuGetPackageRoot)lib.harmony/2.4.2/lib/net6.0/0Harmony.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

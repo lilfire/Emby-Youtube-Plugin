@@ -1,0 +1,1297 @@
+[
+  {
+    "Report": "verification/PersonalChannels/CLOSED-ALPHA-ACCEPTANCE.md",
+    "Artifact": "verification/PersonalChannels/LILFLIX-ALPHA-DEPLOYMENT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/CLOSED-ALPHA-ACCEPTANCE.md",
+    "Artifact": "verification/FollowUp/K/INDEX.md",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/PersonalChannels/CLOSED-ALPHA.md",
+    "Artifact": "verification/PersonalChannels/LILFLIX-ALPHA-DEPLOYMENT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/CLOSED-ALPHA.md",
+    "Artifact": "verification/FollowUp/K/INDEX.md",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/PersonalChannels/CLOSED-ALPHA.md",
+    "Artifact": "verification/PersonalChannels/bin/packages/2.0.10-alpha.1-20261014T102002670.zip",
+    "Availability": "local-ignored"
+  },
+  {
+    "Report": "verification/PersonalChannels/CLOSED-ALPHA.md",
+    "Artifact": "verification/PersonalChannels/CLOSED-ALPHA-ACCEPTANCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/CLOSED-ALPHA.md",
+    "Artifact": "verification/PersonalChannels/ANDROIDTV-ALPHA-RESULT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/CLOSED-ALPHA.md",
+    "Artifact": "verification/PersonalChannels/DOCKER-ALPHA-RELEASE-RESULT.json",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/CURRENT-DELIVERY.md",
+    "Artifact": "verification/PersonalChannels/LILFLIX-ALPHA-DEPLOYMENT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/CURRENT-DELIVERY.md",
+    "Artifact": "verification/FollowUp/K/INDEX.md",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/PersonalChannels/CURRENT-DELIVERY.md",
+    "Artifact": "verification/PersonalChannels/bin/packages/2.0.10-alpha.1-20261014T102002670.zip",
+    "Availability": "local-ignored"
+  },
+  {
+    "Report": "verification/PersonalChannels/CURRENT-DELIVERY.md",
+    "Artifact": "verification/PersonalChannels/CLOSED-ALPHA-ACCEPTANCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/CURRENT-DELIVERY.md",
+    "Artifact": "verification/PersonalChannels/CLOSED-ALPHA.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-ASSET-SOURCE-PROVENANCE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-ASSET-SOURCE-PROVENANCE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-CONVERTED-SYNC-FILES.md",
+    "Artifact": "verification/PersonalChannels/Test-NativeConvertedSyncFiles.ps1",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-CONVERTED-SYNC-ROOT-RACE.md",
+    "Artifact": "verification/PersonalChannels/Test-NativeSyncPrepareRace.ps1",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-CONVERTED-SYNC-ROOT-RACE.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-CONVERTED-SYNC-FILES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-DERIVED-ASSET-SOURCES.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-IMAGE-CACHE-RECIPE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-DERIVED-ASSET-SOURCES.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-GROWTH-WHOLE-ROOT-DELETION.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-DELETED-ROOT-LIVE-STREAMS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-LIBRARY-RECREATION.md",
+    "Artifact": "verification/PersonalChannels/Test-NativeRootRecreation.ps1",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-MEMBER-EVENT-PERSISTENCE.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-GROWTH-WHOLE-ROOT-DELETION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-REFERENCE-LEDGER-EXPERIMENT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-MEMBER-EVENT-PERSISTENCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-ROOT-DELETION-OBSERVATIONS.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-REFERENCE-LEDGER-EXPERIMENT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-ROOT-READY-ORIGINAL-FILES.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-ROOT-SYNC-ITEM-RETENTION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-ROOT-SOURCE-LOCATIONS.md",
+    "Artifact": "verification/PersonalChannels/NEW-UNREGISTERED-NATIVE-ROOT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-STATIC-FACTORY-PROVENANCE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-STATIC-FACTORY-PROVENANCE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-VIDEO-STREAMS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-SYNC-PREPARE-WRITE-SURFACE.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-SYNC-PREPARE-ROOT-RACE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/NATIVE-UNBOUND-DESCENDANT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-PRODUCTION-BINDING-INTEGRATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH-MUTATION-RACES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH-HISTORY.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGE-WRITERS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-REFERENCES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-LISTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ITEM-COUNTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SUGGESTIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DISCOVERY-LISTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-IMAGE-CACHE-RECIPE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-DERIVED-ASSET-SOURCES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-ASSET-SOURCE-PROVENANCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-HTTP-VARIANTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-TRANSFER-LEASE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-WRITE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PRIMARY-IMAGE-EXTERNAL-SUBTITLE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-STATIC-FACTORY-PROVENANCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-VIDEO-STREAMS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-VARIANTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-REFERENCE-RESPONSE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-LIST-TRANSFER-LEASE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-LIST-WRITE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-LIST-RESULT-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "PersonalYouTubeStore.cs",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PROFILE-STORE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-ASSET-HTTP-VARIANTS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-ASSET-HTTP-VARIANTS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-WRITE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-ASSET-HTTP-VARIANTS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-TRANSFER-LEASE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-IMAGE-CACHE-RECIPE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-ASSET-TRANSFER-LEASE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-ASSET-TRANSFER-LEASE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-WRITE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-ASSET-WRITE-REVOCATION.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-ASSET-WRITE-REVOCATION.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-TRANSFER-LEASE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-REVOCATION.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-VARIANTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-VARIANTS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGE-WRITERS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGES.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGE-WRITERS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-NATIVE-BINDINGS.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-PRODUCTION-BINDING-INTEGRATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-NATIVE-BINDINGS.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-UNBOUND-DESCENDANT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PRIMARY-IMAGE-EXTERNAL-SUBTITLE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PRIMARY-IMAGE-EXTERNAL-SUBTITLE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-WRITE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PRIMARY-IMAGE-EXTERNAL-SUBTITLE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-TRANSFER-LEASE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PRIMARY-IMAGE-EXTERNAL-SUBTITLE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-HTTP-VARIANTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-SERVICE.md",
+    "Artifact": "PersonalYouTubeService.cs",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-SERVICE.md",
+    "Artifact": "PersonalYouTubeStore.cs",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-SERVICE.md",
+    "Artifact": "verification/PersonalChannels/Test-ProductionPersonalProfiles.ps1",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-SERVICE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PROFILE-STORE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-STORE.md",
+    "Artifact": "PersonalYouTubeStore.cs",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-STORE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-NATIVE-BINDINGS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-STORE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PUBLICATION-JOURNAL.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-STORE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PROFILE-SERVICE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-STORE.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PROFILE-UI.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-UI.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PROFILE-SERVICE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PROFILE-UI.md",
+    "Artifact": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PUBLICATION-JOURNAL.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-UNBOUND-DESCENDANT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PUBLICATION-JOURNAL.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-ROOT-SOURCE-LOCATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-PUBLICATION-JOURNAL.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-PUBLICATION-STATE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-SEARCH-HISTORY.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH-MUTATION-RACES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-SEARCH-MUTATION-RACES.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH-HISTORY.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PRODUCTION-STATIC-VIDEO-STREAMS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH-MUTATION-RACES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH-HISTORY.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGE-WRITERS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-REFERENCES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-LISTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ITEM-COUNTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SUGGESTIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DISCOVERY-LISTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-IMAGE-CACHE-RECIPE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-DERIVED-ASSET-SOURCES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-ASSET-SOURCE-PROVENANCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-HTTP-VARIANTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-TRANSFER-LEASE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-WRITE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PRIMARY-IMAGE-EXTERNAL-SUBTITLE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-STATIC-FACTORY-PROVENANCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-VIDEO-STREAMS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-VARIANTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-REFERENCE-RESPONSE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-LIST-TRANSFER-LEASE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-LIST-WRITE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-LIST-RESULT-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-LIST-INVENTORY-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ITEM-LIST-GATE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SERVICE-REFERENCE-GATE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-NATIVE-ACCESS-RESOLUTION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-NATIVE-CREATION-HOOK.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-NATIVE-CREATION-CONTEXT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-CREATION-PRE-SOURCE-WINDOW.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-NATIVE-BINDINGS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-PRODUCTION-BINDING-INTEGRATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-UNBOUND-DESCENDANT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PUBLICATION-JOURNAL.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-PUBLICATION-STATE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-ROOT-SOURCE-LOCATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NEW-UNREGISTERED-NATIVE-ROOT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PROFILE-UI.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-CONVERTED-SYNC-ROOT-RACE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-LIBRARY-RECREATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-CONVERTED-SYNC-FILES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/PERSONAL-ISOLATION-REQUIREMENTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-WEB-CLIENT-OBSERVATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/REMAINING-BOUNDARIES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-READY-OWNER-DELETION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-MEDIA-ASSET-OBSERVATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/YOUTUBE-SOURCE-COMPATIBILITY.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/LIVE-STREAM-OWNERSHIP.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/LIVE-STREAM-BINDING-EXPERIMENT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/OPEN-TOKEN-PRECHECK-EXPERIMENT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/STALE-OPEN-TOKEN-OBSERVATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/TOKEN-LEDGER-EXPERIMENT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/TOKEN-OWNER-RECREATION-OBSERVATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/UNISSUED-SOURCE-GUARD-EXPERIMENT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/CONCURRENT-STREAM-SCOPE-OBSERVATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/SHARED-VIDEO-IDENTITY-OBSERVATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-LIBRARY-RENAME-OBSERVATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-ROOT-DELETION-OBSERVATIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-REFERENCE-LEDGER-EXPERIMENT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-MEMBER-EVENT-PERSISTENCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-GROWTH-WHOLE-ROOT-DELETION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-DELETED-ROOT-LIVE-STREAMS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-ROOT-READY-ORIGINAL-FILES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-ROOT-SYNC-ITEM-RETENTION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-SYNC-PREPARE-WRITE-SURFACE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-SYNC-PREPARE-ROOT-RACE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH-MUTATION-RACES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH-HISTORY.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SEARCH.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGE-WRITERS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-IMAGES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-REFERENCES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-METADATA-LISTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ITEM-COUNTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-SUGGESTIONS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DISCOVERY-LISTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-IMAGE-CACHE-RECIPE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-DERIVED-ASSET-SOURCES.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-ASSET-SOURCE-PROVENANCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-HTTP-VARIANTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-TRANSFER-LEASE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-ASSET-WRITE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-PRIMARY-IMAGE-EXTERNAL-SUBTITLE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-SOURCE-BINDING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/NATIVE-STATIC-FACTORY-PROVENANCE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-STATIC-VIDEO-STREAMS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-VARIANTS.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-DOWNLOAD-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-REFERENCE-RESPONSE-REVOCATION.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PRODUCTION-LIST-TRANSFER-LEASE.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PLAN-FULL-SKJERMING.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/PersonalChannels/STATUS.md",
+    "Artifact": "verification/PersonalChannels/PROOF-AUDIT.md",
+    "Availability": "tracked"
+  },
+  {
+    "Report": "verification/FollowUp/A/REPORT.md",
+    "Artifact": "verification/FollowUp/A/ROUTES.csv",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/A/REPORT.md",
+    "Artifact": "verification/FollowUp/A/SUMMARY.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/A/REPORT.md",
+    "Artifact": "verification/FollowUp/A/PRIVATE-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/A/REPORT.md",
+    "Artifact": "verification/FollowUp/A/PUBLIC-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/A/REPORT.md",
+    "Artifact": "verification/FollowUp/A/RACE-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/B/REPORT.md",
+    "Artifact": "verification/FollowUp/B/Run-B.ps1",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/B/REPORT.md",
+    "Artifact": "verification/FollowUp/B/SUMMARY.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/B/REPORT.md",
+    "Artifact": "verification/FollowUp/B/Run-Collision.ps1",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/B/REPORT.md",
+    "Artifact": "verification/FollowUp/B/ROUTES.csv",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/B/REPORT.md",
+    "Artifact": "verification/FollowUp/B/PRIVATE-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/B/REPORT.md",
+    "Artifact": "verification/FollowUp/B/PUBLIC-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/B/REPORT.md",
+    "Artifact": "verification/FollowUp/B/COLLISION-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/C/REPORT.md",
+    "Artifact": "verification/FollowUp/C/Run-C.ps1",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/C/REPORT.md",
+    "Artifact": "verification/FollowUp/C/SUMMARY.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/C/REPORT.md",
+    "Artifact": "verification/FollowUp/C/NATIVE-INVENTORY.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/C/REPORT.md",
+    "Artifact": "verification/FollowUp/C/PROVENANCE.md",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/Run-D.ps1",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/BoundaryFixture.csproj",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/NativeVideoBoundary.cs",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/Transport-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/Hls-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/Content-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/Boundary-Reader-File-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/Public-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/BeforeWrite-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/Lease-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/Abort-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/SUMMARY.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/D/REPORT.md",
+    "Artifact": "verification/FollowUp/D/ROUTES.csv",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/E/REPORT.md",
+    "Artifact": "verification/FollowUp/E/SUMMARY.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/E/REPORT.md",
+    "Artifact": "verification/FollowUp/E/Program.cs",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/E/REPORT.md",
+    "Artifact": "verification/FollowUp/E/WINDOWS-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/E/REPORT.md",
+    "Artifact": "verification/FollowUp/E/LINUX-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/F/REPORT.md",
+    "Artifact": "verification/FollowUp/F/STORE-METADATA.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/F/REPORT.md",
+    "Artifact": "verification/FollowUp/F/INTEGRATION-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/F/REPORT.md",
+    "Artifact": "verification/FollowUp/F/WINDOWS-STORE-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/F/REPORT.md",
+    "Artifact": "verification/FollowUp/F/LINUX-STORE-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/F/REPORT.md",
+    "Artifact": "verification/FollowUp/F/WINDOWS-PERMISSIONS.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/F/REPORT.md",
+    "Artifact": "verification/FollowUp/F/FINAL-CLEANUP.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/G/REPORT.md",
+    "Artifact": "verification/FollowUp/G/Program.cs",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/G/REPORT.md",
+    "Artifact": "verification/FollowUp/G/WINDOWS-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/ENVIRONMENT.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/Prepare-H.ps1",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/Bind-H.ps1",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/PREFLIGHT.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/CLIENTS.csv",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/UI.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/Probe-H.ps1",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/HTTP.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/WEB-AUTH.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/REVOCATION.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/Cleanup-H.ps1",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/H/REPORT.md",
+    "Artifact": "verification/FollowUp/H/CLEANUP.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/J/REPORT.md",
+    "Artifact": "verification/FollowUp/J/PLATFORM-METADATA.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/J/REPORT.md",
+    "Artifact": "verification/FollowUp/J/Program.cs",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/J/REPORT.md",
+    "Artifact": "verification/FollowUp/J/WINDOWS-NATIVE-INVENTORY.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/J/REPORT.md",
+    "Artifact": "verification/FollowUp/J/LINUX-NATIVE-INVENTORY.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/J/REPORT.md",
+    "Artifact": "verification/FollowUp/J/PACKAGE-EVIDENCE.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/J/REPORT.md",
+    "Artifact": "verification/FollowUp/J/verify_package.py",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/J/REPORT.md",
+    "Artifact": "verification/FollowUp/J/test_package.py",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/J/REPORT.md",
+    "Artifact": "verification/FollowUp/J/INSTALLATION-PLAN.md",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/K/REPORT.md",
+    "Artifact": "verification/FollowUp/K/INDEX.md",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/K/REPORT.md",
+    "Artifact": "verification/FollowUp/K/REPORT-INDEX.csv",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/K/REPORT.md",
+    "Artifact": "verification/FollowUp/K/ARTIFACTS.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/K/REPORT.md",
+    "Artifact": "verification/FollowUp/K/LINK-AVAILABILITY.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/K/REPORT.md",
+    "Artifact": "verification/FollowUp/K/REGRESSION.json",
+    "Availability": "untracked-publishable"
+  },
+  {
+    "Report": "verification/FollowUp/K/REPORT.md",
+    "Artifact": "verification/FollowUp/K/VERIFICATION.json",
+    "Availability": "untracked-publishable"
+  }
+]

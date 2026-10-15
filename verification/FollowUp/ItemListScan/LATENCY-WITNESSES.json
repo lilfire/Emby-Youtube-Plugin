@@ -1,0 +1,466 @@
+﻿{
+    "Label":  "witnesses",
+    "PluginSha256":  "B27179ED140841FCA94525F9DB1941619148EA406F7FE47992E079905ACA3C3A",
+    "AdminVisibleItems":  40010,
+    "Rows":  [
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  1280,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  1196,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  993,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  1139,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  1016,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  1117,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  1307,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  1090,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  1125,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  1039,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  1095,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  944,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  1113,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  1229,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "serverkey",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  610,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "serverkey",
+                     "Route":  "Library/VirtualFolders",
+                     "Status":  200,
+                     "Ms":  568,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  1,
+                     "Actor":  "serverkey",
+                     "Route":  "Items",
+                     "Status":  200,
+                     "Ms":  489,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  1029,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  1107,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  1012,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  997,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  1084,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  1044,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  1316,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  919,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  1105,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  1028,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  1077,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  969,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  1057,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  1321,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "serverkey",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  525,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "serverkey",
+                     "Route":  "Library/VirtualFolders",
+                     "Status":  200,
+                     "Ms":  539,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  2,
+                     "Actor":  "serverkey",
+                     "Route":  "Items",
+                     "Status":  200,
+                     "Ms":  494,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  1088,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  991,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  1085,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  1066,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  1071,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  1009,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  1343,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  929,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  1039,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  1026,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  980,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  992,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  1020,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  1267,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "serverkey",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  552,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "serverkey",
+                     "Route":  "Library/VirtualFolders",
+                     "Status":  200,
+                     "Ms":  466,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "witnesses",
+                     "Round":  3,
+                     "Actor":  "serverkey",
+                     "Route":  "Items",
+                     "Status":  200,
+                     "Ms":  585,
+                     "Count":  null
+                 }
+             ]
+}

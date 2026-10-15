@@ -1,0 +1,1427 @@
+﻿[
+    {
+        "ServerStopped":  true,
+        "Cleanup":  {
+                        "MediaGone":  true,
+                        "FixtureGone":  true,
+                        "UsersGone":  true,
+                        "LibrariesGone":  true,
+                        "GuardGone":  true,
+                        "ServerStopped":  false
+                    },
+        "Observations":  [
+                             {
+                                 "Label":  "Actual native empty-page count without production/experimental list hooks",
+                                 "Size":  0,
+                                 "ExperimentalEnabled":  false,
+                                 "Total":  0,
+                                 "ProductionListInstalled":  false
+                             },
+                             {
+                                 "Label":  "Actual native baseline own full list",
+                                 "Size":  1,
+                                 "Total":  1
+                             },
+                             {
+                                 "EnableAllFolders":  true,
+                                 "Label":  "a native policy allows all libraries"
+                             },
+                             {
+                                 "EnableAllFolders":  true,
+                                 "Label":  "b native policy allows all libraries"
+                             },
+                             {
+                                 "Label":  "Production query gate installed with experimental guard off",
+                                 "Installed":  true,
+                                 "ExperimentalEnabled":  false
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Actual A list paused after inventory before native service",
+                                 "Active":  true,
+                                 "HttpPending":  true
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "B own list while A paused",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "A mutation state while list request held",
+                                 "DeletionWaiting":  false,
+                                 "Deleted":  true,
+                                 "PauseStillActive":  true
+                             },
+                             {
+                                 "Label":  "Previously authorized list after completed deletion",
+                                 "Total":  0,
+                                 "PrivateNamePresent":  false,
+                                 "IsolationPass":  true,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a own complete list",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a first page",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a forged query subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a forged path subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "RestartVerified":  true,
+                                 "Label":  "Actual restart and experimental guard off"
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a own complete list",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a first page",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a forged query subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a forged path subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Production scope and native query prefixes executed",
+                                 "Queries":  10,
+                                 "WritesDenied":  0,
+                                 "Requests":  10,
+                                 "Writes":  10
+                             }
+                         ],
+        "Completed":  true,
+        "Boundary":  "InventoryRace"
+    },
+    {
+        "ServerStopped":  true,
+        "Cleanup":  {
+                        "MediaGone":  true,
+                        "FixtureGone":  true,
+                        "UsersGone":  true,
+                        "LibrariesGone":  true,
+                        "GuardGone":  true,
+                        "ServerStopped":  false
+                    },
+        "Observations":  [
+                             {
+                                 "Label":  "Actual native empty-page count without production/experimental list hooks",
+                                 "Size":  0,
+                                 "ExperimentalEnabled":  false,
+                                 "Total":  0,
+                                 "ProductionListInstalled":  false
+                             },
+                             {
+                                 "Label":  "Actual native baseline own full list",
+                                 "Size":  1,
+                                 "Total":  1
+                             },
+                             {
+                                 "EnableAllFolders":  true,
+                                 "Label":  "a native policy allows all libraries"
+                             },
+                             {
+                                 "EnableAllFolders":  true,
+                                 "Label":  "b native policy allows all libraries"
+                             },
+                             {
+                                 "Label":  "Production query gate installed with experimental guard off",
+                                 "Installed":  true,
+                                 "ExperimentalEnabled":  false
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Actual A list paused after native task completed before result wrapper",
+                                 "Active":  true,
+                                 "HttpPending":  true
+                             },
+                             {
+                                 "Label":  "Actual native result completed before deletion and production wrapper",
+                                 "ResultType":  "Emby.Server.Implementations.HttpServer.StreamWriter",
+                                 "NativeTaskCompleted":  true
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "B own list while A paused",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "A mutation state while list request held",
+                                 "DeletionWaiting":  false,
+                                 "Deleted":  true,
+                                 "PauseStillActive":  true
+                             },
+                             {
+                                 "Label":  "Previously authorized list after completed deletion",
+                                 "Total":  null,
+                                 "PrivateNamePresent":  false,
+                                 "IsolationPass":  true,
+                                 "Status":  404,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a own complete list",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a first page",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a forged query subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a forged path subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "RestartVerified":  true,
+                                 "Label":  "Actual restart and experimental guard off"
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a own complete list",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a first page",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a forged query subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a forged path subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Production scope and native query prefixes executed",
+                                 "Queries":  10,
+                                 "WritesDenied":  0,
+                                 "Requests":  10,
+                                 "Writes":  10
+                             }
+                         ],
+        "Completed":  true,
+        "Boundary":  "ResultRace"
+    },
+    {
+        "ServerStopped":  true,
+        "Cleanup":  {
+                        "MediaGone":  true,
+                        "FixtureGone":  true,
+                        "UsersGone":  true,
+                        "LibrariesGone":  true,
+                        "GuardGone":  true,
+                        "ServerStopped":  false
+                    },
+        "Observations":  [
+                             {
+                                 "Label":  "Actual native empty-page count without production/experimental list hooks",
+                                 "Size":  0,
+                                 "ExperimentalEnabled":  false,
+                                 "Total":  0,
+                                 "ProductionListInstalled":  false
+                             },
+                             {
+                                 "Label":  "Actual native baseline own full list",
+                                 "Size":  1,
+                                 "Total":  1
+                             },
+                             {
+                                 "EnableAllFolders":  true,
+                                 "Label":  "a native policy allows all libraries"
+                             },
+                             {
+                                 "EnableAllFolders":  true,
+                                 "Label":  "b native policy allows all libraries"
+                             },
+                             {
+                                 "Label":  "Production query gate installed with experimental guard off",
+                                 "Installed":  true,
+                                 "ExperimentalEnabled":  false
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Actual A list paused at native WriteToAsync after result checks",
+                                 "Active":  true,
+                                 "HttpPending":  true
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "B own list while A paused",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "A mutation state while list request held",
+                                 "DeletionWaiting":  false,
+                                 "Deleted":  true,
+                                 "PauseStillActive":  true
+                             },
+                             {
+                                 "Label":  "Previously authorized list after completed deletion",
+                                 "Total":  null,
+                                 "PrivateNamePresent":  false,
+                                 "IsolationPass":  true,
+                                 "Status":  404,
+                                 "Size":  0
+                             },
+                             {
+                                 "Label":  "Production native write prefix executed",
+                                 "WritesDenied":  1,
+                                 "Installed":  true,
+                                 "Writes":  12
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a own complete list",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a first page",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a forged query subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a forged path subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "RestartVerified":  true,
+                                 "Label":  "Actual restart and experimental guard off"
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a own complete list",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a first page",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a forged query subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a forged path subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Production scope and native query prefixes executed",
+                                 "Queries":  10,
+                                 "WritesDenied":  0,
+                                 "Requests":  10,
+                                 "Writes":  10
+                             }
+                         ],
+        "Completed":  true,
+        "Boundary":  "WriteRace"
+    },
+    {
+        "ServerStopped":  true,
+        "Cleanup":  {
+                        "MediaGone":  true,
+                        "FixtureGone":  true,
+                        "UsersGone":  true,
+                        "LibrariesGone":  true,
+                        "GuardGone":  true,
+                        "ServerStopped":  false
+                    },
+        "Observations":  [
+                             {
+                                 "Label":  "Actual native empty-page count without production/experimental list hooks",
+                                 "Size":  0,
+                                 "ExperimentalEnabled":  false,
+                                 "Total":  0,
+                                 "ProductionListInstalled":  false
+                             },
+                             {
+                                 "Label":  "Actual native baseline own full list",
+                                 "Size":  1,
+                                 "Total":  1
+                             },
+                             {
+                                 "EnableAllFolders":  true,
+                                 "Label":  "a native policy allows all libraries"
+                             },
+                             {
+                                 "EnableAllFolders":  true,
+                                 "Label":  "b native policy allows all libraries"
+                             },
+                             {
+                                 "Label":  "Production query gate installed with experimental guard off",
+                                 "Installed":  true,
+                                 "ExperimentalEnabled":  false
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active a forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Active b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Actual A list paused after production write permission check",
+                                 "Active":  true,
+                                 "HttpPending":  true
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "B own list while A paused",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Deletion reached owner gate while native writer held lease",
+                                 "DeleteHttpPending":  true,
+                                 "Waiting":  1,
+                                 "PersistedState":  "Draft",
+                                 "Held":  true
+                             },
+                             {
+                                 "RevisionAdvanced":  true,
+                                 "Label":  "B profile mutation succeeds while A deletion waits"
+                             },
+                             {
+                                 "Label":  "A mutation state while list request held",
+                                 "DeletionWaiting":  true,
+                                 "Deleted":  false,
+                                 "PauseStillActive":  true
+                             },
+                             {
+                                 "Label":  "Authorized list whose native write held the lease before mutation",
+                                 "Total":  1,
+                                 "PrivateNamePresent":  true,
+                                 "IsolationPass":  true,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Queued deletion persisted after native write lease released",
+                                 "Status":  200,
+                                 "Held":  false,
+                                 "Waiting":  0,
+                                 "State":  "Deleted"
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a own complete list",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a first page",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a forged query subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile a forged path subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "Deleted A profile b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "RestartVerified":  true,
+                                 "Label":  "Actual restart and experimental guard off"
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a own complete list",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a first page",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a forged query subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart a forged path subject",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b own complete list",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b first page",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b page past end",
+                                 "Total":  0,
+                                 "ExpectedTotal":  0,
+                                 "ExpectedSize":  0,
+                                 "Status":  200,
+                                 "Size":  0
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b forged query subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "ForeignNamePresent":  false,
+                                 "Label":  "After restart b forged path subject",
+                                 "Total":  1,
+                                 "ExpectedTotal":  1,
+                                 "ExpectedSize":  1,
+                                 "Status":  200,
+                                 "Size":  1
+                             },
+                             {
+                                 "Label":  "Production scope and native query prefixes executed",
+                                 "Queries":  10,
+                                 "WritesDenied":  0,
+                                 "Requests":  10,
+                                 "Writes":  10
+                             }
+                         ],
+        "Completed":  true,
+        "Boundary":  "AfterWriteCheckRace"
+    }
+]

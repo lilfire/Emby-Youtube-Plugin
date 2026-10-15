@@ -1,0 +1,98 @@
+{
+  "Completed": true,
+  "ProductionDLLSHA256": "B27179ED140841FCA94525F9DB1941619148EA406F7FE47992E079905ACA3C3A",
+  "Platform": "Microsoft Windows 10.0.19045",
+  "Scope": "Production access resolver and storage; SDK library adapter with deliberately stale ancestor index and lexical path filters. No native SQL/HTTP, Emby process, Google or production data.",
+  "CandidateSafeToEnable": false,
+  "Observations": [
+    {
+      "Name": "Positive owner receives the registered active item",
+      "Pass": true
+    },
+    {
+      "Name": "Foreign account is denied that same item",
+      "Pass": true
+    },
+    {
+      "Name": "Ordinary public source works for both accounts",
+      "Pass": true
+    },
+    {
+      "Name": "Unknown private descendants denied to both accounts",
+      "Pass": true
+    },
+    {
+      "Name": "Canonical private path alias denied to both accounts",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes registered source",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes unregistered child",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes nested external-path child",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes unregistered media orphan",
+      "Pass": true
+    },
+    {
+      "Name": "Direct-parent candidate includes descendant of private physical path",
+      "Pass": true
+    },
+    {
+      "Name": "Ordinary public source is outside the candidate private scope",
+      "Pass": true
+    },
+    {
+      "Name": "Indexed ancestry misses a child when its native ancestor index is stale",
+      "Pass": true
+    },
+    {
+      "Name": "Direct parent walk covers that stale-ancestor case",
+      "Pass": true
+    },
+    {
+      "Name": "Both string-prefix candidates miss the canonical private path alias",
+      "Pass": true
+    },
+    {
+      "Name": "Private inventory replacement must remain disabled",
+      "Pass": true
+    },
+    {
+      "Name": "Unbound reserved root remains denied to its owner",
+      "Pass": true
+    },
+    {
+      "Name": "Candidate resolves the reserved GUID and its unregistered child",
+      "Pass": true
+    },
+    {
+      "Name": "Reserved child denied to both accounts",
+      "Pass": true
+    },
+    {
+      "Name": "Revoked owner loses previously allowed private source",
+      "Pass": true
+    },
+    {
+      "Name": "Public source survives private owner revocation",
+      "Pass": true
+    },
+    {
+      "Name": "Corrupt private profile fails closed without denying public source",
+      "Pass": true
+    },
+    {
+      "Name": "Global corrupt journal still blocks ordinary public resolution",
+      "Pass": true
+    }
+  ],
+  "TestDataGone": true
+}

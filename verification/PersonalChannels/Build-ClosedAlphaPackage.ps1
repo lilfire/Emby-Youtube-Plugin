@@ -1,4 +1,4 @@
-param([string]$Version='2.0.10-alpha.1',[ValidateSet('candidate-not-approved','closed-alpha-ready')][string]$Status='candidate-not-approved')
+param([string]$Version='2.0.11-alpha.1',[ValidateSet('candidate-not-approved','closed-alpha-ready')][string]$Status='candidate-not-approved')
 $ErrorActionPreference='Stop'
 $repository=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../..'))
 $packages=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot 'bin/packages'))
@@ -8,7 +8,7 @@ New-Item -ItemType Directory -Path $candidate | Out-Null
 $sources=@{'Emby.YouTubePlugin.dll'='bin/Release/net6.0/Emby.YouTubePlugin.dll';'thumb.png'='thumb.png';'LICENSE'='LICENSE';'INSTALL.md'='verification/PersonalChannels/alpha-package/INSTALL.md';'KNOWN-LIMITS.md'='verification/PersonalChannels/alpha-package/KNOWN-LIMITS.md'}
 foreach($name in $sources.Keys){Copy-Item -LiteralPath (Join-Path $repository $sources[$name]) -Destination (Join-Path $candidate $name)}
 $assembly=[Reflection.AssemblyName]::GetAssemblyName((Join-Path $candidate 'Emby.YouTubePlugin.dll'))
-if($assembly.Version.ToString() -ne '2.0.10.0'){throw 'Build the alpha version before packaging'}
+if($assembly.Version.ToString() -ne '2.0.11.0'){throw 'Build the alpha version before packaging'}
 $entries=@($sources.Keys|Sort-Object|ForEach-Object{@{Name=$_;SHA256=(Get-FileHash -LiteralPath (Join-Path $candidate $_)).Hash;Bytes=(Get-Item -LiteralPath (Join-Path $candidate $_)).Length}})
 @{Version=$Version;AssemblyVersion=$assembly.Version.ToString();Status=$Status;Files=$entries}|ConvertTo-Json -Depth 6|Set-Content -LiteralPath (Join-Path $candidate 'manifest.json') -Encoding UTF8
 $zip=$candidate+'.zip'

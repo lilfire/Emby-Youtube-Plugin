@@ -1,0 +1,307 @@
+﻿{
+    "LastStage":  "F account deletion and identical name new GUID",
+    "Observations":  [
+                         {
+                             "State":  "WaitingForSettings",
+                             "Label":  "Saving incomplete settings reports WaitingForSettings"
+                         },
+                         {
+                             "Label":  "Authenticated profile save completes actual background publication",
+                             "ObservedStates":  [
+                                                    "Queued",
+                                                    "Buffering",
+                                                    "Publishing",
+                                                    "Ready"
+                                                ],
+                             "Videos":  1,
+                             "State":  "Ready"
+                         },
+                         {
+                             "Label":  "Forged owner query returns only B own job status",
+                             "LibraryId":  null,
+                             "State":  "Idle"
+                         },
+                         {
+                             "Label":  "Restricted A gains only its own new library; B broad policy preserved",
+                             "BEnableAllFolders":  true,
+                             "AddedAFolders":  1,
+                             "AEnableAllFolders":  false
+                         },
+                         {
+                             "Label":  "Readable native library/video names and encoded provider description",
+                             "DescriptionEncoded":  true,
+                             "LibraryName":  "YouTube",
+                             "VideoTitle":  "Public upstream test video"
+                         },
+                         {
+                             "Label":  "Ordinary library discovery and native video response",
+                             "ForeignVideoStatus":  404,
+                             "OwnerVideoStatus":  200,
+                             "OwnerBytes":  565499
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F identical key/channel produces separate collections, generations and native roots"
+                         },
+                         {
+                             "OwnerBytes":  565499,
+                             "Label":  "F A shared source owner/foreign playback",
+                             "OwnerStatus":  200,
+                             "ForeignStatus":  404,
+                             "Passed":  true
+                         },
+                         {
+                             "OwnerBytes":  565499,
+                             "Label":  "F B shared source owner/foreign playback",
+                             "OwnerStatus":  200,
+                             "ForeignStatus":  404,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F anonymous Get YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F manipulated identity Get YouTubePlugin/MyProfile",
+                             "Status":  200,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F anonymous Get YouTubePlugin/MyJob",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F manipulated identity Get YouTubePlugin/MyJob",
+                             "Status":  200,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F anonymous Get YouTubePlugin/PersonalServerStatus",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F manipulated identity Get YouTubePlugin/PersonalServerStatus",
+                             "Status":  403,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F anonymous Post YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F manipulated identity Post YouTubePlugin/MyProfile",
+                             "Status":  400,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F anonymous Post YouTubePlugin/MyProfile/Delete",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F manipulated identity Post YouTubePlugin/MyProfile/Delete",
+                             "Status":  400,
+                             "Passed":  true
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F administrator positive diagnostic control"
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F forged route bodies preserve B profile"
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F actual publication paused after native root insertion"
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F profile update waits during production creation lease"
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F B playback works while A publication and update are pending"
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F queued profile update completes after publication lease release"
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F latest revision publishes and interrupted generation is retired"
+                         },
+                         {
+                             "OwnerBytes":  565499,
+                             "Label":  "F latest A publication owner/foreign playback",
+                             "OwnerStatus":  200,
+                             "ForeignStatus":  404,
+                             "Passed":  true
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F disabled account policy readback"
+                         },
+                         {
+                             "Label":  "F disabled session Get YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F disabled session Get YouTubePlugin/MyJob",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F disabled session Get YouTubePlugin/PersonalServerStatus",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F disabled session Post YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F disabled session Post YouTubePlugin/MyProfile/Delete",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F disabled session Post YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F disabled session Post YouTubePlugin/MyProfile/Delete",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "OwnerBytes":  565499,
+                             "Label":  "F disabled A leaves B playback functional",
+                             "OwnerStatus":  200,
+                             "ForeignStatus":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "OwnerBytes":  565499,
+                             "Label":  "F reenabled A playback positive control",
+                             "OwnerStatus":  200,
+                             "ForeignStatus":  404,
+                             "Passed":  true
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F native token revocation accepted"
+                         },
+                         {
+                             "Label":  "F revoked session Get YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F revoked session Get YouTubePlugin/MyJob",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F revoked session Get YouTubePlugin/PersonalServerStatus",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F revoked session Post YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F revoked session Post YouTubePlugin/MyProfile/Delete",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F revoked session Post YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F revoked session Post YouTubePlugin/MyProfile/Delete",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "OwnerBytes":  565499,
+                             "Label":  "F new A token playback positive control",
+                             "OwnerStatus":  200,
+                             "ForeignStatus":  404,
+                             "Passed":  true
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F account deletion native readback"
+                         },
+                         {
+                             "Label":  "F deleted account session Get YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F deleted account session Get YouTubePlugin/MyJob",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F deleted account session Get YouTubePlugin/PersonalServerStatus",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F deleted account session Post YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F deleted account session Post YouTubePlugin/MyProfile/Delete",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F deleted account session Post YouTubePlugin/MyProfile",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Label":  "F deleted account session Post YouTubePlugin/MyProfile/Delete",
+                             "Status":  401,
+                             "Passed":  true
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F identical name new GUID inherits no profile or key"
+                         },
+                         {
+                             "Label":  "F identical name new GUID cannot read old native video",
+                             "Status":  404,
+                             "Passed":  true
+                         },
+                         {
+                             "Passed":  true,
+                             "Label":  "F A account lifecycle preserves B profile and playback"
+                         },
+                         {
+                             "Classification":  "Retention finding; access denied",
+                             "Passed":  true,
+                             "Label":  "F deleted account profile retention measured",
+                             "OldProfileRetained":  true,
+                             "OldMediaRetained":  true
+                         }
+                     ],
+    "Completed":  true,
+    "Failure":  null,
+    "Scope":  "F: actual authenticated profiles/jobs, native publication and playback; identical key/channel for two owners; disabled/revoked/deleted accounts, same name new GUID. Controlled Google catalog transport; real yt-dlp media extraction; no main server or physical app."
+}

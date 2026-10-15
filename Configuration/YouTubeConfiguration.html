@@ -603,6 +603,8 @@
                     <div class="paper-card">
                         <h2 style="margin-top: 0;">Personal YouTube — closed alpha</h2>
                         <p>Personal API keys and channels are managed under each user's YouTube settings. Use controlled test content during the alpha. Restart Emby after changing these server settings.</p>
+                        <p class="ytPersonalServerStatus" role="status" aria-live="polite">Server status has not been checked.</p>
+                        <button is="emby-button" type="button" class="raised ytPersonalServerReload">Check running server</button>
                         <div class="checkboxContainer checkboxContainer-withDescription">
                             <label><input is="emby-checkbox" id="chkPersonalYouTubeAlphaEnabled" type="checkbox"><span>Enable personal YouTube alpha</span></label>
                         </div>
@@ -612,7 +614,7 @@
                         <div class="inputContainer"><label class="inputLabel" for="numPersonalYouTubeMaxVideos">Recent videos per user, shared across their channels</label><input is="emby-input" id="numPersonalYouTubeMaxVideos" type="number" min="1" max="10000"></div>
                         <div class="inputContainer"><label class="inputLabel" for="numPersonalYouTubeMaxVideoMiB">Maximum size per video (MiB)</label><input is="emby-input" id="numPersonalYouTubeMaxVideoMiB" type="number" min="1" max="4096"></div>
                         <div class="inputContainer"><label class="inputLabel" for="numPersonalYouTubeMaxCollectionMiB">Maximum size per collection (MiB)</label><input is="emby-input" id="numPersonalYouTubeMaxCollectionMiB" type="number" min="1" max="1048576"></div>
-                        <div class="inputContainer"><label class="inputLabel" for="numPersonalYouTubeMaxStorageMiB">Combined personal media and staging budget (MiB)</label><input is="emby-input" id="numPersonalYouTubeMaxStorageMiB" type="number" min="2" max="1048576"><div class="fieldDescription">Includes all users and temporary publication copies. Downloads run one at a time across users.</div></div>
+                        <div class="inputContainer"><label class="inputLabel" for="numPersonalYouTubeMaxStorageMiB">Combined personal media and staging budget (MiB)</label><input is="emby-input" id="numPersonalYouTubeMaxStorageMiB" type="number" min="2" max="1048576"><div class="fieldDescription">Video size must not exceed collection size; collection size must not exceed this budget. Includes all users and temporary publication copies, so the effective collection allowance can be lower. Downloads run one at a time across users. Existing tool files are checked when saving; executable permissions and versions are checked during use.</div></div>
                     </div>
 
                     <div class="paper-card">

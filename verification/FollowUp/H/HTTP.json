@@ -1,0 +1,239 @@
+﻿{
+    "RevokeA":  false,
+    "Observations":  [
+                         {
+                             "ForeignLibrary":  true,
+                             "Bytes":  3588,
+                             "Route":  "Users/SELF/HomeSections?displayMode=mobile,desktop",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  true,
+                             "Bytes":  973,
+                             "Route":  "Users/SELF/Sections/smalllibrarytiles/Items?Limit=12",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  720,
+                             "Route":  "Users/SELF/Sections/latestmedia_7642/Items?Limit=12",
+                             "Actor":  "a",
+                             "OwnName":  true,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  720,
+                             "Route":  "Users/SELF/Sections/latestmedia_7644/Items?Limit=12",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  true
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  1614,
+                             "Route":  "Users/SELF/Views",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  1614,
+                             "Route":  "Users/SELF/Views?AllowDynamicChildren=true",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  1614,
+                             "Route":  "Users/SELF/Views?AllowDynamicChildren=false",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  2,
+                             "Route":  "Users/SELF/Items/Latest?ParentId=7644\u0026Limit=16",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  362,
+                             "Route":  "Users/SELF/Items/Latest?IncludeItemTypes=Video\u0026GroupItems=false\u0026Limit=100",
+                             "Actor":  "a",
+                             "OwnName":  true,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  5835,
+                             "Route":  "Users/SELF/Items/7647",
+                             "Actor":  "a",
+                             "OwnName":  true,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  15,
+                             "Route":  "Users/SELF/Items/7649",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  404,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  237886,
+                             "Route":  "Videos/7647/stream.mp4?Static=true",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  15,
+                             "Route":  "Videos/7649/stream.mp4?Static=true",
+                             "Actor":  "a",
+                             "OwnName":  false,
+                             "Status":  404,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  true,
+                             "Bytes":  3588,
+                             "Route":  "Users/SELF/HomeSections?displayMode=mobile,desktop",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  true,
+                             "Bytes":  973,
+                             "Route":  "Users/SELF/Sections/smalllibrarytiles/Items?Limit=12",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  720,
+                             "Route":  "Users/SELF/Sections/latestmedia_7644/Items?Limit=12",
+                             "Actor":  "b",
+                             "OwnName":  true,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  720,
+                             "Route":  "Users/SELF/Sections/latestmedia_7642/Items?Limit=12",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  true
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  1614,
+                             "Route":  "Users/SELF/Views",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  1614,
+                             "Route":  "Users/SELF/Views?AllowDynamicChildren=true",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  1614,
+                             "Route":  "Users/SELF/Views?AllowDynamicChildren=false",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  2,
+                             "Route":  "Users/SELF/Items/Latest?ParentId=7642\u0026Limit=16",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  362,
+                             "Route":  "Users/SELF/Items/Latest?IncludeItemTypes=Video\u0026GroupItems=false\u0026Limit=100",
+                             "Actor":  "b",
+                             "OwnName":  true,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  5682,
+                             "Route":  "Users/SELF/Items/7649",
+                             "Actor":  "b",
+                             "OwnName":  true,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  15,
+                             "Route":  "Users/SELF/Items/7647",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  404,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  11071,
+                             "Route":  "Videos/7649/stream.mp4?Static=true",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  200,
+                             "ForeignName":  false
+                         },
+                         {
+                             "ForeignLibrary":  false,
+                             "Bytes":  15,
+                             "Route":  "Videos/7647/stream.mp4?Static=true",
+                             "Actor":  "b",
+                             "OwnName":  false,
+                             "Status":  404,
+                             "ForeignName":  false
+                         }
+                     ]
+}

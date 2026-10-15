@@ -1,17 +1,30 @@
 # Leveransestatus: personlig YouTube
 
+2026-10-15: **Ny kandidat 2.0.11-alpha.1**, assembly `2.0.11.0`.
+Den inneholder native kildeoversikt, skrivebarriere, varig privat rotregister,
+servernøkkelfiks og forbedret innstillingsvalidering. Bygget bestod uten
+advarsler/feil; 119 native observasjoner og 46 komponentkontroller bestod på
+den versjonerte DLL-en. SHA256:
+`2DE94E0F869D303F6E6C2870285B44FCA81852A125EFAE8B3B974C65609C1F66`.
+Se [implementasjon og bevis](../FollowUp/PrivateInventory/IMPLEMENTATION.md).
+Tidligere fullmatriser og ytelsestall gjelder den tidligere kildekandidaten.
+Gjeldende Lilflix-status står i [utrullingsrapporten](LILFLIX-ALPHA-DEPLOYMENT.md).
+Avsnittene nedenfor om tidligere pakker er historikk.
+
 Oppdatering 2026-10-14: Alfaen er nå også installert og aktivert på Lilflix etter
 uttrykkelig brukerbestilling. Oppstart, DLL-hash, verktøy, alle tilgangskontroller
 og innstillingsavlesning bestod. Se [utrullingsrapporten](LILFLIX-ALPHA-DEPLOYMENT.md).
+Senere isolerte undersøkelser påviser tilgangshull i flere API-/transport-
+familier. Se [evidensindeks og godkjenningsnivåer](../FollowUp/K/INDEX.md).
 Formuleringene nedenfor om ingen utrulling beskriver statusen før dette.
 
-2026-10-14: **Lukket alfa 2.0.10-alpha.1 er ferdig og klar for kontrollert test.** Full skjerming er fortsatt ikke bevist. Ingen utrulling til hovedserveren eller offentlig utgivelse er utført.
+2026-10-14: **Lukket alfa 2.0.10-alpha.1 er installert for kontrollert test.** Full skjerming har påviste åpne hull. Ingen offentlig binærutgivelse er dokumentert.
 
 Gjeldende pakke: [2.0.10-alpha.1](bin/packages/2.0.10-alpha.1-20261014T102002670.zip). Manifeststatus er `closed-alpha-ready`; DLL SHA256 er `2E68B8DE68DE787DCEEB8AC30C44A417BD28126A3EE630F988F183ED193347EC`.
 
 Stue-TV med Emby AndroidTv 1.8.54g viste video, fremdrift og aktiv lydutgang etter retting av original.mp4-ruten. Samme siste DLL bestod ekte Google/to kanaler, egne/fremmede native strømmer, omstart, Buffering-avbrudd/gjenoppretting og sletting i Docker. Chrome-flyten og administratorlagringen bestod. Android mobil og øvrige klienter er uverifisert.
 
-Godkjenningskontrollen er fullført i [CLOSED-ALPHA-ACCEPTANCE.md](CLOSED-ALPHA-ACCEPTANCE.md). TV/nettverk er tilbakeført, Windows-fixturen ryddet/stoppet og Docker-testprofilen slettet/testcontaineren stoppet. Hovedserverens plugin og konfigurasjon er uendret.
+Den historiske godkjenningskontrollen finnes i [CLOSED-ALPHA-ACCEPTANCE.md](CLOSED-ALPHA-ACCEPTANCE.md). Etter testfasen var TV/nettverk tilbakeført, Windows-fixturen ryddet/stoppet og Docker-testprofilen slettet/testcontaineren stoppet. Deretter ble hovedserverens plugin og konfigurasjon oppdatert under den autoriserte utrullingen.
 
 ## Tidligere status og undersøkelser (historisk)
 

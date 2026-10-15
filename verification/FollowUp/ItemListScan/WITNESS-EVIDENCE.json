@@ -1,0 +1,41 @@
+﻿{
+  "ProductionDLLSHA256": "B27179ED140841FCA94525F9DB1941619148EA406F7FE47992E079905ACA3C3A",
+  "Observations": [
+    {
+      "Name": "Initial source search records a witness",
+      "Pass": true,
+      "Queries": 1
+    },
+    {
+      "Name": "Fresh valid witness avoids the full source search",
+      "Pass": true,
+      "Queries": 1
+    },
+    {
+      "Name": "Invisible witness falls back to another visible source",
+      "Pass": true,
+      "Queries": 2
+    },
+    {
+      "Name": "Changed native link falls back to another source",
+      "Pass": true,
+      "Queries": 2
+    },
+    {
+      "Name": "Old witness cannot authorize a tag without a current source",
+      "Pass": true,
+      "Queries": 2
+    },
+    {
+      "Name": "Changed parent denies a stale witness",
+      "Pass": true,
+      "Queries": 2
+    },
+    {
+      "Name": "Disabled account cannot use a stored witness",
+      "Pass": true,
+      "Queries": 0
+    }
+  ],
+  "Limit": "Production resolver with a library adapter and public sources; native private ownership and writer races require the separate Emby matrices. Temporary directory removed."
+}

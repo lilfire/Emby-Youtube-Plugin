@@ -1,0 +1,32 @@
+{
+  "TestType": "Actual UI observations through Chrome browser control and Home Assistant Android Debug Bridge",
+  "Google": "No live Google catalog request in H",
+  "Web": {
+    "Client": "Emby Web 4.10.1.0; Chrome 154 Windows",
+    "AOwnDetail": "PrivateNativeVideo_a_client; H264 640x360; AAC stereo; English SRT",
+    "APlayback": {"currentTime": 4.730635, "duration": 9.938141, "paused": false, "readyState": 4, "videoWidth": 640, "videoHeight": 360, "error": null},
+    "Seek": {"controlPercent": 30, "currentTime": 2.981, "paused": true},
+    "SubtitleVisible": "PrivateSubtitle_a_native_media",
+    "Resume": {"currentTime": 2.99752, "paused": false, "readyState": 4},
+    "FreshBHome": "After Change User and full reload, B sidebar has B only but main home tiles and latest rows show both private libraries and both video titles",
+    "ForeignADetailAsB": "Item not found.",
+    "OwnADetailAfterDeletion": "Item not found.; settings menu confirms native-privacy-fixture-a",
+    "PersonalSettings": "Preferences > YouTube opens personal form; server alpha feature disabled in this fixture",
+    "ThumbnailBackendObservation": "B own primary image 7649 and foreign image 7647 returned 404 during web homepage reload"
+  },
+  "LivingRoomTV": {
+    "ClientVersion": "1.8.54g",
+    "AndroidVersion": "12",
+    "AHome": "A own library present; B library absent in loaded native home",
+    "ADetail": "A title, SD H264, AAC stereo and English SRT displayed",
+    "AFrame": "Actual youtube-dl test video and synthetic A subtitle visible in native player",
+    "AFirstPausedPositionTicks": 10170000,
+    "AResumedPausedPositionTicks": 32520000,
+    "Audio": "Emby process 6161; active 44100 Hz stereo track; speaker device at 48000 Hz; track gain -inf in sampled dump; physical sound not listened to",
+    "BHome": "After native account switch, B own library and video shown; A library and title absent in loaded home",
+    "BPlayback": {"Video": "PrivateNativeVideo_b_client", "Frame": "Red synthetic video", "PositionTicks": 11220000, "IsPaused": true, "PlayMethod": "DirectStream"},
+    "AHomeAfterDeletion": "Switched back to A after stored deletion: Playlists only; A and B private libraries absent",
+    "Restoration": "Lilflix selected; thomas visible again; HOME restores com.spocky.projengmenu/.ui.home.MainActivity; temporary XML and PNG absent"
+  },
+  "Limits": ["Short samples do not verify durable resume across restart", "Native TV old-link and seek matrix not completed", "Physical listening not performed", "No actual Sync/download client", "No native app custom settings claim", "No support claim for untested client versions"]
+}

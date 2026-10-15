@@ -1,0 +1,33 @@
+{
+  "Commit": "e49dc06ec5edf4de3c966a4d49d9cb51419ecfe7",
+  "Scope": "Non-ignored FollowUp text artifacts and source; matched values never emitted",
+  "FilesChecked": 145,
+  "Findings": [],
+  "ReviewedMatches": [
+    {
+      "File": "verification/FollowUp/B/Probe-B.ps1",
+      "Line": 96,
+      "Category": "credential-assignment",
+      "Review": "Synthetic fixture key or runtime expression; no literal secret"
+    },
+    {
+      "File": "verification/FollowUp/D/Probe-D.ps1",
+      "Line": 89,
+      "Category": "credential-assignment",
+      "Review": "Synthetic fixture key or runtime expression; no literal secret"
+    },
+    {
+      "File": "verification/FollowUp/F/Probe-F.ps1",
+      "Line": 36,
+      "Category": "credential-assignment",
+      "Review": "Synthetic fixture key or runtime expression; no literal secret"
+    },
+    {
+      "File": "verification/FollowUp/F/Probe-F.ps1",
+      "Line": 73,
+      "Category": "credential-assignment",
+      "Review": "Synthetic fixture key or runtime expression; no literal secret"
+    }
+  ],
+  "Limit": "Pattern preflight, not a guarantee; scripts require review before publishing"
+}

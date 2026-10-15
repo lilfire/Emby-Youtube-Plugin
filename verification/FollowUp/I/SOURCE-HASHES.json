@@ -1,0 +1,26 @@
+﻿[
+    {
+        "File":  "Configuration/YouTubePersonalSettings.js",
+        "SHA256":  "8B7745EF7655798B6C047C545DC62BC8BEDA7BD3F00061C9686C48B881DA2454"
+    },
+    {
+        "File":  "Configuration/YouTubePersonalSettings.html",
+        "SHA256":  "A199EA24492BE3350995CCB3A9B66A9A437B4BB1DB6AB3885275F921CF1A7255"
+    },
+    {
+        "File":  "Configuration/YouTubeConfiguration.js",
+        "SHA256":  "027BA9ED378B400EE8882FD4149E4A1F5B5EA74FAEFB3D464A9C779988A2AFA4"
+    },
+    {
+        "File":  "Configuration/YouTubeConfiguration.html",
+        "SHA256":  "ED0939B90E847CFB5B547D95030BC99A7AB65A59629C4DE9ED9B4116A7F5F092"
+    },
+    {
+        "File":  "Configuration/PersonalYouTubeConfigurationValidation.cs",
+        "SHA256":  "4359649ED8DD8CAF15770D357E8CD8914B3E2ED6ABC06554E6CE3B5D29AAE102"
+    },
+    {
+        "File":  "YouTubeConfigSaveService.cs",
+        "SHA256":  "C7F0D272D5E258C1CF90171F6F61400BC050DD74944065AD07255B4450A69649"
+    }
+]

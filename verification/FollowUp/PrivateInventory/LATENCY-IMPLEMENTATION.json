@@ -1,0 +1,612 @@
+﻿{
+    "Label":  "source-inventory-final",
+    "PluginSha256":  "D062C89BF60607A16A538DFC5A5E45225BD00E8DBCAF0897290FBE352861B780",
+    "AdminVisibleItems":  40010,
+    "Rows":  [
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  812,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  663,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  554,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  609,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  556,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  547,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "admin",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  890,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  496,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  538,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  543,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  584,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  562,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  548,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "user",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  883,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "serverkey",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  132,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "serverkey",
+                     "Route":  "Library/VirtualFolders",
+                     "Status":  200,
+                     "Ms":  69,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  1,
+                     "Actor":  "serverkey",
+                     "Route":  "Items",
+                     "Status":  200,
+                     "Ms":  64,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  558,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  571,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  590,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  604,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  519,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  540,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "admin",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  825,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  492,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  574,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  528,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  598,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  509,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  516,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "user",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  804,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "serverkey",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  114,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "serverkey",
+                     "Route":  "Library/VirtualFolders",
+                     "Status":  200,
+                     "Ms":  52,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  2,
+                     "Actor":  "serverkey",
+                     "Route":  "Items",
+                     "Status":  200,
+                     "Ms":  61,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  493,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  553,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  570,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  583,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  551,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  516,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "admin",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  859,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Views",
+                     "Status":  200,
+                     "Ms":  511,
+                     "Count":  2
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items",
+                     "Status":  200,
+                     "Ms":  558,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Users/{u}/Items/Latest",
+                     "Status":  200,
+                     "Ms":  544,
+                     "Count":  16
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  571,
+                     "Count":  20000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Genres",
+                     "Status":  200,
+                     "Ms":  523,
+                     "Count":  30
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Studios",
+                     "Status":  200,
+                     "Ms":  512,
+                     "Count":  500
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "user",
+                     "Route":  "Tags",
+                     "Status":  200,
+                     "Ms":  787,
+                     "Count":  3000
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "serverkey",
+                     "Route":  "Items/Counts",
+                     "Status":  200,
+                     "Ms":  115,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "serverkey",
+                     "Route":  "Library/VirtualFolders",
+                     "Status":  200,
+                     "Ms":  53,
+                     "Count":  null
+                 },
+                 {
+                     "Label":  "source-inventory-final",
+                     "Round":  3,
+                     "Actor":  "serverkey",
+                     "Route":  "Items",
+                     "Status":  200,
+                     "Ms":  61,
+                     "Count":  null
+                 }
+             ],
+    "ParallelRows":  [
+                         {
+                             "Round":  1,
+                             "Actor":  "admin",
+                             "Route":  "Users/{u}/Views",
+                             "Status":  200,
+                             "Ms":  649,
+                             "Count":  2
+                         },
+                         {
+                             "Round":  1,
+                             "Actor":  "user",
+                             "Route":  "Users/{u}/Items",
+                             "Status":  200,
+                             "Ms":  707,
+                             "Count":  20000
+                         },
+                         {
+                             "Round":  1,
+                             "Actor":  "user",
+                             "Route":  "Users/{u}/Views",
+                             "Status":  200,
+                             "Ms":  723,
+                             "Count":  2
+                         },
+                         {
+                             "Round":  1,
+                             "Actor":  "user",
+                             "Route":  "Users/{u}/Items/Latest",
+                             "Status":  200,
+                             "Ms":  753,
+                             "Count":  16
+                         },
+                         {
+                             "Round":  1,
+                             "Actor":  "admin",
+                             "Route":  "Users/{u}/Items",
+                             "Status":  200,
+                             "Ms":  1111,
+                             "Count":  20000
+                         },
+                         {
+                             "Round":  1,
+                             "Actor":  "admin",
+                             "Route":  "Users/{u}/Items/Latest",
+                             "Status":  200,
+                             "Ms":  1203,
+                             "Count":  16
+                         },
+                         {
+                             "Round":  2,
+                             "Actor":  "user",
+                             "Route":  "Users/{u}/Views",
+                             "Status":  200,
+                             "Ms":  726,
+                             "Count":  2
+                         },
+                         {
+                             "Round":  2,
+                             "Actor":  "admin",
+                             "Route":  "Users/{u}/Items/Latest",
+                             "Status":  200,
+                             "Ms":  773,
+                             "Count":  16
+                         },
+                         {
+                             "Round":  2,
+                             "Actor":  "user",
+                             "Route":  "Users/{u}/Items",
+                             "Status":  200,
+                             "Ms":  803,
+                             "Count":  20000
+                         },
+                         {
+                             "Round":  2,
+                             "Actor":  "admin",
+                             "Route":  "Users/{u}/Items",
+                             "Status":  200,
+                             "Ms":  835,
+                             "Count":  20000
+                         },
+                         {
+                             "Round":  2,
+                             "Actor":  "admin",
+                             "Route":  "Users/{u}/Views",
+                             "Status":  200,
+                             "Ms":  1192,
+                             "Count":  2
+                         },
+                         {
+                             "Round":  2,
+                             "Actor":  "user",
+                             "Route":  "Users/{u}/Items/Latest",
+                             "Status":  200,
+                             "Ms":  1191,
+                             "Count":  16
+                         },
+                         {
+                             "Round":  3,
+                             "Actor":  "admin",
+                             "Route":  "Users/{u}/Views",
+                             "Status":  200,
+                             "Ms":  649,
+                             "Count":  2
+                         },
+                         {
+                             "Round":  3,
+                             "Actor":  "user",
+                             "Route":  "Users/{u}/Views",
+                             "Status":  200,
+                             "Ms":  664,
+                             "Count":  2
+                         },
+                         {
+                             "Round":  3,
+                             "Actor":  "admin",
+                             "Route":  "Users/{u}/Items/Latest",
+                             "Status":  200,
+                             "Ms":  680,
+                             "Count":  16
+                         },
+                         {
+                             "Round":  3,
+                             "Actor":  "user",
+                             "Route":  "Users/{u}/Items",
+                             "Status":  200,
+                             "Ms":  694,
+                             "Count":  20000
+                         },
+                         {
+                             "Round":  3,
+                             "Actor":  "user",
+                             "Route":  "Users/{u}/Items/Latest",
+                             "Status":  200,
+                             "Ms":  1113,
+                             "Count":  16
+                         },
+                         {
+                             "Round":  3,
+                             "Actor":  "admin",
+                             "Route":  "Users/{u}/Items",
+                             "Status":  200,
+                             "Ms":  1145,
+                             "Count":  20000
+                         }
+                     ]
+}

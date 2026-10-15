@@ -1,0 +1,19 @@
+{
+  "Completed": true,
+  "Results": [
+    {
+      "Name": "baseline-late-job-painted-after-account-switch",
+      "Passed": true
+    },
+    {
+      "Name": "baseline-pause-retains-private-job-status",
+      "Passed": true
+    },
+    {
+      "Name": "baseline-old-job-response-overwrites-new",
+      "Passed": true
+    }
+  ],
+  "Browser": "Microsoft Edge headless",
+  "Transport": "synthetic promises; real production controller and DOM"
+}

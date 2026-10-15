@@ -143,7 +143,13 @@ try {
         $ready=$true
         foreach ($library in $state.Libraries) {
             $nativeItemType=if($Movies){'Movie'}else{'Video'}
-            $items=Call "Items?ParentId=$($library.LibraryId)&Recursive=true&IncludeItemTypes=$nativeItemType"
+            try { $items=Call "Items?ParentId=$($library.LibraryId)&Recursive=true&IncludeItemTypes=$nativeItemType" }
+            catch {
+                # A library scan can change sources while this readiness query
+                # runs. Only readiness polls may retry the resulting denial.
+                if ([int]$_.Exception.Response.StatusCode -ne 404) { throw }
+                $ready=$false; continue
+            }
             if ($items.Items.Count -ne 1) {$ready=$false} else {$library.VideoId=[string]$items.Items[0].Id}
         }
         if (-not $ready) {Start-Sleep -Milliseconds 200}
@@ -157,6 +163,11 @@ try {
             $item|Add-Member -NotePropertyName Studios -NotePropertyValue @(@{Name="PrivateNativeStudio_$($library.Owner)"},@{Name='SharedNativeStudio'}) -Force
             $item|Add-Member -NotePropertyName Tags -NotePropertyValue @("PrivateNativeTag_$($library.Owner)",'SharedNativeTag') -Force
             $item|Add-Member -NotePropertyName TagItems -NotePropertyValue $null -Force
+            if($env:PERSONAL_YOUTUBE_A_PROBE){
+                $item|Add-Member -NotePropertyName ProductionYear -NotePropertyValue $(if($library.Owner -eq 'a'){2001}else{2002}) -Force
+                $item|Add-Member -NotePropertyName OfficialRating -NotePropertyValue "PrivateNativeRating_$($library.Owner)" -Force
+                $item|Add-Member -NotePropertyName People -NotePropertyValue @(@{Name="PrivateNativePerson_$($library.Owner)";Type='Actor'}) -Force
+            }
             Call "Items/$($library.VideoId)" $admin Post $item|Out-Null
             $readback=Call "Users/$($auth.UserId)/Items/$($library.VideoId)?Fields=Genres,Studios,Tags"
             $actualTags=@($readback.Tags)+@($readback.TagItems.Name)
